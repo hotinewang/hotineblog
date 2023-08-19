@@ -1,86 +1,86 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - Tag - Hotine的小窝</title>
-        <link>https://blog.hotine.wang/blog/tags/</link>
+        <link>https://blog.hotine.wang/tags/</link>
         <description>Tags - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 17 Aug 2023 21:20:59 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/blog/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 17 Aug 2023 21:20:59 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Docker</title>
-    <link>https://blog.hotine.wang/blog/tags/docker/</link>
+    <link>https://blog.hotine.wang/tags/docker/</link>
     <pubDate>Thu, 17 Aug 2023 21:20:59 &#43;0800</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/blog/tags/docker/</guid>
+    <guid>https://blog.hotine.wang/tags/docker/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>NAS</title>
-    <link>https://blog.hotine.wang/blog/tags/nas/</link>
+    <link>https://blog.hotine.wang/tags/nas/</link>
     <pubDate>Thu, 17 Aug 2023 21:20:59 &#43;0800</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/blog/tags/nas/</guid>
+    <guid>https://blog.hotine.wang/tags/nas/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>ZeroTier</title>
-    <link>https://blog.hotine.wang/blog/tags/zerotier/</link>
+    <link>https://blog.hotine.wang/tags/zerotier/</link>
     <pubDate>Thu, 17 Aug 2023 21:20:59 &#43;0800</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/blog/tags/zerotier/</guid>
+    <guid>https://blog.hotine.wang/tags/zerotier/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>内网穿透</title>
-    <link>https://blog.hotine.wang/blog/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+    <link>https://blog.hotine.wang/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
     <pubDate>Thu, 17 Aug 2023 21:20:59 &#43;0800</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/blog/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
+    <guid>https://blog.hotine.wang/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>反向代理</title>
-    <link>https://blog.hotine.wang/blog/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</link>
+    <link>https://blog.hotine.wang/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</link>
     <pubDate>Thu, 17 Aug 2023 21:20:59 &#43;0800</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/blog/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</guid>
+    <guid>https://blog.hotine.wang/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>建站</title>
-    <link>https://blog.hotine.wang/blog/tags/%E5%BB%BA%E7%AB%99/</link>
+    <link>https://blog.hotine.wang/tags/%E5%BB%BA%E7%AB%99/</link>
     <pubDate>Thu, 17 Aug 2023 21:20:59 &#43;0800</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/blog/tags/%E5%BB%BA%E7%AB%99/</guid>
+    <guid>https://blog.hotine.wang/tags/%E5%BB%BA%E7%AB%99/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Hugo</title>
-    <link>https://blog.hotine.wang/blog/tags/hugo/</link>
+    <link>https://blog.hotine.wang/tags/hugo/</link>
     <pubDate>Thu, 17 Aug 2023 16:11:23 &#43;0800</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/blog/tags/hugo/</guid>
+    <guid>https://blog.hotine.wang/tags/hugo/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>博客</title>
-    <link>https://blog.hotine.wang/blog/tags/%E5%8D%9A%E5%AE%A2/</link>
+    <link>https://blog.hotine.wang/tags/%E5%8D%9A%E5%AE%A2/</link>
     <pubDate>Thu, 17 Aug 2023 16:11:23 &#43;0800</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/blog/tags/%E5%8D%9A%E5%AE%A2/</guid>
+    <guid>https://blog.hotine.wang/tags/%E5%8D%9A%E5%AE%A2/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Caddy</title>
-    <link>https://blog.hotine.wang/blog/tags/caddy/</link>
+    <link>https://blog.hotine.wang/tags/caddy/</link>
     <pubDate>Mon, 14 Aug 2023 22:54:59 &#43;0800</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/blog/tags/caddy/</guid>
+    <guid>https://blog.hotine.wang/tags/caddy/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>VPS</title>
-    <link>https://blog.hotine.wang/blog/tags/vps/</link>
+    <link>https://blog.hotine.wang/tags/vps/</link>
     <pubDate>Mon, 14 Aug 2023 22:54:59 &#43;0800</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/blog/tags/vps/</guid>
+    <guid>https://blog.hotine.wang/tags/vps/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

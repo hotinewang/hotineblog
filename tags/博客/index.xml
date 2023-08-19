@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>博客 - Tag - Hotine的小窝</title>
-        <link>https://blog.hotine.wang/blog/tags/%E5%8D%9A%E5%AE%A2/</link>
+        <link>https://blog.hotine.wang/tags/%E5%8D%9A%E5%AE%A2/</link>
         <description>博客 - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 17 Aug 2023 16:11:23 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/blog/tags/%E5%8D%9A%E5%AE%A2/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 17 Aug 2023 16:11:23 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/%E5%8D%9A%E5%AE%A2/" rel="self" type="application/rss+xml" /><item>
     <title>Hugo个人博客搭建</title>
-    <link>https://blog.hotine.wang/blog/posts/20230817_hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+    <link>https://blog.hotine.wang/posts/20230817_hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
     <pubDate>Thu, 17 Aug 2023 16:11:23 &#43;0800</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/blog/posts/20230817_hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+    <guid>https://blog.hotine.wang/posts/20230817_hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/posts/20230817_Hugo%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.jpg" referrerpolicy="no-referrer">
             </div>前言 一直想弄一个轻量级的博客，操作简单，便于迁移。试过wordpress和自建静态博客，最后发现还有hugo这类好东西。整体对比起来就是 wo]]></description>

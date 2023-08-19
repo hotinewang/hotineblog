@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>旁路由 - Tag - Hotine的小窝</title>
-        <link>https://blog.hotine.wang/blog/tags/%E6%97%81%E8%B7%AF%E7%94%B1/</link>
+        <link>https://blog.hotine.wang/tags/%E6%97%81%E8%B7%AF%E7%94%B1/</link>
         <description>旁路由 - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 10 May 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/blog/tags/%E6%97%81%E8%B7%AF%E7%94%B1/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 10 May 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/%E6%97%81%E8%B7%AF%E7%94%B1/" rel="self" type="application/rss+xml" /><item>
     <title>NAS当旁路由-DOCKER中OPEN-WRT配置</title>
-    <link>https://blog.hotine.wang/blog/posts/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE/</link>
+    <link>https://blog.hotine.wang/posts/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE/</link>
     <pubDate>Wed, 10 May 2023 00:00:00 &#43;0800</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/blog/posts/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE/</guid>
+    <guid>https://blog.hotine.wang/posts/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/posts/20230510_NAS%e5%bd%93%e6%97%81%e8%b7%af%e7%94%b1-DOCKER%e4%b8%adOPEN-WRT%e9%85%8d%e7%bd%ae.jpg" referrerpolicy="no-referrer">
             </div>家里NAS上为啥要弄个旁路由，当然是为了能更好的优化网络，美美的上网了。 安装流程： 网卡开启混杂模式 用SSH工具连接服务器,需要先查看是否打开]]></description>
