@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>NAS当旁路由-DOCKER中OPEN-WRT配置 - Hotine的小窝</title><meta name="Description" content="Hotine的窝？"><meta property="og:title" content="NAS当旁路由-DOCKER中OPEN-WRT配置" />
+<meta property="og:description" content="家里NAS上为啥要弄个旁路由，当然是为了能更好的优化网络，美美的上网了。 安装流程： 网卡开启混杂模式 用SSH工具连接服务器,需要先查看是否打开" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.hotine.wang/blog/posts/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-10T00:00:00+08:00" />
+<meta property="article:modified_time" content="2023-05-10T00:00:00+08:00" /><meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="NAS当旁路由-DOCKER中OPEN-WRT配置"/>
+<meta name="twitter:description" content="家里NAS上为啥要弄个旁路由，当然是为了能更好的优化网络，美美的上网了。 安装流程： 网卡开启混杂模式 用SSH工具连接服务器,需要先查看是否打开"/>
+<meta name="application-name" content="Hotine的小窝">
+<meta name="apple-mobile-web-app-title" content="Hotine的小窝"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.hotine.wang/blog/posts/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE/" /><link rel="prev" href="https://blog.hotine.wang/blog/posts/20221201_docker%E5%AE%9D%E5%BA%93bt%E4%B8%8B%E8%BD%BD/" /><link rel="next" href="https://blog.hotine.wang/blog/posts/20230510_linux%E4%B8%AD%E5%AE%89%E8%A3%85nodejs%E5%B9%B6%E7%94%A8express%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/blog/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "NAS当旁路由-DOCKER中OPEN-WRT配置",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.hotine.wang\/blog\/posts\/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE\/"
+        },"genre": "posts","keywords": "旁路由, OpenWRT, Docker","wordcount":  1470 ,
+        "url": "https:\/\/blog.hotine.wang\/blog\/posts\/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE\/","datePublished": "2023-05-10T00:00:00+08:00","dateModified": "2023-05-10T00:00:00+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Hotine"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/blog/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/blog/posts/" title="文章列表"> 文章列表 </a><a class="menu-item" href="/blog/categories/" title="分类"> 分类 </a><a class="menu-item" href="/blog/tags/" title="标签"> 标签 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/blog/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/blog/posts/" title="文章列表">文章列表</a><a class="menu-item" href="/blog/categories/" title="分类">分类</a><a class="menu-item" href="/blog/tags/" title="标签">标签</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">NAS当旁路由-DOCKER中OPEN-WRT配置</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/blog/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
+</span>&nbsp;<span class="post-category">included in <a href="/blog/categories/%E6%97%81%E8%B7%AF%E7%94%B1/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>旁路由</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-05-10">2023-05-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1470 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/blog/svg/loading.min.svg"
+        data-src="/images/posts/20230510_NAS%e5%bd%93%e6%97%81%e8%b7%af%e7%94%b1-DOCKER%e4%b8%adOPEN-WRT%e9%85%8d%e7%bd%ae.jpg"
+        data-srcset="/images/posts/20230510_NAS%e5%bd%93%e6%97%81%e8%b7%af%e7%94%b1-DOCKER%e4%b8%adOPEN-WRT%e9%85%8d%e7%bd%ae.jpg, /images/posts/20230510_NAS%e5%bd%93%e6%97%81%e8%b7%af%e7%94%b1-DOCKER%e4%b8%adOPEN-WRT%e9%85%8d%e7%bd%ae.jpg 1.5x, /images/posts/20230510_NAS%e5%bd%93%e6%97%81%e8%b7%af%e7%94%b1-DOCKER%e4%b8%adOPEN-WRT%e9%85%8d%e7%bd%ae.jpg 2x"
+        data-sizes="auto"
+        alt="/images/posts/20230510_NAS当旁路由-DOCKER中OPEN-WRT配置.jpg"
+        title="/images/posts/20230510_NAS当旁路由-DOCKER中OPEN-WRT配置.jpg" /></div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#安装流程">安装流程：</a>
+      <ul>
+        <li><a href="#网卡开启混杂模式"><strong>网卡开启混杂模式</strong></a></li>
+        <li><a href="#docker安装openwrt"><strong>Docker安装OpenWRT</strong></a></li>
+        <li><a href="#设置openwrt"><strong>设置openwrt</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#如何使用胖路由"><strong>如何使用胖路由</strong></a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>家里NAS上为啥要弄个旁路由，当然是为了能更好的优化网络，美美的上网了。</p>
+<h2 id="安装流程">安装流程：</h2>
+<h3 id="网卡开启混杂模式"><strong>网卡开启混杂模式</strong></h3>
+<p>用SSH工具连接服务器,需要先查看是否打开了网卡的混杂模式。
+查看网卡是否打开混杂模式（使用以下两个命令都可以）</p>
+<pre tabindex="0"><code>ip addr
+或者
+ifconfig
+</code></pre><p>会显示类似于下边的信息：</p>
+<pre tabindex="0"><code>1: lo: .LOOPBACK,UP,LOWER_UP. mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+inet 127.0.0.1/8 scope host lo
+valid_lft forever preferred_lft forever
+inet6 ::1/128 scope host
+valid_lft forever preferred_lft forever
+2: enp1s0: .BROADCAST,MULTICAST,PROMISC,UP,LOWER_UP. mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+link/ether 68:1d:ef:16:9d:16 brd ff:ff:ff:ff:ff:ff
+inet 192.168.31.74/24 brd 192.168.31.255 scope global dynamic enp1s0
+valid_lft 33867sec preferred_lft 33867sec
+inet6 fe80::6a1d:efff:fe16:9d16/64 scope link
+valid_lft forever preferred_lft forever
+</code></pre><p>找到ip和主机地址一致的那个网卡，例如enp1s0，看后边有没有<code>PROMISC</code>字样，没有就是没开启的意思，使用以下命令开启混杂模式：</p>
+<pre tabindex="0"><code>sudo ip link set enp1s0 promisc on
+</code></pre><p>然后再通过<code>ip addr</code>或者<code>ifconfig</code>命令检查是否开启成功。</p>
+<h3 id="docker安装openwrt"><strong>Docker安装OpenWRT</strong></h3>
+<p>创建docker网卡</p>
+<pre tabindex="0"><code>docker network create -d macvlan --subnet=192.168.31.0/24 --gateway=192.168.31.1 -o parent=enp1s0 macnet
+</code></pre><p>其中&ndash;subnet=192.168.31.0/24是网段和子网掩码，&ndash;gateway=192.168.31.1是网关（一般是路由器管理页面的ip地址）
+可以用以下命令查看是否创建成功：</p>
+<pre tabindex="0"><code>docker network list
+</code></pre><p>查看自己系统的架构</p>
+<pre tabindex="0"><code>uname -a
+</code></pre><p>安装dock镜像，项目地址：<a href="https://hub.docker.com/r/sulinggg/openwrt" target="_blank" rel="noopener noreffer">https://hub.docker.com/r/sulinggg/openwrt</a>
+，从网址中找到对应自己系统架构的镜像名称(dockerhub或阿里云镜像仓库 (上海))。并安装对应的镜像：</p>
+<pre tabindex="0"><code>docker run --restart always --name openwrt -d --network macnet --privileged registry.cn-shanghai.aliyuncs.com/suling/openwrt:x86_64 /sbin/init
+</code></pre><p>上述命令中，<code>--name openwrt</code>是指镜像名称，可修改；<code>--network macnet</code>中的macnet就是对应的新建网卡名称；<code>registry.cn-shanghai.aliyuncs.com/suling/openwrt:x86_64</code>是要安装镜像名称，用dockerhub或阿里云镜像仓库 (上海)都可以。
+安装完毕后，开始设置openwrt的ip。进入portainer管理界面，在容器列表里找到openwrt，点击QuickAction列表下的&gt;_，在下一个页面点击连接，进入命令行模式,输入:</p>
+<pre tabindex="0"><code>vim /etc/config/network
+</code></pre><p>修改以下部分</p>
+<pre tabindex="0"><code>option ipaddr &#39;192.168.123.100&#39;
+option gateway &#39;192.168.123.1&#39;
+option dns &#39;192.168.123.1&#39;
+</code></pre><p>为：</p>
+<pre tabindex="0"><code>option ipaddr &#39;192.168.31.5&#39;
+option gateway &#39;192.168.31.1&#39;
+option dns &#39;192.168.31.1&#39;
+</code></pre><p>按i进入编辑模式，修改完以后按esc退出，输入以下命令保存</p>
+<pre tabindex="0"><code>:wq
+</code></pre><p>重启网络:</p>
+<pre tabindex="0"><code>/etc/init.d/network restart
+</code></pre><p>随后访问<code>http://192.168.31.5/</code>即可进入openwrt界面，默认密码是：root或者password或者随便输一个也能进入。先修改密码。</p>
+<h3 id="设置openwrt"><strong>设置openwrt</strong></h3>
+<ul>
+<li>网络-接口-LAN-修改，在基本设置里：把“使用自定义的DNS”清空，基本设置里勾选“忽略此接口”，IPv6设置里，全部禁用，之后保存应用。之后切到物理设置：取消勾选“桥接接口”。</li>
+<li>网络-防火墙-自定义规则，在最后添加一行代码：
+<code>iptables -t nat -I POSTROUTING -j MASQUERADE</code></li>
+<li>网络-Turbo ACC 网络加速设置：勾选“DNS缓存”，保存并应用。</li>
+<li>到此，整个docker运行openWRT的过程就结束了。</li>
+</ul>
+<h2 id="如何使用胖路由"><strong>如何使用胖路由</strong></h2>
+<ul>
+<li>方案1：修改主路由器设置（局域网内全部设备均通过旁路由）
+进入路由器后台中，将主路由的 DHCP 的默认网关和 DNS 服务器设置为openWRT的 IP。完成以上操作后，断开设备（如手机，电脑）与路由器的连接，重新连接路由器。(此方法如果旁路由挂了，会导致整个家里网络都瘫掉)</li>
+<li>方案2：修改联网设备设置（特定联网设备通过旁路由）
+以安卓机为例，将IP设置修改为“静态”，IP地址填写一个未被占用的IP，前缀长度填24，DNS1填写openwrt的ip，例如上文中的192.168.31.5。保存，断开网络再重新联网即可（次方法仅设置过的设备使用旁路由，旁路由挂掉对家中其他设备无影响）。</li>
+</ul>
+<p>参考文献：https://mlapp.cn/376.html</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-05-10</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.hotine.wang/blog/posts/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE/" data-title="NAS当旁路由-DOCKER中OPEN-WRT配置" data-via="xxxx" data-hashtags="旁路由,OpenWRT,Docker"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.hotine.wang/blog/posts/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE/" data-hashtag="旁路由"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://blog.hotine.wang/blog/posts/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE/" data-title="NAS当旁路由-DOCKER中OPEN-WRT配置" data-image="/images/posts/20230510_NAS当旁路由-DOCKER中OPEN-WRT配置.jpg"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/blog/tags/%E6%97%81%E8%B7%AF%E7%94%B1/">旁路由</a>,&nbsp;<a href="/blog/tags/openwrt/">OpenWRT</a>,&nbsp;<a href="/blog/tags/docker/">Docker</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/blog/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/blog/posts/20221201_docker%E5%AE%9D%E5%BA%93bt%E4%B8%8B%E8%BD%BD/" class="prev" rel="prev" title="Docker宝库：BT下载"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Docker宝库：BT下载</a>
+            <a href="/blog/posts/20230510_linux%E4%B8%AD%E5%AE%89%E8%A3%85nodejs%E5%B9%B6%E7%94%A8express%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/" class="next" rel="next" title="Linux中安装NodeJS并用Express搭建静态网站">Linux中安装NodeJS并用Express搭建静态网站<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><br /></div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2021 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/blog/" target="_blank">Hotine</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.5.4/dist/index.umd.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"Hotine.Wang的小窝","id-2":"Hotine.Wang的小窝"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/blog/js/theme.min.js"></script></body>
+</html>

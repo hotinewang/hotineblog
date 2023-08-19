@@ -1,0 +1,55 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>建站 - Tag - Hotine的小窝</title>
+        <link>https://blog.hotine.wang/blog/tags/%E5%BB%BA%E7%AB%99/</link>
+        <description>建站 - Tag - Hotine的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 17 Aug 2023 21:20:59 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/blog/tags/%E5%BB%BA%E7%AB%99/" rel="self" type="application/rss+xml" /><item>
+    <title>ZeroTier内网穿透教程</title>
+    <link>https://blog.hotine.wang/blog/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+    <pubDate>Thu, 17 Aug 2023 21:20:59 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/blog/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/posts/20230817_ZeroTier%e5%86%85%e7%bd%91%e7%a9%bf%e9%80%8f.jpg" referrerpolicy="no-referrer">
+            </div>ZeroTier内网穿透简介 家有NAS，如何从外网进行访问或管理，这就需要使用内网穿透。对于家里宽带没有公网IP的人来说，用ZeroTier]]></description>
+</item>
+<item>
+    <title>Hugo个人博客搭建</title>
+    <link>https://blog.hotine.wang/blog/posts/20230817_hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+    <pubDate>Thu, 17 Aug 2023 16:11:23 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/blog/posts/20230817_hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/posts/20230817_Hugo%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.jpg" referrerpolicy="no-referrer">
+            </div>前言 一直想弄一个轻量级的博客，操作简单，便于迁移。试过wordpress和自建静态博客，最后发现还有hugo这类好东西。整体对比起来就是 wo]]></description>
+</item>
+<item>
+    <title>Caddy建站指南</title>
+    <link>https://blog.hotine.wang/blog/posts/20230811_caddy%E5%BB%BA%E7%AB%99%E6%8C%87%E5%8D%97/</link>
+    <pubDate>Fri, 11 Aug 2023 00:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/blog/posts/20230811_caddy%E5%BB%BA%E7%AB%99%E6%8C%87%E5%8D%97/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/posts/20230811_Caddy%e5%bb%ba%e7%ab%99%e6%8c%87%e5%8d%97.svg" referrerpolicy="no-referrer">
+            </div>分类：网站建设 关键字：建站 caddy 对于在VPS或者家里的小服务器上搭建网站，最轻量级的可以使用基于NodeJS的Express,也可以使用功能强大]]></description>
+</item>
+<item>
+    <title>Linux中安装NodeJS并用Express搭建静态网站</title>
+    <link>https://blog.hotine.wang/blog/posts/20230510_linux%E4%B8%AD%E5%AE%89%E8%A3%85nodejs%E5%B9%B6%E7%94%A8express%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</link>
+    <pubDate>Wed, 10 May 2023 16:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/blog/posts/20230510_linux%E4%B8%AD%E5%AE%89%E8%A3%85nodejs%E5%B9%B6%E7%94%A8express%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</guid>
+    <description><![CDATA[NODEJS部署 下载Nodejs 先在服务器上下载nodejs包，在控制台通过cd命令进入usr/local目录： cd /usr/local 在nodejs.org官]]></description>
+</item>
+<item>
+    <title>Linux中Docker的安装</title>
+    <link>https://blog.hotine.wang/blog/posts/20221130_linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85/</link>
+    <pubDate>Wed, 30 Nov 2022 20:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/blog/posts/20221130_linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/posts/20221130_Linux%e4%b8%adDocker%e7%9a%84%e5%ae%89%e8%a3%85.cover.jpg" referrerpolicy="no-referrer">
+            </div>什么是DOCKER？ Docker 是一种开源的容器化平台，用于帮助开发人员构建、交付和运行应用程序。通过使用 Docker，开发人员可以将应用程序及其所有]]></description>
+</item>
+</channel>
+</rss>

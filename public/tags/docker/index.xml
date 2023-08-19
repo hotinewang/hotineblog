@@ -1,0 +1,93 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Docker - Tag - Hotine的小窝</title>
+        <link>https://blog.hotine.wang/blog/tags/docker/</link>
+        <description>Docker - Tag - Hotine的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 17 Aug 2023 21:20:59 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/blog/tags/docker/" rel="self" type="application/rss+xml" /><item>
+    <title>ZeroTier内网穿透教程</title>
+    <link>https://blog.hotine.wang/blog/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+    <pubDate>Thu, 17 Aug 2023 21:20:59 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/blog/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/posts/20230817_ZeroTier%e5%86%85%e7%bd%91%e7%a9%bf%e9%80%8f.jpg" referrerpolicy="no-referrer">
+            </div>ZeroTier内网穿透简介 家有NAS，如何从外网进行访问或管理，这就需要使用内网穿透。对于家里宽带没有公网IP的人来说，用ZeroTier]]></description>
+</item>
+<item>
+    <title>通过Docker实现B站视频推流</title>
+    <link>https://blog.hotine.wang/blog/posts/20230616_docker%E5%AE%9D%E5%BA%93b%E7%AB%99%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81/</link>
+    <pubDate>Fri, 16 Jun 2023 00:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/blog/posts/20230616_docker%E5%AE%9D%E5%BA%93b%E7%AB%99%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/posts/20230616_Docker%e5%ae%9d%e5%ba%93%ef%bc%9aB%e7%ab%99%e8%a7%86%e9%a2%91%e6%8e%a8%e6%b5%81.jpg" referrerpolicy="no-referrer">
+            </div>可以使用kplayer在B站做一个7*24小时的直播小电台。 安装流程： 首先是Kplayer的官方GitHub：bytelang/kplaye]]></description>
+</item>
+<item>
+    <title>NAS当旁路由-DOCKER中OPEN-WRT配置</title>
+    <link>https://blog.hotine.wang/blog/posts/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE/</link>
+    <pubDate>Wed, 10 May 2023 00:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/blog/posts/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/posts/20230510_NAS%e5%bd%93%e6%97%81%e8%b7%af%e7%94%b1-DOCKER%e4%b8%adOPEN-WRT%e9%85%8d%e7%bd%ae.jpg" referrerpolicy="no-referrer">
+            </div>家里NAS上为啥要弄个旁路由，当然是为了能更好的优化网络，美美的上网了。 安装流程： 网卡开启混杂模式 用SSH工具连接服务器,需要先查看是否打开]]></description>
+</item>
+<item>
+    <title>Docker宝库：BT下载</title>
+    <link>https://blog.hotine.wang/blog/posts/20221201_docker%E5%AE%9D%E5%BA%93bt%E4%B8%8B%E8%BD%BD/</link>
+    <pubDate>Thu, 01 Dec 2022 20:00:06 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/blog/posts/20221201_docker%E5%AE%9D%E5%BA%93bt%E4%B8%8B%E8%BD%BD/</guid>
+    <description><![CDATA[BT下载可以用TRANSMISSION，也可以用QBITTORENT。 TRANSMISSION：更傻瓜化，界面更简单，但是资源不好的时候，下]]></description>
+</item>
+<item>
+    <title>Docker宝库：百度网盘</title>
+    <link>https://blog.hotine.wang/blog/posts/20221201_docker%E5%AE%9D%E5%BA%93%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/</link>
+    <pubDate>Thu, 01 Dec 2022 20:00:06 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/blog/posts/20221201_docker%E5%AE%9D%E5%BA%93%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/</guid>
+    <description><![CDATA[百度网盘资源的远程下载，可以登录会员，且能长期保持登录状态。 docker pull johnshine/baidunetdisk-crossover-vnc:latest docker run -d -p 6080:6080 --name=BaiduNetDisk -v /path/to/your/downloadfolder:/home/baidu/baidunetdiskdownload/ johnshine/baidunetdisk-crossover-vnc:latest 参数解释： &ndash;name=BaiduNetDisk “BaiduNetDisk”是容器名称，可以]]></description>
+</item>
+<item>
+    <title>Docker宝库：远程迅雷</title>
+    <link>https://blog.hotine.wang/blog/posts/20221201_docker%E5%AE%9D%E5%BA%93%E8%BF%9C%E7%A8%8B%E8%BF%85%E9%9B%B7/</link>
+    <pubDate>Thu, 01 Dec 2022 20:00:05 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/blog/posts/20221201_docker%E5%AE%9D%E5%BA%93%E8%BF%9C%E7%A8%8B%E8%BF%85%E9%9B%B7/</guid>
+    <description><![CDATA[迅雷下载网页版，和PC版用起来差不多，每日支持添加3个下载连接，如果超过3个，可以使用迅雷手机app的远程下载功能添加下载。 docker run -d --name=xunlei --hostname=mynas --net=host -e XL_WEB_PORT=2345]]></description>
+</item>
+<item>
+    <title>Docker宝库：文件管理器</title>
+    <link>https://blog.hotine.wang/blog/posts/20221201_docker%E5%AE%9D%E5%BA%93%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/</link>
+    <pubDate>Thu, 01 Dec 2022 20:00:04 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/blog/posts/20221201_docker%E5%AE%9D%E5%BA%93%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/</guid>
+    <description><![CDATA[文件管理器FileBrowser：如果想管理服务器中的文件，不依赖软件还是挺麻烦的。FileBrowser提供了一个网页版的文件管理器，让用]]></description>
+</item>
+<item>
+    <title>Docker宝库：JELLYFIN家庭影院</title>
+    <link>https://blog.hotine.wang/blog/posts/20221201_docker%E5%AE%9D%E5%BA%93jellyfin%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2/</link>
+    <pubDate>Thu, 01 Dec 2022 20:00:02 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/blog/posts/20221201_docker%E5%AE%9D%E5%BA%93jellyfin%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2/</guid>
+    <description><![CDATA[家里的电影比较多，想搭一个个人影音库，让每个电影都有专属的封面、介绍、评分等等，更重要的是，只要在同一网络下的用户，都可以直接访问，实现全家]]></description>
+</item>
+<item>
+    <title>Docker宝库：Heidmall网址导航</title>
+    <link>https://blog.hotine.wang/blog/posts/20221201_docker%E5%AE%9D%E5%BA%93heidmall%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/</link>
+    <pubDate>Thu, 01 Dec 2022 20:00:01 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/blog/posts/20221201_docker%E5%AE%9D%E5%BA%93heidmall%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/</guid>
+    <description><![CDATA[NAS中安装的容器（程序）太多，端口号不好记，因此可以通过一个网址导航来省去记端口的烦恼。 Docker安装命令非常简单，使用SSH工具连接服]]></description>
+</item>
+<item>
+    <title>Docker宝库：SSH控制台</title>
+    <link>https://blog.hotine.wang/blog/posts/20221201_docker%E5%AE%9D%E5%BA%93ssh%E6%8E%A7%E5%88%B6%E5%8F%B0/</link>
+    <pubDate>Thu, 01 Dec 2022 20:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/blog/posts/20221201_docker%E5%AE%9D%E5%BA%93ssh%E6%8E%A7%E5%88%B6%E5%8F%B0/</guid>
+    <description><![CDATA[SSH控制台：如果电脑上不想安装相关的SSH控制台程序，就可使用这个网页版的SSH控制台。 只需输入要连接的IP、端口号、用户名和密码，即可完]]></description>
+</item>
+</channel>
+</rss>

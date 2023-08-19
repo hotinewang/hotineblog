@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>ZeroTier内网穿透教程 - Hotine的小窝</title><meta name="Description" content="Hotine的窝？"><meta property="og:title" content="ZeroTier内网穿透教程" />
+<meta property="og:description" content="ZeroTier内网穿透简介 家有NAS，如何从外网进行访问或管理，这就需要使用内网穿透。对于家里宽带没有公网IP的人来说，用ZeroTier" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.hotine.wang/blog/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-08-17T21:20:59+08:00" />
+<meta property="article:modified_time" content="2023-08-17T21:20:59+08:00" /><meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ZeroTier内网穿透教程"/>
+<meta name="twitter:description" content="ZeroTier内网穿透简介 家有NAS，如何从外网进行访问或管理，这就需要使用内网穿透。对于家里宽带没有公网IP的人来说，用ZeroTier"/>
+<meta name="application-name" content="Hotine的小窝">
+<meta name="apple-mobile-web-app-title" content="Hotine的小窝"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.hotine.wang/blog/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" /><link rel="prev" href="https://blog.hotine.wang/blog/posts/20230817_hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/blog/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "ZeroTier内网穿透教程",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.hotine.wang\/blog\/posts\/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F\/"
+        },"genre": "posts","keywords": "ZeroTier, Docker, 内网穿透, NAS, 建站, 反向代理","wordcount":  1708 ,
+        "url": "https:\/\/blog.hotine.wang\/blog\/posts\/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F\/","datePublished": "2023-08-17T21:20:59+08:00","dateModified": "2023-08-17T21:20:59+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Hotine"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/blog/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/blog/posts/" title="文章列表"> 文章列表 </a><a class="menu-item" href="/blog/categories/" title="分类"> 分类 </a><a class="menu-item" href="/blog/tags/" title="标签"> 标签 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/blog/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/blog/posts/" title="文章列表">文章列表</a><a class="menu-item" href="/blog/categories/" title="分类">分类</a><a class="menu-item" href="/blog/tags/" title="标签">标签</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ZeroTier内网穿透教程</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/blog/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
+</span>&nbsp;<span class="post-category">included in <a href="/blog/categories/nas/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>NAS</a>&nbsp;<a href="/blog/categories/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>VPS与建站</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-17">2023-08-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1708 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/blog/svg/loading.min.svg"
+        data-src="/images/posts/20230817_ZeroTier%e5%86%85%e7%bd%91%e7%a9%bf%e9%80%8f.jpg"
+        data-srcset="/images/posts/20230817_ZeroTier%e5%86%85%e7%bd%91%e7%a9%bf%e9%80%8f.jpg, /images/posts/20230817_ZeroTier%e5%86%85%e7%bd%91%e7%a9%bf%e9%80%8f.jpg 1.5x, /images/posts/20230817_ZeroTier%e5%86%85%e7%bd%91%e7%a9%bf%e9%80%8f.jpg 2x"
+        data-sizes="auto"
+        alt="/images/posts/20230817_ZeroTier内网穿透.jpg"
+        title="/images/posts/20230817_ZeroTier内网穿透.jpg" /></div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#zerotier内网穿透简介">ZeroTier内网穿透简介</a></li>
+    <li><a href="#开始搭建">开始搭建</a></li>
+    <li><a href="#设备加入网络">设备加入网络</a></li>
+    <li><a href="#互相访问">互相访问</a></li>
+    <li><a href="#进阶优化">进阶优化</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="zerotier内网穿透简介">ZeroTier内网穿透简介</h2>
+<p>家有NAS，如何从外网进行访问或管理，这就需要使用内网穿透。对于家里宽带没有公网IP的人来说，用ZeroTier是个不错的选择。当然，能实现网穿透的还有frp，但是frp需要一个服务端（比方说一个VPS），而ZeroTier则不需要自己拥有服务端。
+ZeroTier简单来说，就是通过这个软件，把各个设备接入一个虚拟局域网中，并分配给每个设备一个（或多个）局域网IP，从而实现设备间的互联。
+优点：安装和设置简单，不需要过多的配置和知识。
+缺点：需要相关设备下载ZeroTier，网速和稳定性取决于ZeroTier的服务，也可哪天就不能用了。</p>
+<h2 id="开始搭建">开始搭建</h2>
+<ul>
+<li>注册ZeroTier账号，访问<a href="https://www.zerotier.com/" target="_blank" rel="noopener noreffer">zerotier.com</a>
+,正常注册就好。</li>
+<li>登录后创建一个网络（虚拟局域网），点击“Create A Network”，下方就会出现一条新的记录，点进入进行设置。</li>
+<li>Network ID：网络ID，这个很重要，是加入这个网络所必须用到的ID</li>
+<li>Name和Description：可随意修改，就是这个虚拟局域网的名称和简介（可不填）</li>
+<li>Access Control：选择Private比较安全，每个加入这个局域网的设备，都需要通过这个网页进行确认批准。而选择Public，则会使每个知道NetworkID的人，都能随意接入这个局域网。</li>
+<li>其他设置保持默认即可。</li>
+</ul>
+<h2 id="设备加入网络">设备加入网络</h2>
+<ul>
+<li>windows设备：在<a href="https://www.zerotier.com/download/" target="_blank" rel="noopener noreffer">官网下载</a>
+并安装windows客户端，安装完毕并运行后，在桌面右下角托盘区找到程序图标，点击并选择“Join New Network”（加入新网络），并输入之前在ZeroTier网站创建的网络的NetworkID即可。</li>
+<li>安卓设备：在谷歌市场下载APP：ZeroTier One，进入之后，在APP主页面点击“Add Network”,输入NetworkID，其他保持默认，点击最下方“Add”即可。回到主页面，右上方“Settings”中，可勾选“Use Mobile Data”，这样可以在移动网络下访问局域网设备（不勾选则只能在Wifi网络中访问局域网）。最后，回到主页面，点击刚刚新建的网络的右方的开关，即可连入局域网。</li>
+<li>Docker：如果是NAS设备（Linux系统）想接入局域网，可以安装Docker版的ZeroTier。用SSH工具接入已装好Docker的NAS设备的控制台后，输入以下命令安装ZeroTier镜像：
+<pre tabindex="0"><code>docker run -d \
+--name ZeroTier \
+--restart=always \
+--device=/dev/net/tun \
+--net=host \
+--cap-add=NET_ADMIN \
+--cap-add=SYS_ADMIN \
+zerotier/zerotier-synology:latest
+</code></pre>再输入以下命令加入局域网络：
+<pre tabindex="0"><code>docker exec -it ZeroTier zerotier-cli join 233ccaac272dfa91
+</code></pre>注意把join后边的那串文字替换成自己网络的NetworkID</li>
+<li>批准设备入网：当有新设备加入网络中后，需要在<a href="https://www.zerotier.com/" target="_blank" rel="noopener noreffer">zerotier.com</a>
+中对应网络的设置页面进行批准。在设置页面往下拉，在Members一节中，会出现新申请入网的设备。在这里勾选这条记录，即可准入网络。此处可以看到自动分配给这个设备的局域网IP，这个很重要，是设备间互相访问所使用的IP。也可以在这里修改设备的备注名称和描述。</li>
+</ul>
+<h2 id="互相访问">互相访问</h2>
+<p>此时，已可以实现各设备之间的互联。比如家中设备的IP是192.168.122.1,在8088端口运行了一个网站。则在已加入这个虚拟局域网的外网设备中，可以通过192.168.122.1:8088访问到家中的网站。访问家中FTP或者SMB服务也是同理。</p>
+<h2 id="进阶优化">进阶优化</h2>
+<p>上边的方案，需要每一个设备都加入虚拟局域网才能实现互相访问。自己用比较方便，但是如果想把内容分享给其他人，或者临时使用公共设备，再或者想用家里设备作为服务器工给外网访问，这就不方便了。
+如果想解决上述问题，需要拥有一个VPS（虚拟主机，有公网IP），通过反向代理，来实现。
+大致原理就是：把家中设备和VPS加入同一个局域网，在VPS上设置反向代理，用户想要访问家中设备上的内容时，由VPS充当中转站，负责用户与家中设备的通信。
+开始动手：</p>
+<ul>
+<li>把VPS和家中服务器接入局域网，实现内网穿透。参照上文教程即可。一般VPS都是Linux系统，可以通过安装Docker版ZeroTier实现。</li>
+<li>VPS上设置反向代理。利用Caddy服务，或者Nginx服务进行反向代理设置。（详见Caddy相关博客，也可网络搜索教程）</li>
+<li>之后只要通过设置好的域名，便可以直接访问家中服务器。</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-08-17</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.hotine.wang/blog/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" data-title="ZeroTier内网穿透教程" data-via="xxxx" data-hashtags="ZeroTier,Docker,内网穿透,NAS,建站,反向代理"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.hotine.wang/blog/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" data-hashtag="ZeroTier"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://blog.hotine.wang/blog/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" data-title="ZeroTier内网穿透教程" data-image="/images/posts/20230817_ZeroTier内网穿透.jpg"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/blog/tags/zerotier/">ZeroTier</a>,&nbsp;<a href="/blog/tags/docker/">Docker</a>,&nbsp;<a href="/blog/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">内网穿透</a>,&nbsp;<a href="/blog/tags/nas/">NAS</a>,&nbsp;<a href="/blog/tags/%E5%BB%BA%E7%AB%99/">建站</a>,&nbsp;<a href="/blog/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/">反向代理</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/blog/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/blog/posts/20230817_hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="prev" rel="prev" title="Hugo个人博客搭建"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Hugo个人博客搭建</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><br /></div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2021 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/blog/" target="_blank">Hotine</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.5.4/dist/index.umd.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"Hotine.Wang的小窝","id-2":"Hotine.Wang的小窝"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/blog/js/theme.min.js"></script></body>
+</html>

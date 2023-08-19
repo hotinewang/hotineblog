@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>V途锐部署笔记 - Hotine的小窝</title><meta name="Description" content="Hotine的窝？"><meta property="og:title" content="V途锐部署笔记" />
+<meta property="og:description" content="前言 VPS的IP被墙了，在此之前，V途锐在搬瓦工已经安稳运行了8个月了。不知道是因为在VPS部署了Chanzhaoyu/chatgpt-we" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.hotine.wang/blog/posts/20230814_v%E9%80%94%E9%94%90%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-08-14T22:54:59+08:00" />
+<meta property="article:modified_time" content="2023-08-14T22:54:59+08:00" /><meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="V途锐部署笔记"/>
+<meta name="twitter:description" content="前言 VPS的IP被墙了，在此之前，V途锐在搬瓦工已经安稳运行了8个月了。不知道是因为在VPS部署了Chanzhaoyu/chatgpt-we"/>
+<meta name="application-name" content="Hotine的小窝">
+<meta name="apple-mobile-web-app-title" content="Hotine的小窝"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.hotine.wang/blog/posts/20230814_v%E9%80%94%E9%94%90%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/" /><link rel="prev" href="https://blog.hotine.wang/blog/posts/20230813_firstarticles/" /><link rel="next" href="https://blog.hotine.wang/blog/posts/20230817_hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/blog/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "V途锐部署笔记",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.hotine.wang\/blog\/posts\/20230814_v%E9%80%94%E9%94%90%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0\/"
+        },"genre": "posts","keywords": "V途锐, Caddy, VPS","wordcount":  2248 ,
+        "url": "https:\/\/blog.hotine.wang\/blog\/posts\/20230814_v%E9%80%94%E9%94%90%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0\/","datePublished": "2023-08-14T22:54:59+08:00","dateModified": "2023-08-14T22:54:59+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Hotine"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/blog/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/blog/posts/" title="文章列表"> 文章列表 </a><a class="menu-item" href="/blog/categories/" title="分类"> 分类 </a><a class="menu-item" href="/blog/tags/" title="标签"> 标签 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/blog/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/blog/posts/" title="文章列表">文章列表</a><a class="menu-item" href="/blog/categories/" title="分类">分类</a><a class="menu-item" href="/blog/tags/" title="标签">标签</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">V途锐部署笔记</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/blog/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
+</span>&nbsp;<span class="post-category">included in <a href="/blog/categories/vpn/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>VPN</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-14">2023-08-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2248 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;5 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#ip地址隐藏救活被墙的ip">IP地址隐藏/救活被墙的IP</a></li>
+    <li><a href="#v途锐流量伪装">V途锐流量伪装</a></li>
+    <li><a href="#v途锐客户端使用建议">V途锐客户端使用建议</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="前言">前言</h2>
+<p>VPS的IP被墙了，在此之前，V途锐在搬瓦工已经安稳运行了8个月了。不知道是因为在VPS部署了Chanzhaoyu/chatgpt-web的项目的缘故(因为大约在被墙的前两周发现该项目使用的3002端口被封了)，还是因为升级的V途锐的版本的问题(升级后稀里糊涂重新配置了VM3SS链接，可能伪装比较差)。总之之前那个VPS的IP报废了。之后又慌忙花了60块钱换了个新IP(心疼)，花了一天的时间恢复了网站，并且把V途锐使用了VM3SS+WS+TLS伪装。结果第二天发现又有被墙的迹象，主要表现为域名解析出现问题，通过域名访问不了VPS了，但是通过<a href="https://ping.pe" target="_blank" rel="noopener noreffer">ping.pe</a>
+检测，国内均能ping通。于是抓紧想办法补救。结果还真有办法，而且之前换IP的那60元，也成了冤枉钱。
+具体办法是:</p>
+<ul>
+<li>IP地址使用CDN隐藏</li>
+<li>V途锐使用了VM3SS+WS+TLS伪装</li>
+<li>客户端使用建议</li>
+</ul>
+<h2 id="ip地址隐藏救活被墙的ip">IP地址隐藏/救活被墙的IP</h2>
+<p>CDN主要是用于网络加速，但是免费且不需要备案的服务商CloudFlare的CDN号称“减速云”，不过好在能隐藏IP和复活被墙的IP啊。</p>
+<ul>
+<li>首先需要有一个域名(自行申请)。</li>
+<li>之后在<a href="https://cloudflare.com" target="_blank" rel="noopener noreffer">cloudflare.com</a>
+上注册一个账号(如果网站是英文的，右上角可以选择中文，具体注册流程很简单，网上教程也一堆，就不详细说了)。</li>
+<li>登录进入仪表板(dash),点击&quot;添加站点&quot;，之后输入域名并确认。</li>
+<li>选择“计划”，使用最下边的Free并确认即可。</li>
+<li>在接下来的页面，提示你需要在域名购买商那里，把默认的DNS服务器(名称服务器)修改为网页中提供的那两个DNS服务器。这个页面不要关掉，后边还有用！</li>
+<li>按要求去之前的域名购买商那里修改DNS。每家域名提供商都不一样，可以自己搜索修改教程。修改快的话可能几分钟后生效，长的话可能24小时。</li>
+<li>回到cloudflare刚才的页面中，点击检查名称服务器，看看是否修改成功。成功后，就可以设置域名解析了。</li>
+<li>仪表板最左边菜单选DNS，就可以打开域名解析的设置。(假设我VPS的IP地址是 192.xx.xx.xx,域名是 hotine.wang)添加记录,建议如下∶
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>名称</th>
+<th>IPV4</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>192.xx.xx.xx</td>
+<td>hotine.wang 解析到对应IP</td>
+</tr>
+<tr>
+<td>A</td>
+<td>*</td>
+<td>192.xx.xx.xx</td>
+<td>默认所有的子域名都解析到对应IP，例如 abc.hotine.wang,www.hotine.wang</td>
+</tr>
+<tr>
+<td>A</td>
+<td>x</td>
+<td>192.xx.xx.xx</td>
+<td>x.hotine.wang 解析到对应的IP，这个是给后续跑V途锐做伪装用的</td>
+</tr>
+<tr>
+<td>CNAME</td>
+<td>blog</td>
+<td>hotine.github.com</td>
+<td>blog.hotine.wang 解析到 hotine.github.com</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<p>注意上表的解析设置中，TTL都选自动，x的解析状态都选开启。
+这样再用<a href="ping.pe" rel="">https://ping.pe</a>
+等PING工具去测试 hotine.wang 时，显示的IP就不再是真实的VPS的IP了，而是CDN的IP,从而隐藏了真实IP。</p>
+<h2 id="v途锐流量伪装">V途锐流量伪装</h2>
+<p>查了很多资料都说websocket+tls+web的伪装最安全，协议用VM3SS或者VL3SS都行。
+具体就是通过websocket协议把流量通过tls加密发送到一个部署了网站的服务器，由服务器解析后再交由V途锐程序处理并返回到客户。这样，V途锐的流量和正常访问网页内容的流量就看上去没有什么差别了，从而进行伪装。
+使用这个模式需要网站开启https,开启https需要申请SSL/TLS证书，这就很麻烦了。所以使用Caddy网站部署服务，可以部署网站，并自动申请证书，让一切都变得简单。</p>
+<ul>
+<li>首先安装V途锐一键脚本，使用github上233boy/v2ray的脚本就行，这个脚本自带Caddy,非常方便。按照官方教程即可。用SSH工具连接VPS后，输入：
+<pre tabindex="0"><code>bash &lt;(wget -qO- -o- https://git.io/v2ray.sh)
+</code></pre></li>
+<li>安装完毕后，会自动创建一个可用的VM3SS链接，可以用客户端试一下。能用的话说明安装配置没问题，再进行下一步。不能用的话可以用<a href="https://ping.sx/check-port" target="_blank" rel="noopener noreffer">https://ping.sx/check-port</a>
+测试下端口是否能ping通，不通的话可能是被防火墙屏蔽了，需要修改防火墙设置。</li>
+<li>选择添加配置，协议选择VM3SS+ES+TLS或者VL3SS+ES+TLS，按照提示输入内容即可。
+<ul>
+<li>其中有一步需要输入域名，输入x.hotine.wang即可。脚本会自动用Caddy部署一个x.hotine.wang的网页。可以用浏览器访问这个网址测试，应该是白屏才对。</li>
+<li>还有一步会提升去cloudflare关掉x.hotine.wang的代理。</li>
+<li>最后设置都成功后，即可回到cloudflare再开启x.hotine.wang的代理。</li>
+</ul>
+</li>
+<li>这样V途锐就能用了，把链接导入客户端使用即可。</li>
+<li>之后使用SSH工具，进入VPS的目录，修改网站设置文件：<code>/etc/caddy/233boy/x.hotine.wang.conf.add</code>,把文件正文改为：
+<pre tabindex="0"><code>root * /opt/www/x   #这个路径代表网页文件再VPS的位置
+file_server   #这个代表使用静态网页服务
+</code></pre></li>
+<li>保存后，使用<code>v2ray restart caddy</code>命令重启caddy服务即可生效。</li>
+<li>用自己的或者网上下载的网页模板，上传到<code>/opt/www/x</code>路径中，一个伪装网站就建好了。</li>
+<li>当然，也可以直接用hotine.wang做伪装网站，相应的修改上面的设置即可。</li>
+</ul>
+<h2 id="v途锐客户端使用建议">V途锐客户端使用建议</h2>
+<ul>
+<li>搭建完成后，尽量避免多用户、多客户端同时连接使用，这样会更容易被封。</li>
+<li>国内各大科技厂商，窥探隐私的欲望比较强烈，因此不要安装国产杀毒软件,不要使用国产浏览器,使用国产输入法也有风险。</li>
+<li>尽量避免使用V2Ray客户端的全局代理模式上网。如果你的所有流量都指向一个国外IP，这是非常可疑的。 电脑端推荐设置为PAC模式，或者国外IP走代理。手机端推荐设置为分应用代理，比如只让浏览器走代理。</li>
+<li>尽量避免在安卓手机上长时间使用，尽量避免在安卓手机上长时间、大流量科学上网，毕竟国内各大手机厂商的系统基本都会收集个人数据。</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-08-14</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.hotine.wang/blog/posts/20230814_v%E9%80%94%E9%94%90%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/" data-title="V途锐部署笔记" data-via="xxxx" data-hashtags="V途锐,Caddy,VPS"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.hotine.wang/blog/posts/20230814_v%E9%80%94%E9%94%90%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/" data-hashtag="V途锐"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://blog.hotine.wang/blog/posts/20230814_v%E9%80%94%E9%94%90%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/" data-title="V途锐部署笔记"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/blog/tags/v%E9%80%94%E9%94%90/">V途锐</a>,&nbsp;<a href="/blog/tags/caddy/">Caddy</a>,&nbsp;<a href="/blog/tags/vps/">VPS</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/blog/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/blog/posts/20230813_firstarticles/" class="prev" rel="prev" title="第一篇Hugo博文"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>第一篇Hugo博文</a>
+            <a href="/blog/posts/20230817_hugo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="next" rel="next" title="Hugo个人博客搭建">Hugo个人博客搭建<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><br /></div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2021 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/blog/" target="_blank">Hotine</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.5.4/dist/index.umd.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"Hotine.Wang的小窝","id-2":"Hotine.Wang的小窝"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/blog/js/theme.min.js"></script></body>
+</html>
