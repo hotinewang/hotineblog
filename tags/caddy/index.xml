@@ -3,7 +3,15 @@
         <title>Caddy - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/caddy/</link>
         <description>Caddy - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 14 Aug 2023 22:54:59 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/caddy/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 23 Aug 2023 22:49:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/caddy/" rel="self" type="application/rss+xml" /><item>
+    <title>Caddy网站设置访问密码</title>
+    <link>https://blog.hotine.wang/posts/20230823_caddy%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE%E8%AE%BF%E9%97%AE%E5%AF%86%E7%A0%81/</link>
+    <pubDate>Wed, 23 Aug 2023 22:49:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20230823_caddy%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE%E8%AE%BF%E9%97%AE%E5%AF%86%E7%A0%81/</guid>
+    <description><![CDATA[有时候，明明搭建了一个网站，但还不想让无关的人看，咋办？当然是设置访问密码！ 当然有很多这样的应用场景，比方说： 把家里NAS上的某个功能穿透到]]></description>
+</item>
+<item>
     <title>V途锐部署笔记</title>
     <link>https://blog.hotine.wang/posts/20230814_v%E9%80%94%E9%94%90%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/</link>
     <pubDate>Mon, 14 Aug 2023 22:54:59 &#43;0800</pubDate>
