@@ -3,7 +3,15 @@
         <title>VPS与建站 - Category - Hotine的小窝</title>
         <link>https://blog.hotine.wang/categories/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/</link>
         <description>VPS与建站 - Category - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 23 Aug 2023 22:49:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 15 Sep 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/" rel="self" type="application/rss+xml" /><item>
+    <title>VPS套娃，Linux装Docker，Docker再跑Ubuntu</title>
+    <link>https://blog.hotine.wang/posts/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/</link>
+    <pubDate>Fri, 15 Sep 2023 00:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/</guid>
+    <description><![CDATA[VPS套娃，Linux装Docker，Docker再跑Ubuntu 有一个VPS，想弄一个云端工作区。考虑过VPS直接装远程桌面之类的，但是过]]></description>
+</item>
+<item>
     <title>Caddy网站设置访问密码</title>
     <link>https://blog.hotine.wang/posts/20230823_caddy%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE%E8%AE%BF%E9%97%AE%E5%AF%86%E7%A0%81/</link>
     <pubDate>Wed, 23 Aug 2023 22:49:00 &#43;0800</pubDate>

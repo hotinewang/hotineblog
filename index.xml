@@ -3,9 +3,25 @@
         <title>Hotine的小窝</title>
         <link>https://blog.hotine.wang/</link>
         <description>Hotine的窝？</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 23 Aug 2023 22:49:00 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</lastBuildDate>
             <atom:link href="https://blog.hotine.wang/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>远程浏览器，通过Docker安装Firefox远程版</title>
+    <link>https://blog.hotine.wang/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/</link>
+    <pubDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/</guid>
+    <description><![CDATA[远程浏览器，通过Docker安装Firefox远程版 通过VPS，可以挂一个远程浏览器，这样就可以变相实现魔法上网。 同时，也可以在远程浏览器中]]></description>
+</item>
+<item>
+    <title>VPS套娃，Linux装Docker，Docker再跑Ubuntu</title>
+    <link>https://blog.hotine.wang/posts/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/</link>
+    <pubDate>Fri, 15 Sep 2023 00:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/</guid>
+    <description><![CDATA[VPS套娃，Linux装Docker，Docker再跑Ubuntu 有一个VPS，想弄一个云端工作区。考虑过VPS直接装远程桌面之类的，但是过]]></description>
+</item>
+<item>
     <title>Caddy网站设置访问密码</title>
     <link>https://blog.hotine.wang/posts/20230823_caddy%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE%E8%AE%BF%E9%97%AE%E5%AF%86%E7%A0%81/</link>
     <pubDate>Wed, 23 Aug 2023 22:49:00 &#43;0800</pubDate>
@@ -76,24 +92,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/posts/20230616_Docker%e5%ae%9d%e5%ba%93%ef%bc%9aB%e7%ab%99%e8%a7%86%e9%a2%91%e6%8e%a8%e6%b5%81.jpg" referrerpolicy="no-referrer">
             </div>可以使用kplayer在B站做一个7*24小时的直播小电台。 安装流程： 首先是Kplayer的官方GitHub：bytelang/kplaye]]></description>
-</item>
-<item>
-    <title>Linux中安装NodeJS并用Express搭建静态网站</title>
-    <link>https://blog.hotine.wang/posts/20230510_linux%E4%B8%AD%E5%AE%89%E8%A3%85nodejs%E5%B9%B6%E7%94%A8express%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</link>
-    <pubDate>Wed, 10 May 2023 16:00:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20230510_linux%E4%B8%AD%E5%AE%89%E8%A3%85nodejs%E5%B9%B6%E7%94%A8express%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</guid>
-    <description><![CDATA[NODEJS部署 下载Nodejs 先在服务器上下载nodejs包，在控制台通过cd命令进入usr/local目录： cd /usr/local 在nodejs.org官]]></description>
-</item>
-<item>
-    <title>NAS当旁路由-DOCKER中OPEN-WRT配置</title>
-    <link>https://blog.hotine.wang/posts/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE/</link>
-    <pubDate>Wed, 10 May 2023 00:00:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/20230510_NAS%e5%bd%93%e6%97%81%e8%b7%af%e7%94%b1-DOCKER%e4%b8%adOPEN-WRT%e9%85%8d%e7%bd%ae.jpg" referrerpolicy="no-referrer">
-            </div>家里NAS上为啥要弄个旁路由，当然是为了能更好的优化网络，美美的上网了。 安装流程： 网卡开启混杂模式 用SSH工具连接服务器,需要先查看是否打开]]></description>
 </item>
 </channel>
 </rss>

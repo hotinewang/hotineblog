@@ -3,7 +3,15 @@
         <title>NAS - Category - Hotine的小窝</title>
         <link>https://blog.hotine.wang/categories/nas/</link>
         <description>NAS - Category - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 17 Aug 2023 21:20:59 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/nas/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/nas/" rel="self" type="application/rss+xml" /><item>
+    <title>远程浏览器，通过Docker安装Firefox远程版</title>
+    <link>https://blog.hotine.wang/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/</link>
+    <pubDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/</guid>
+    <description><![CDATA[远程浏览器，通过Docker安装Firefox远程版 通过VPS，可以挂一个远程浏览器，这样就可以变相实现魔法上网。 同时，也可以在远程浏览器中]]></description>
+</item>
+<item>
     <title>ZeroTier内网穿透教程</title>
     <link>https://blog.hotine.wang/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
     <pubDate>Thu, 17 Aug 2023 21:20:59 &#43;0800</pubDate>
@@ -78,16 +86,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/posts/20221130_Linux%e4%b8%adDocker%e7%9a%84%e5%ae%89%e8%a3%85.cover.jpg" referrerpolicy="no-referrer">
             </div>什么是DOCKER？ Docker 是一种开源的容器化平台，用于帮助开发人员构建、交付和运行应用程序。通过使用 Docker，开发人员可以将应用程序及其所有]]></description>
-</item>
-<item>
-    <title>用OMV系统搭建家用NAS</title>
-    <link>https://blog.hotine.wang/posts/20221129_%E5%AE%B6%E7%94%A8nas%E6%90%AD%E5%BB%BAomv%E7%B3%BB%E7%BB%9F/</link>
-    <pubDate>Tue, 29 Nov 2022 20:00:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20221129_%E5%AE%B6%E7%94%A8nas%E6%90%AD%E5%BB%BAomv%E7%B3%BB%E7%BB%9F/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/20221129_%e5%ae%b6%e7%94%a8NAS%e6%90%ad%e5%bb%ba%ef%bc%9aOMV%e7%b3%bb%e7%bb%9f.cover.jpg" referrerpolicy="no-referrer">
-            </div>超低成本私有NAS 用OMV5打造轻量级家庭云服务器 序言： 你想不想&hellip;？ 家里的电影，一人下载，全家同享。无论是手机、电视、电脑，打]]></description>
 </item>
 </channel>
 </rss>

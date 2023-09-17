@@ -3,7 +3,23 @@
         <title>VPS - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/vps/</link>
         <description>VPS - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 14 Aug 2023 22:54:59 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/vps/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/vps/" rel="self" type="application/rss+xml" /><item>
+    <title>远程浏览器，通过Docker安装Firefox远程版</title>
+    <link>https://blog.hotine.wang/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/</link>
+    <pubDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/</guid>
+    <description><![CDATA[远程浏览器，通过Docker安装Firefox远程版 通过VPS，可以挂一个远程浏览器，这样就可以变相实现魔法上网。 同时，也可以在远程浏览器中]]></description>
+</item>
+<item>
+    <title>VPS套娃，Linux装Docker，Docker再跑Ubuntu</title>
+    <link>https://blog.hotine.wang/posts/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/</link>
+    <pubDate>Fri, 15 Sep 2023 00:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/</guid>
+    <description><![CDATA[VPS套娃，Linux装Docker，Docker再跑Ubuntu 有一个VPS，想弄一个云端工作区。考虑过VPS直接装远程桌面之类的，但是过]]></description>
+</item>
+<item>
     <title>V途锐部署笔记</title>
     <link>https://blog.hotine.wang/posts/20230814_v%E9%80%94%E9%94%90%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/</link>
     <pubDate>Mon, 14 Aug 2023 22:54:59 &#43;0800</pubDate>

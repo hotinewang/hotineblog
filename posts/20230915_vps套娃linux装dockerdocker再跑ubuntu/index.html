@@ -4,29 +4,29 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Caddy网站设置访问密码 - Hotine的小窝</title><meta name="Description" content="Hotine的窝？"><meta property="og:title" content="Caddy网站设置访问密码" />
-<meta property="og:description" content="有时候，明明搭建了一个网站，但还不想让无关的人看，咋办？当然是设置访问密码！ 当然有很多这样的应用场景，比方说： 把家里NAS上的某个功能穿透到" />
+        <title>VPS套娃，Linux装Docker，Docker再跑Ubuntu - Hotine的小窝</title><meta name="Description" content="Hotine的窝？"><meta property="og:title" content="VPS套娃，Linux装Docker，Docker再跑Ubuntu" />
+<meta property="og:description" content="VPS套娃，Linux装Docker，Docker再跑Ubuntu 有一个VPS，想弄一个云端工作区。考虑过VPS直接装远程桌面之类的，但是过" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.hotine.wang/posts/20230823_caddy%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE%E8%AE%BF%E9%97%AE%E5%AF%86%E7%A0%81/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-08-23T22:49:00+08:00" />
-<meta property="article:modified_time" content="2023-08-23T22:49:00+08:00" /><meta property="og:site_name" content="My cool site" />
+<meta property="og:url" content="https://blog.hotine.wang/posts/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-15T00:00:00+08:00" />
+<meta property="article:modified_time" content="2023-09-15T00:00:00+08:00" /><meta property="og:site_name" content="My cool site" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Caddy网站设置访问密码"/>
-<meta name="twitter:description" content="有时候，明明搭建了一个网站，但还不想让无关的人看，咋办？当然是设置访问密码！ 当然有很多这样的应用场景，比方说： 把家里NAS上的某个功能穿透到"/>
+<meta name="twitter:title" content="VPS套娃，Linux装Docker，Docker再跑Ubuntu"/>
+<meta name="twitter:description" content="VPS套娃，Linux装Docker，Docker再跑Ubuntu 有一个VPS，想弄一个云端工作区。考虑过VPS直接装远程桌面之类的，但是过"/>
 <meta name="application-name" content="Hotine的小窝">
 <meta name="apple-mobile-web-app-title" content="Hotine的小窝"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.hotine.wang/posts/20230823_caddy%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE%E8%AE%BF%E9%97%AE%E5%AF%86%E7%A0%81/" /><link rel="prev" href="https://blog.hotine.wang/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" /><link rel="next" href="https://blog.hotine.wang/posts/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.hotine.wang/posts/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/" /><link rel="prev" href="https://blog.hotine.wang/posts/20230823_caddy%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE%E8%AE%BF%E9%97%AE%E5%AF%86%E7%A0%81/" /><link rel="next" href="https://blog.hotine.wang/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Caddy网站设置访问密码",
+        "headline": "VPS套娃，Linux装Docker，Docker再跑Ubuntu",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/blog.hotine.wang\/posts\/20230823_caddy%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE%E8%AE%BF%E9%97%AE%E5%AF%86%E7%A0%81\/"
-        },"genre": "posts","keywords": "Caddy, 建站","wordcount":  457 ,
-        "url": "https:\/\/blog.hotine.wang\/posts\/20230823_caddy%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE%E8%AE%BF%E9%97%AE%E5%AF%86%E7%A0%81\/","datePublished": "2023-08-23T22:49:00+08:00","dateModified": "2023-08-23T22:49:00+08:00","publisher": {
+            "@id": "https:\/\/blog.hotine.wang\/posts\/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu\/"
+        },"genre": "posts","keywords": "Docker, VPS, NAS","wordcount":  667 ,
+        "url": "https:\/\/blog.hotine.wang\/posts\/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu\/","datePublished": "2023-09-15T00:00:00+08:00","dateModified": "2023-09-15T00:00:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -66,70 +66,78 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Caddy网站设置访问密码</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">VPS套娃，Linux装Docker，Docker再跑Ubuntu</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>VPS与建站</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-23">2023-08-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;457 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-09-15">2023-09-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;667 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><p><strong>有时候，明明搭建了一个网站，但还不想让无关的人看，咋办？当然是设置访问密码！</strong></p>
-<p>当然有很多这样的应用场景，比方说：</p>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#vps套娃linux装dockerdocker再跑ubuntu">VPS套娃，Linux装Docker，Docker再跑Ubuntu</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="vps套娃linux装dockerdocker再跑ubuntu">VPS套娃，Linux装Docker，Docker再跑Ubuntu</h2>
+<p>有一个VPS，想弄一个云端工作区。考虑过VPS直接装远程桌面之类的，但是过程比较复杂，而且万一弄不好，把整个VPS弄瘫痪了就麻烦了，所以最终还是选择了Docker安装Ubuntu，干干净净，不影响原VPS系统使用。</p>
+<p>本次使用的是 Kasm 的docker镜像，这家公司把Ubuntu打包成了一个可以远程桌面连接，也可以远程网页桌面连接的集成环境。安装十分方便。</p>
+<p>可以选择使用以下两者其一：
++kasmweb/desktop：相当于最小安装，包含Ubuntu系统、远控程序、浏览器
++kasmweb/ubuntu-jammy-desktop：集成工作空间，在desktop版的基础上，还增加了VSCode、办公软件、绘图软件等工具。</p>
+<p>安装使用以下命令：
+desktop版</p>
+<pre tabindex="0"><code>docker run -d --restart=unless-stopped \
+--name ubuntu \
+-p 6901:6901 \
+-e VNC_PW=wbb@147258369 \
+-v /mnt/ubuntushare:/mnt/share \
+--shm-size=512m \
+kasmweb/desktop:1.14.0
+</code></pre><p>集成工作空间版</p>
+<pre tabindex="0"><code>docker run -d --restart=unless-stopped \
+--name ubuntu  \
+-p 6901:6901 \
+-e VNC_PW=147258369 \
+-e LANG=zh_CN.UTF-8 \
+-e LANGUAGE=zh_CN:zh \
+-e LC_ALL=zh_CN.UTF-8 \
+-v /mnt/ubuntushare:/mnt/share \
+--shm-size=512m \
+kasmweb/ubuntu-jammy-desktop:1.14.0
+</code></pre><p>注意：</p>
 <ul>
-<li>把家里NAS上的某个功能穿透到外网了，但是只想自己能看到。</li>
-<li>把宝宝相册放到VPS上了，不想让无关人员看到。</li>
-<li>等等</li>
+<li><code>-e VNC_PW=147258369</code>中的147258369修改成自己的密码</li>
+<li><code>-v /mnt/ubuntushare:/mnt/share \</code>是指把VPS中 /mnt/ubuntushare目录挂载到docker容器中的/mnt/share目录。这样在容器中的Ubuntu系统中，文件只要放在/mnt/share目录下，就可以在VPS的/mnt/ubuntushare目录中访问到。</li>
+<li>最后，通过https://VPS的IP或者域名:6901进行访问即可，用户名是kasm_user，密码是上文中设置的密码。</li>
 </ul>
-<p>如何设置呢？总不能自己写一个身份验证吧（那也太麻烦了），幸运的是，Caddy自带身份验证的功能。</p>
-<p>Caddy支持在访问网站前通过用户名和密码进行身份验证，在配置文件中，密码是以HASH的形式加密的，并不是储存的明文，因此需要先获取自己密码的HASH值：</p>
-<p>首先想一个密码，然后在用SSH工具连接上VPS，输入</p>
-<pre tabindex="0"><code>caddy hash-password
-</code></pre><p>之后按照提示，输入两遍密码，就会生成一个HASH密码。把这个HASH密码记下来。</p>
-<p>修改VPS上的caddyfile（在<code>/etc/caddy/Caddyfile</code>），在网站设置里添加basicauth，例如没有身份验证的网站设置是：</p>
-<pre tabindex="0"><code>xl.hotine.wang {
-    reverse_proxy 192.168.193.27:2345   #这是一个反向代理
-}
-</code></pre><p>修改成下边的样子以增加身份验证</p>
-<pre tabindex="0"><code>xl.hotine.wang {
-    reverse_proxy 192.168.193.27:2345
-    basicauth /* {
-    admin $2a$14$hWxxxxzQUxzmf0a8pu5NxxxxockwxHxHSjIiQ3KLDnGY67lVXmVw2
-    }
-}
-</code></pre><ul>
-<li>admin 是用户名</li>
-<li>$2a$14$hWxxxxzQUxzmf0a8pu5NxxxxockwxHxHSjIiQ3KLDnGY67lVXmVw2  这一堆是HASH密码</li>
-</ul>
-<p>使用以下命令重启caddy即可生效：</p>
-<pre tabindex="0"><code>sudo systemctl stop caddy
-sudo systemctl start caddy
+<p>如需设置Ubuntu的root密码，可以使用以下命令</p>
+<pre tabindex="0"><code>docker exec -u root -it ubuntu-desktop passwd
 </code></pre></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2023-08-23</span>
+                <span>Updated on 2023-09-15</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.hotine.wang/posts/20230823_caddy%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE%E8%AE%BF%E9%97%AE%E5%AF%86%E7%A0%81/" data-title="Caddy网站设置访问密码" data-via="xxxx" data-hashtags="Caddy,建站"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.hotine.wang/posts/20230823_caddy%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE%E8%AE%BF%E9%97%AE%E5%AF%86%E7%A0%81/" data-hashtag="Caddy"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://blog.hotine.wang/posts/20230823_caddy%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE%E8%AE%BF%E9%97%AE%E5%AF%86%E7%A0%81/" data-title="Caddy网站设置访问密码"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.hotine.wang/posts/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/" data-title="VPS套娃，Linux装Docker，Docker再跑Ubuntu" data-via="xxxx" data-hashtags="Docker,VPS,NAS"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.hotine.wang/posts/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/" data-hashtag="Docker"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://blog.hotine.wang/posts/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/" data-title="VPS套娃，Linux装Docker，Docker再跑Ubuntu"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/caddy/">Caddy</a>,&nbsp;<a href="/tags/%E5%BB%BA%E7%AB%99/">建站</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/docker/">Docker</a>,&nbsp;<a href="/tags/vps/">VPS</a>,&nbsp;<a href="/tags/nas/">NAS</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" class="prev" rel="prev" title="ZeroTier内网穿透教程"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>ZeroTier内网穿透教程</a>
-            <a href="/posts/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/" class="next" rel="next" title="VPS套娃，Linux装Docker，Docker再跑Ubuntu">VPS套娃，Linux装Docker，Docker再跑Ubuntu<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/posts/20230823_caddy%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE%E8%AE%BF%E9%97%AE%E5%AF%86%E7%A0%81/" class="prev" rel="prev" title="Caddy网站设置访问密码"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Caddy网站设置访问密码</a>
+            <a href="/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/" class="next" rel="next" title="远程浏览器，通过Docker安装Firefox远程版">远程浏览器，通过Docker安装Firefox远程版<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
