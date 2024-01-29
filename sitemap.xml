@@ -2,16 +2,19 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://blog.hotine.wang/categories/</loc><lastmod>2024-01-29T20:12:00&#43;08:00</lastmod></url><url>
+            <loc>https://blog.hotine.wang/</loc><lastmod>2024-01-29T20:12:00&#43;08:00</lastmod></url><url>
+            <loc>https://blog.hotine.wang/tags/linux/</loc><lastmod>2024-01-29T20:12:00&#43;08:00</lastmod></url><url>
+            <loc>https://blog.hotine.wang/posts/20240129_linux%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%8C%85/</loc><lastmod>2024-01-29T20:12:00&#43;08:00</lastmod></url><url>
+            <loc>https://blog.hotine.wang/tags/nas/</loc><lastmod>2024-01-29T20:12:00&#43;08:00</lastmod></url><url>
+            <loc>https://blog.hotine.wang/posts/</loc><lastmod>2024-01-29T20:12:00&#43;08:00</lastmod></url><url>
+            <loc>https://blog.hotine.wang/tags/</loc><lastmod>2024-01-29T20:12:00&#43;08:00</lastmod></url><url>
+            <loc>https://blog.hotine.wang/categories/%E5%85%B6%E4%BB%96/</loc><lastmod>2024-01-29T20:12:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/tags/autojs/</loc><lastmod>2023-09-17T21:36:00&#43;08:00</lastmod></url><url>
-            <loc>https://blog.hotine.wang/categories/</loc><lastmod>2023-09-17T21:36:00&#43;08:00</lastmod></url><url>
-            <loc>https://blog.hotine.wang/</loc><lastmod>2023-09-17T21:36:00&#43;08:00</lastmod></url><url>
-            <loc>https://blog.hotine.wang/posts/</loc><lastmod>2023-09-17T21:36:00&#43;08:00</lastmod></url><url>
-            <loc>https://blog.hotine.wang/tags/</loc><lastmod>2023-09-17T21:36:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/tags/vscode/</loc><lastmod>2023-09-17T21:36:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/posts/20230917_%E5%AE%89%E5%8D%93%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B9%8Bautox.js/</loc><lastmod>2023-09-17T21:36:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/categories/%E5%AE%89%E5%8D%93%E8%87%AA%E5%8A%A8%E5%8C%96/</loc><lastmod>2023-09-17T21:36:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/tags/docker/</loc><lastmod>2023-09-16T00:00:00&#43;08:00</lastmod></url><url>
-            <loc>https://blog.hotine.wang/tags/nas/</loc><lastmod>2023-09-16T00:00:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/categories/nas/</loc><lastmod>2023-09-16T00:00:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/tags/vps/</loc><lastmod>2023-09-16T00:00:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/</loc><lastmod>2023-09-16T00:00:00&#43;08:00</lastmod></url><url>
@@ -30,7 +33,6 @@
             <loc>https://blog.hotine.wang/categories/vpn/</loc><lastmod>2023-08-14T22:54:59&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/tags/v%E9%80%94%E9%94%90/</loc><lastmod>2023-08-14T22:54:59&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/posts/20230814_v%E9%80%94%E9%94%90%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/</loc><lastmod>2023-08-14T22:54:59&#43;08:00</lastmod></url><url>
-            <loc>https://blog.hotine.wang/categories/%E5%85%B6%E4%BB%96/</loc><lastmod>2023-08-14T21:22:49&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/posts/20230813_firstarticles/</loc><lastmod>2023-08-14T21:22:49&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/posts/20230811_caddy%E5%BB%BA%E7%AB%99%E6%8C%87%E5%8D%97/</loc><lastmod>2023-08-11T00:00:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/posts/20230625_linux%E7%B3%BB%E7%BB%9F%E4%B8%ADv%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85/</loc><lastmod>2023-06-25T00:00:00&#43;08:00</lastmod></url><url>

@@ -3,7 +3,15 @@
         <title>NAS - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/nas/</link>
         <description>NAS - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/nas/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 29 Jan 2024 20:12:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/nas/" rel="self" type="application/rss+xml" /><item>
+    <title>Linux更新软件包</title>
+    <link>https://blog.hotine.wang/posts/20240129_linux%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%8C%85/</link>
+    <pubDate>Mon, 29 Jan 2024 20:12:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240129_linux%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%8C%85/</guid>
+    <description><![CDATA[在Debian系统中更新软件包 在使用Debian或基于Debian的发行版（如Ubuntu）时，你可以使用APT（Advanced Package Tool]]></description>
+</item>
+<item>
     <title>远程浏览器，通过Docker安装Firefox远程版</title>
     <link>https://blog.hotine.wang/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/</link>
     <pubDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</pubDate>
@@ -43,7 +51,7 @@
     <pubDate>Thu, 01 Dec 2022 20:00:06 &#43;0800</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/</guid>
-    <description><![CDATA[百度网盘资源的远程下载，可以登录会员，且能长期保持登录状态。 docker pull johnshine/baidunetdisk-crossover-vnc:latest docker run -d -p 6080:6080 --name=BaiduNetDisk -v /path/to/your/downloadfolder:/home/baidu/baidunetdiskdownload/ johnshine/baidunetdisk-crossover-vnc:latest 参数解释： &ndash;name=BaiduNetDisk “BaiduNetDisk”是容器名称，可以]]></description>
+    <description><![CDATA[百度网盘资源的远程下载，可以登录会员，且能长期保持登录状态。 2024年1月22日更新-发现一个更好用的百度网盘： docker run -d \ --name=baidunetdisk \ -p 15811:5800 \ -p 15911:5900 \ -v /opt/baidunetdisk/config:/config]]></description>
 </item>
 <item>
     <title>Docker宝库：远程迅雷</title>
@@ -76,14 +84,6 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93heidmall%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/</guid>
     <description><![CDATA[NAS中安装的容器（程序）太多，端口号不好记，因此可以通过一个网址导航来省去记端口的烦恼。 Docker安装命令非常简单，使用SSH工具连接服]]></description>
-</item>
-<item>
-    <title>Docker宝库：SSH控制台</title>
-    <link>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93ssh%E6%8E%A7%E5%88%B6%E5%8F%B0/</link>
-    <pubDate>Thu, 01 Dec 2022 20:00:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93ssh%E6%8E%A7%E5%88%B6%E5%8F%B0/</guid>
-    <description><![CDATA[SSH控制台：如果电脑上不想安装相关的SSH控制台程序，就可使用这个网页版的SSH控制台。 只需输入要连接的IP、端口号、用户名和密码，即可完]]></description>
 </item>
 </channel>
 </rss>

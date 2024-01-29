@@ -3,9 +3,17 @@
         <title>Hotine的小窝</title>
         <link>https://blog.hotine.wang/</link>
         <description>Hotine的窝？</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 17 Sep 2023 21:36:00 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 29 Jan 2024 20:12:00 &#43;0800</lastBuildDate>
             <atom:link href="https://blog.hotine.wang/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Linux更新软件包</title>
+    <link>https://blog.hotine.wang/posts/20240129_linux%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%8C%85/</link>
+    <pubDate>Mon, 29 Jan 2024 20:12:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240129_linux%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%8C%85/</guid>
+    <description><![CDATA[在Debian系统中更新软件包 在使用Debian或基于Debian的发行版（如Ubuntu）时，你可以使用APT（Advanced Package Tool]]></description>
+</item>
+<item>
     <title>安卓手机自动化神器AutoX.JS</title>
     <link>https://blog.hotine.wang/posts/20230917_%E5%AE%89%E5%8D%93%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B9%8Bautox.js/</link>
     <pubDate>Sun, 17 Sep 2023 21:36:00 &#43;0800</pubDate>
@@ -82,14 +90,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/posts/20230811_Caddy%e5%bb%ba%e7%ab%99%e6%8c%87%e5%8d%97.svg" referrerpolicy="no-referrer">
             </div>分类：网站建设 关键字：建站 caddy 对于在VPS或者家里的小服务器上搭建网站，最轻量级的可以使用基于NodeJS的Express,也可以使用功能强大]]></description>
-</item>
-<item>
-    <title>Linux系统中V途锐客户端安装</title>
-    <link>https://blog.hotine.wang/posts/20230625_linux%E7%B3%BB%E7%BB%9F%E4%B8%ADv%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85/</link>
-    <pubDate>Sun, 25 Jun 2023 00:00:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20230625_linux%E7%B3%BB%E7%BB%9F%E4%B8%ADv%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85/</guid>
-    <description><![CDATA[Linux系统中V途锐客户端的名称叫V2RAYA。 官网：V2RAYA.ORG GitHub：v2rayA/v2rayA 官方文档Debian：D]]></description>
 </item>
 </channel>
 </rss>
