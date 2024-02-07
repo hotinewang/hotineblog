@@ -3,7 +3,15 @@
         <title>All Posts - Hotine的小窝</title>
         <link>https://blog.hotine.wang/posts/</link>
         <description>All Posts | Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 07 Feb 2024 20:58:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 07 Feb 2024 21:44:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>随感</title>
+    <link>https://blog.hotine.wang/posts/20240207_%E9%9A%8F%E6%84%9F/</link>
+    <pubDate>Wed, 07 Feb 2024 21:44:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240207_%E9%9A%8F%E6%84%9F/</guid>
+    <description><![CDATA[随感 自从有了AI，人都变懒了，最近几篇Blog都是用AI写的。 《Linux更新软件包 》是用ChatGPT 写的、《Docker宝库：Visua]]></description>
+</item>
+<item>
     <title>Hugo修改发布位置</title>
     <link>https://blog.hotine.wang/posts/20240207_hugo%E4%BF%AE%E6%94%B9%E5%8F%91%E5%B8%83%E4%BD%8D%E7%BD%AE/</link>
     <pubDate>Wed, 07 Feb 2024 20:58:00 &#43;0800</pubDate>
@@ -80,14 +88,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/posts/20230817_Hugo%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.jpg" referrerpolicy="no-referrer">
             </div>前言 一直想弄一个轻量级的博客，操作简单，便于迁移。试过wordpress和自建静态博客，最后发现还有hugo这类好东西。整体对比起来就是 wo]]></description>
-</item>
-<item>
-    <title>V途锐部署笔记</title>
-    <link>https://blog.hotine.wang/posts/20230814_v%E9%80%94%E9%94%90%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/</link>
-    <pubDate>Mon, 14 Aug 2023 22:54:59 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20230814_v%E9%80%94%E9%94%90%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/</guid>
-    <description><![CDATA[前言 VPS的IP被墙了，在此之前，V途锐在搬瓦工已经安稳运行了8个月了。不知道是因为在VPS部署了Chanzhaoyu/chatgpt-we]]></description>
 </item>
 </channel>
 </rss>
