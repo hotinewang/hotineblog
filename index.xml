@@ -3,9 +3,27 @@
         <title>Hotine的小窝</title>
         <link>https://blog.hotine.wang/</link>
         <description>Hotine的窝？</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 29 Jan 2024 20:12:00 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 07 Feb 2024 20:58:00 &#43;0800</lastBuildDate>
             <atom:link href="https://blog.hotine.wang/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Hugo修改发布位置</title>
+    <link>https://blog.hotine.wang/posts/20240207_hugo%E4%BF%AE%E6%94%B9%E5%8F%91%E5%B8%83%E4%BD%8D%E7%BD%AE/</link>
+    <pubDate>Wed, 07 Feb 2024 20:58:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240207_hugo%E4%BF%AE%E6%94%B9%E5%8F%91%E5%B8%83%E4%BD%8D%E7%BD%AE/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/posts/20230817_Hugo%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.jpg" referrerpolicy="no-referrer">
+            </div>Hugo修改发布位置 Hugo默认发布文件是保存在Hugo文件夹下的public文件夹中，如果需要修改发布的位置，例如直接发布在github的]]></description>
+</item>
+<item>
+    <title>Docker宝库：Visual Studio Code</title>
+    <link>https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/</link>
+    <pubDate>Wed, 07 Feb 2024 20:32:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/</guid>
+    <description><![CDATA[远程开发环境，通过Docker安装Visual Studio Code 通过Docker，可以在远程服务器上安装并运行Visual Studio Code，实现远程编程和开发。]]></description>
+</item>
+<item>
     <title>Linux更新软件包</title>
     <link>https://blog.hotine.wang/posts/20240129_linux%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%8C%85/</link>
     <pubDate>Mon, 29 Jan 2024 20:12:00 &#43;0800</pubDate>
@@ -72,24 +90,6 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20230814_v%E9%80%94%E9%94%90%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/</guid>
     <description><![CDATA[前言 VPS的IP被墙了，在此之前，V途锐在搬瓦工已经安稳运行了8个月了。不知道是因为在VPS部署了Chanzhaoyu/chatgpt-we]]></description>
-</item>
-<item>
-    <title>第一篇Hugo博文</title>
-    <link>https://blog.hotine.wang/posts/20230813_firstarticles/</link>
-    <pubDate>Mon, 14 Aug 2023 21:22:49 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20230813_firstarticles/</guid>
-    <description><![CDATA[第一篇Hugo博文 终于弄好了Hugo，发布了第一篇文章！]]></description>
-</item>
-<item>
-    <title>Caddy建站指南</title>
-    <link>https://blog.hotine.wang/posts/20230811_caddy%E5%BB%BA%E7%AB%99%E6%8C%87%E5%8D%97/</link>
-    <pubDate>Fri, 11 Aug 2023 00:00:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20230811_caddy%E5%BB%BA%E7%AB%99%E6%8C%87%E5%8D%97/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/20230811_Caddy%e5%bb%ba%e7%ab%99%e6%8c%87%e5%8d%97.svg" referrerpolicy="no-referrer">
-            </div>分类：网站建设 关键字：建站 caddy 对于在VPS或者家里的小服务器上搭建网站，最轻量级的可以使用基于NodeJS的Express,也可以使用功能强大]]></description>
 </item>
 </channel>
 </rss>

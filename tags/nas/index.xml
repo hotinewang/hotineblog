@@ -3,7 +3,15 @@
         <title>NAS - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/nas/</link>
         <description>NAS - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 29 Jan 2024 20:12:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/nas/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 07 Feb 2024 20:32:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/nas/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker宝库：Visual Studio Code</title>
+    <link>https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/</link>
+    <pubDate>Wed, 07 Feb 2024 20:32:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/</guid>
+    <description><![CDATA[远程开发环境，通过Docker安装Visual Studio Code 通过Docker，可以在远程服务器上安装并运行Visual Studio Code，实现远程编程和开发。]]></description>
+</item>
+<item>
     <title>Linux更新软件包</title>
     <link>https://blog.hotine.wang/posts/20240129_linux%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%8C%85/</link>
     <pubDate>Mon, 29 Jan 2024 20:12:00 &#43;0800</pubDate>
@@ -76,14 +84,6 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93jellyfin%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2/</guid>
     <description><![CDATA[家里的电影比较多，想搭一个个人影音库，让每个电影都有专属的封面、介绍、评分等等，更重要的是，只要在同一网络下的用户，都可以直接访问，实现全家]]></description>
-</item>
-<item>
-    <title>Docker宝库：Heidmall网址导航</title>
-    <link>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93heidmall%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/</link>
-    <pubDate>Thu, 01 Dec 2022 20:00:01 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93heidmall%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/</guid>
-    <description><![CDATA[NAS中安装的容器（程序）太多，端口号不好记，因此可以通过一个网址导航来省去记端口的烦恼。 Docker安装命令非常简单，使用SSH工具连接服]]></description>
 </item>
 </channel>
 </rss>

@@ -3,7 +3,15 @@
         <title>Docker - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/docker/</link>
         <description>Docker - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/docker/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 07 Feb 2024 20:32:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/docker/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker宝库：Visual Studio Code</title>
+    <link>https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/</link>
+    <pubDate>Wed, 07 Feb 2024 20:32:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/</guid>
+    <description><![CDATA[远程开发环境，通过Docker安装Visual Studio Code 通过Docker，可以在远程服务器上安装并运行Visual Studio Code，实现远程编程和开发。]]></description>
+</item>
+<item>
     <title>远程浏览器，通过Docker安装Firefox远程版</title>
     <link>https://blog.hotine.wang/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/</link>
     <pubDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</pubDate>
@@ -80,14 +88,6 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/</guid>
     <description><![CDATA[文件管理器FileBrowser：如果想管理服务器中的文件，不依赖软件还是挺麻烦的。FileBrowser提供了一个网页版的文件管理器，让用]]></description>
-</item>
-<item>
-    <title>Docker宝库：JELLYFIN家庭影院</title>
-    <link>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93jellyfin%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2/</link>
-    <pubDate>Thu, 01 Dec 2022 20:00:02 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93jellyfin%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2/</guid>
-    <description><![CDATA[家里的电影比较多，想搭一个个人影音库，让每个电影都有专属的封面、介绍、评分等等，更重要的是，只要在同一网络下的用户，都可以直接访问，实现全家]]></description>
 </item>
 </channel>
 </rss>

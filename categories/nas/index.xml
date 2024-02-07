@@ -3,7 +3,15 @@
         <title>NAS - Category - Hotine的小窝</title>
         <link>https://blog.hotine.wang/categories/nas/</link>
         <description>NAS - Category - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/nas/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 07 Feb 2024 20:32:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/nas/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker宝库：Visual Studio Code</title>
+    <link>https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/</link>
+    <pubDate>Wed, 07 Feb 2024 20:32:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/</guid>
+    <description><![CDATA[远程开发环境，通过Docker安装Visual Studio Code 通过Docker，可以在远程服务器上安装并运行Visual Studio Code，实现远程编程和开发。]]></description>
+</item>
+<item>
     <title>远程浏览器，通过Docker安装Firefox远程版</title>
     <link>https://blog.hotine.wang/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/</link>
     <pubDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</pubDate>
@@ -76,16 +84,6 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93ssh%E6%8E%A7%E5%88%B6%E5%8F%B0/</guid>
     <description><![CDATA[SSH控制台：如果电脑上不想安装相关的SSH控制台程序，就可使用这个网页版的SSH控制台。 只需输入要连接的IP、端口号、用户名和密码，即可完]]></description>
-</item>
-<item>
-    <title>Linux中Docker的安装</title>
-    <link>https://blog.hotine.wang/posts/20221130_linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85/</link>
-    <pubDate>Wed, 30 Nov 2022 20:00:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20221130_linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/20221130_Linux%e4%b8%adDocker%e7%9a%84%e5%ae%89%e8%a3%85.cover.jpg" referrerpolicy="no-referrer">
-            </div>什么是DOCKER？ Docker 是一种开源的容器化平台，用于帮助开发人员构建、交付和运行应用程序。通过使用 Docker，开发人员可以将应用程序及其所有]]></description>
 </item>
 </channel>
 </rss>
