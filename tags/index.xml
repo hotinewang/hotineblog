@@ -3,7 +3,39 @@
         <title>Tags - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/</link>
         <description>Tags - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 07 Feb 2024 20:58:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 28 Feb 2024 12:20:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker</title>
+    <link>https://blog.hotine.wang/tags/docker/</link>
+    <pubDate>Wed, 28 Feb 2024 12:20:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/docker/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>NAS</title>
+    <link>https://blog.hotine.wang/tags/nas/</link>
+    <pubDate>Wed, 28 Feb 2024 12:20:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/nas/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>同步</title>
+    <link>https://blog.hotine.wang/tags/%E5%90%8C%E6%AD%A5/</link>
+    <pubDate>Wed, 28 Feb 2024 12:20:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/%E5%90%8C%E6%AD%A5/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>相册</title>
+    <link>https://blog.hotine.wang/tags/%E7%9B%B8%E5%86%8C/</link>
+    <pubDate>Sun, 18 Feb 2024 12:20:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/%E7%9B%B8%E5%86%8C/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Hugo</title>
     <link>https://blog.hotine.wang/tags/hugo/</link>
     <pubDate>Wed, 07 Feb 2024 20:58:00 &#43;0800</pubDate>
@@ -28,22 +60,6 @@
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Docker</title>
-    <link>https://blog.hotine.wang/tags/docker/</link>
-    <pubDate>Wed, 07 Feb 2024 20:32:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/docker/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>NAS</title>
-    <link>https://blog.hotine.wang/tags/nas/</link>
-    <pubDate>Wed, 07 Feb 2024 20:32:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/nas/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
     <title>Linux</title>
     <link>https://blog.hotine.wang/tags/linux/</link>
     <pubDate>Mon, 29 Jan 2024 20:12:00 &#43;0800</pubDate>
@@ -65,22 +81,6 @@
     <pubDate>Sun, 17 Sep 2023 21:36:00 &#43;0800</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/tags/vscode/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>VPS</title>
-    <link>https://blog.hotine.wang/tags/vps/</link>
-    <pubDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/vps/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Caddy</title>
-    <link>https://blog.hotine.wang/tags/caddy/</link>
-    <pubDate>Wed, 23 Aug 2023 22:49:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/caddy/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

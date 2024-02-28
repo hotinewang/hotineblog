@@ -3,7 +3,25 @@
         <title>Docker - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/docker/</link>
         <description>Docker - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 07 Feb 2024 20:32:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/docker/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 28 Feb 2024 12:20:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/docker/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker宝库：跨设备同步神器Syncthing</title>
+    <link>https://blog.hotine.wang/posts/20240228_docker%E5%AE%9D%E5%BA%93%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E7%A5%9E%E5%99%A8syncthing/</link>
+    <pubDate>Wed, 28 Feb 2024 12:20:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240228_docker%E5%AE%9D%E5%BA%93%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E7%A5%9E%E5%99%A8syncthing/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/posts/20240228_Docker%e5%ae%9d%e5%ba%93%ef%bc%9a%e8%b7%a8%e8%ae%be%e5%a4%87%e5%90%8c%e6%ad%a5%e7%a5%9e%e5%99%a8Syncthing.jpg" referrerpolicy="no-referrer">
+            </div>Docker宝库：跨设备同步神器Syncthing 简介 Syncthing 是一款开源且免费的跨平台文件同步工具，它可以在多个设备之间进行实时或异步的文件同步，]]></description>
+</item>
+<item>
+    <title>Docker宝库：好用的付费相册MT-Photos</title>
+    <link>https://blog.hotine.wang/posts/20240228_docker%E5%AE%9D%E5%BA%93%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BB%98%E8%B4%B9%E7%9B%B8%E5%86%8Cmt-photos/</link>
+    <pubDate>Sun, 18 Feb 2024 12:20:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240228_docker%E5%AE%9D%E5%BA%93%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BB%98%E8%B4%B9%E7%9B%B8%E5%86%8Cmt-photos/</guid>
+    <description><![CDATA[Docker宝库：好用的付费相册MT-Photos 简介 MT Photos（付费）是一款为NAS用户量身打造的照片管理系统。可自动将照片整理、分类]]></description>
+</item>
+<item>
     <title>Docker宝库：Visual Studio Code</title>
     <link>https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/</link>
     <pubDate>Wed, 07 Feb 2024 20:32:00 &#43;0800</pubDate>
@@ -72,22 +90,6 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/</guid>
     <description><![CDATA[百度网盘资源的远程下载，可以登录会员，且能长期保持登录状态。 2024年1月22日更新-发现一个更好用的百度网盘： docker run -d \ --name=baidunetdisk \ -p 15811:5800 \ -p 15911:5900 \ -v /opt/baidunetdisk/config:/config]]></description>
-</item>
-<item>
-    <title>Docker宝库：远程迅雷</title>
-    <link>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93%E8%BF%9C%E7%A8%8B%E8%BF%85%E9%9B%B7/</link>
-    <pubDate>Thu, 01 Dec 2022 20:00:05 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93%E8%BF%9C%E7%A8%8B%E8%BF%85%E9%9B%B7/</guid>
-    <description><![CDATA[迅雷下载网页版，和PC版用起来差不多，每日支持添加3个下载连接，如果超过3个，可以使用迅雷手机app的远程下载功能添加下载。 docker run -d --name=xunlei --hostname=mynas --net=host -e XL_WEB_PORT=2345]]></description>
-</item>
-<item>
-    <title>Docker宝库：文件管理器</title>
-    <link>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/</link>
-    <pubDate>Thu, 01 Dec 2022 20:00:04 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/</guid>
-    <description><![CDATA[文件管理器FileBrowser：如果想管理服务器中的文件，不依赖软件还是挺麻烦的。FileBrowser提供了一个网页版的文件管理器，让用]]></description>
 </item>
 </channel>
 </rss>

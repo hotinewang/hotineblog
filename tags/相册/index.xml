@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>相册 - Tag - Hotine的小窝</title>
+        <link>https://blog.hotine.wang/tags/%E7%9B%B8%E5%86%8C/</link>
+        <description>相册 - Tag - Hotine的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 18 Feb 2024 12:20:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/%E7%9B%B8%E5%86%8C/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker宝库：好用的付费相册MT-Photos</title>
+    <link>https://blog.hotine.wang/posts/20240228_docker%E5%AE%9D%E5%BA%93%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BB%98%E8%B4%B9%E7%9B%B8%E5%86%8Cmt-photos/</link>
+    <pubDate>Sun, 18 Feb 2024 12:20:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240228_docker%E5%AE%9D%E5%BA%93%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BB%98%E8%B4%B9%E7%9B%B8%E5%86%8Cmt-photos/</guid>
+    <description><![CDATA[Docker宝库：好用的付费相册MT-Photos 简介 MT Photos（付费）是一款为NAS用户量身打造的照片管理系统。可自动将照片整理、分类]]></description>
+</item>
+</channel>
+</rss>
