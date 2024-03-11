@@ -25,7 +25,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/blog.hotine.wang\/posts\/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE\/"
-        },"genre": "posts","keywords": "旁路由, OpenWRT, Docker","wordcount":  1470 ,
+        },"genre": "posts","keywords": "旁路由, OpenWRT, Docker","wordcount":  1503 ,
         "url": "https:\/\/blog.hotine.wang\/posts\/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE\/","datePublished": "2023-05-10T00:00:00+08:00","dateModified": "2023-05-10T00:00:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,7 +69,7 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">NAS当旁路由-DOCKER中OPEN-WRT配置</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/%E6%97%81%E8%B7%AF%E7%94%B1/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>旁路由</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-05-10">2023-05-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1470 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-05-10">2023-05-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1503 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -150,7 +150,11 @@ option dns &#39;192.168.31.1&#39;
 <ul>
 <li>网络-接口-LAN-修改，在基本设置里：把“使用自定义的DNS”清空，基本设置里勾选“忽略此接口”，IPv6设置里，全部禁用，之后保存应用。之后切到物理设置：取消勾选“桥接接口”。</li>
 <li>网络-防火墙-自定义规则，在最后添加一行代码：
-<code>iptables -t nat -I POSTROUTING -j MASQUERADE</code></li>
+<code>iptables -t nat -I POSTROUTING -j MASQUERADE</code>
+并用<code>#</code>注释掉：
+<pre tabindex="0"><code>#iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53
+#iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 53
+</code></pre></li>
 <li>网络-Turbo ACC 网络加速设置：勾选“DNS缓存”，保存并应用。</li>
 <li>到此，整个docker运行openWRT的过程就结束了。</li>
 </ul>

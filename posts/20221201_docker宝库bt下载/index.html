@@ -25,7 +25,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/blog.hotine.wang\/posts\/20221201_docker%E5%AE%9D%E5%BA%93bt%E4%B8%8B%E8%BD%BD\/"
-        },"genre": "posts","keywords": "Docker, NAS","wordcount":  1446 ,
+        },"genre": "posts","keywords": "Docker, NAS","wordcount":  1493 ,
         "url": "https:\/\/blog.hotine.wang\/posts\/20221201_docker%E5%AE%9D%E5%BA%93bt%E4%B8%8B%E8%BD%BD\/","datePublished": "2022-12-01T20:00:06+08:00","dateModified": "2022-12-01T20:00:06+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,7 +69,7 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Docker宝库：BT下载</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/nas/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>NAS</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-01">2022-12-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1446 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-01">2022-12-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1493 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
@@ -113,6 +113,7 @@ docker create --name=transmission -e PUID=0 -e PGID=0 \
 -e PGID=1000 \
 -e TZ=Asia/Shanghai \
 -e WEBUI_PORT=8088 \
+-p 8088:8088 \
 -p 6881:6881 \
 -p 6881:6881/udp \
 -p 10004:8080 \
@@ -123,7 +124,7 @@ ghcr.io/linuxserver/qbittorrent
 </code></pre><p>参数解释：</p>
 <ul>
 <li>&ndash;name=qbittorrent “qbittorrent”是容器名称，可以自己修改</li>
-<li>-e WEBUI_PORT=8088 设置网页版下载页面的端口号为8088，这个可以按需修改</li>
+<li>-e WEBUI_PORT=8088 设置网页版下载页面的端口号为8088，这个可以按需修改，且下方的-p 8088:8088 必须保持一致</li>
 <li>-v /opt/qbit/config:/config  把服务器（宿主机）的<code>/opt/qbit/config</code>挂载到容器内的<code>config</code>路径上。这样容器访问<code>/config</code>目录实际上访问的是服务器的<code>/opt/qbit/config</code>目录。</li>
 <li>-v /path/to/your/downloadfolder:/downloads  原理同上，把宿主机的<code>/path/to/your/downloadfolder</code>（此路径可改）文件挂载到容器内的<code>/downloads</code>文件夹。这样做可以把下载的文件存放在宿主机的<code>/path/to/your/downloadfolder</code>文件夹中。</li>
 <li>其他都不用动</li>
@@ -131,7 +132,7 @@ ghcr.io/linuxserver/qbittorrent
 <p>因为BT下载比较伤硬盘，所以建议下载位置设置成外挂硬盘。
 默认监听端口是6881，即使想要映射监听端口，也不要监听默认端口，大多数PT站都是禁了的，用6881端口进行PT下载就会遇到以下问题：“Port 6881 is blacklisted！”，端口被黑名单了。
 使用方式为直接访问主机地址+端口号，例如192.168.X.X:8088</p>
-<p>进入管理界面后，需要设置Tracker才能获得较好菜单下载速度，点击最上方“工具”-“选项”-“BitTorrent”-拉倒最下方勾选“自动添加一下tracker到新的torrent”，并在下方加入Tracker，比如从以下三个网站获取的的Tracker地址：</p>
+<p>进入管理界面后，密码可在log文件中查看（使用portainer查看很方便）需要设置Tracker才能获得较好菜单下载速度，点击最上方“工具”-“选项”-“BitTorrent”-拉倒最下方勾选“自动添加一下tracker到新的torrent”，并在下方加入Tracker，比如从以下三个网站获取的的Tracker地址：</p>
 <pre tabindex="0"><code>https://trackerslist.com/all.txt
 https://github.com/ngosang/trackerslist/blob/cd664002b9d6f1a023713bb2034925029704a522/blacklist.txt
 http://github.itzmx.com/1265578519/OpenTracker/master/tracker.txt
