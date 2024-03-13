@@ -3,7 +3,15 @@
         <title>Docker - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/docker/</link>
         <description>Docker - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 28 Feb 2024 12:20:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/docker/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 11 Mar 2024 21:16:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/docker/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker宝库：Docker管理工具Portainer</title>
+    <link>https://blog.hotine.wang/posts/20240312_docker%E5%AE%9D%E5%BA%93portainer/</link>
+    <pubDate>Mon, 11 Mar 2024 21:16:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240312_docker%E5%AE%9D%E5%BA%93portainer/</guid>
+    <description><![CDATA[Docker宝库：Docker管理工具Portainer 控制台输入： docker run -d -p 9000:9000 \ -v /var/run/docker.sock:/var/run/docker.sock \ -v /dockerData/portainer:/data \ --restart=always \ --name portainer portainer/portainer-ce:latest 回车即可。 访问主机IP+9000进入管]]></description>
+</item>
+<item>
     <title>Docker宝库：跨设备同步神器Syncthing</title>
     <link>https://blog.hotine.wang/posts/20240228_docker%E5%AE%9D%E5%BA%93%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E7%A5%9E%E5%99%A8syncthing/</link>
     <pubDate>Wed, 28 Feb 2024 12:20:00 &#43;0800</pubDate>
@@ -82,14 +90,6 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93bt%E4%B8%8B%E8%BD%BD/</guid>
     <description><![CDATA[BT下载可以用TRANSMISSION，也可以用QBITTORENT。 TRANSMISSION：更傻瓜化，界面更简单，但是资源不好的时候，下]]></description>
-</item>
-<item>
-    <title>Docker宝库：百度网盘</title>
-    <link>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/</link>
-    <pubDate>Thu, 01 Dec 2022 20:00:06 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/</guid>
-    <description><![CDATA[百度网盘资源的远程下载，可以登录会员，且能长期保持登录状态。 2024年1月22日更新-发现一个更好用的百度网盘： docker run -d \ --name=baidunetdisk \ -p 15811:5800 \ -p 15911:5900 \ -v /opt/baidunetdisk/config:/config]]></description>
 </item>
 </channel>
 </rss>
