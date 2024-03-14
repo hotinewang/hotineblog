@@ -9,9 +9,7 @@
     <pubDate>Tue, 12 Mar 2024 18:00:00 &#43;0800</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20240312_frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/%e5%b0%81%e9%9d%a2%e5%9b%be.jpg" referrerpolicy="no-referrer">
-            </div>FRP内网穿透 内网穿透的方案，除了用Zerotier虚拟组网外，还可以使用FRP进行端口映射，实现内网穿透。FRP（Fast Reverse Proxy）:]]></description>
+    <description><![CDATA[FRP内网穿透 内网穿透的方案，除了用Zerotier虚拟组网外，还可以使用FRP进行端口映射，实现内网穿透。FRP（Fast Reverse Proxy）:]]></description>
 </item>
 <item>
     <title>Docker宝库：Docker管理工具Portainer</title>
