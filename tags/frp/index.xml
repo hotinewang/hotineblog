@@ -3,10 +3,10 @@
         <title>FRP - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/frp/</link>
         <description>FRP - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 12 Mar 2024 18:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/frp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 12 Mar 2024 18:01:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/frp/" rel="self" type="application/rss+xml" /><item>
     <title>FRP内网穿透</title>
     <link>https://blog.hotine.wang/posts/20240312_frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
-    <pubDate>Tue, 12 Mar 2024 18:00:00 &#43;0800</pubDate>
+    <pubDate>Tue, 12 Mar 2024 18:01:00 &#43;0800</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20240312_frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
     <description><![CDATA[FRP内网穿透 内网穿透的方案，除了用Zerotier虚拟组网外，还可以使用FRP进行端口映射，实现内网穿透。FRP（Fast Reverse Proxy）:]]></description>
