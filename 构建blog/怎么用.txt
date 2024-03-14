@@ -1,0 +1,11 @@
+# hotineblog
+hotine's blog
+
+快速使用：
+在项目目录打开cmd并运行：
+`hugo new posts/文章名.md`新建一个博文markdown文件。或者手动复制/创建也可以。
+
+`hugo server -D --disableFastRender`预览博客（含草稿）
+`hugo server --disableFastRender`预览博客（不含草稿）
+
+`hugo`在public文件夹下生成正式网站
