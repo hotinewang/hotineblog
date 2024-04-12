@@ -25,7 +25,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/blog.hotine.wang\/posts\/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu\/"
-        },"genre": "posts","keywords": "Docker, VPS, NAS","wordcount":  667 ,
+        },"genre": "posts","keywords": "Docker, VPS, NAS","wordcount":  684 ,
         "url": "https:\/\/blog.hotine.wang\/posts\/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu\/","datePublished": "2023-09-15T00:00:00+08:00","dateModified": "2023-09-15T00:00:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,7 +69,7 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">VPS套娃，Linux装Docker，Docker再跑Ubuntu</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>VPS与建站</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-09-15">2023-09-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;667 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-09-15">2023-09-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;684 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
@@ -111,7 +111,8 @@ kasmweb/ubuntu-jammy-desktop:1.14.0
 <ul>
 <li><code>-e VNC_PW=147258369</code>中的147258369修改成自己的密码</li>
 <li><code>-v /mnt/ubuntushare:/mnt/share \</code>是指把VPS中 /mnt/ubuntushare目录挂载到docker容器中的/mnt/share目录。这样在容器中的Ubuntu系统中，文件只要放在/mnt/share目录下，就可以在VPS的/mnt/ubuntushare目录中访问到。</li>
-<li>最后，通过https://VPS的IP或者域名:6901进行访问即可，用户名是kasm_user，密码是上文中设置的密码。</li>
+<li>最后，通过https://VPS的IP或者域名:6901进行访问即可，用户名是kasm_user，密码是上文中设置的密码。
+★★★一定要用https访问★★★</li>
 </ul>
 <p>如需设置Ubuntu的root密码，可以使用以下命令</p>
 <pre tabindex="0"><code>docker exec -u root -it ubuntu-desktop passwd

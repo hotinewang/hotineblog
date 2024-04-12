@@ -25,7 +25,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/blog.hotine.wang\/posts\/20221201_docker%E5%AE%9D%E5%BA%93jellyfin%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2\/"
-        },"genre": "posts","keywords": "Docker, NAS","wordcount":  745 ,
+        },"genre": "posts","keywords": "Docker, NAS","wordcount":  770 ,
         "url": "https:\/\/blog.hotine.wang\/posts\/20221201_docker%E5%AE%9D%E5%BA%93jellyfin%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2\/","datePublished": "2022-12-01T20:00:02+08:00","dateModified": "2022-12-01T20:00:02+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,7 +69,7 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Docker宝库：JELLYFIN家庭影院</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/nas/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>NAS</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-01">2022-12-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;745 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-01">2022-12-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;770 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
@@ -93,6 +93,8 @@ Docker安装命令非常简单，使用SSH工具连接服务器，输入以下�
 -v /path/to/your/tvshows:/data/tvshows `#optional` \
 --restart unless-stopped \
 lscr.io/linuxserver/jellyfin:latest
+</code></pre><p>或者最后一行换成中国特供版镜像（集成硬件解码）：</p>
+<pre tabindex="0"><code>nyanmisaka/jellyfin:latest
 </code></pre><p>参数解释：</p>
 <ul>
 <li>-p 8096:8096 宿主机的8096端口（：前边的）映射到容器的8096端口（：后边那个）（如果宿主机8096端口没有被占用，可以不改）</li>

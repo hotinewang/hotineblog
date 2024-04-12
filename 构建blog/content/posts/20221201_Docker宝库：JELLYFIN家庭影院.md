@@ -29,6 +29,10 @@ docker run -d \
 --restart unless-stopped \
 lscr.io/linuxserver/jellyfin:latest
 ```
+或者最后一行换成中国特供版镜像（集成硬件解码）：
+```
+nyanmisaka/jellyfin:latest
+```
 参数解释：
 + -p 8096:8096 宿主机的8096端口（：前边的）映射到容器的8096端口（：后边那个）（如果宿主机8096端口没有被占用，可以不改）
 + -v /opt/jellyfin/config:/config  挂载服务器路径/opt/jellyfin/config（这个路径可修改）到容器内/config路径，也就是说容器内的配置文件实际上是保存到服务器的/opt/Heimdall/config中的。
