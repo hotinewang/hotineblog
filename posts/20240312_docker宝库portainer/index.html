@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <title>Docker宝库：Docker管理工具Portainer - Hotine的小窝</title><meta name="Description" content="Hotine的窝？"><meta property="og:title" content="Docker宝库：Docker管理工具Portainer" />
-<meta property="og:description" content="Docker宝库：Docker管理工具Portainer 控制台输入： docker run -d -p 9000:9000 \ -v /var/run/docker.sock:/var/run/docker.sock \ -v /dockerData/portainer:/data \ --restart=always \ --name portainer portainer/portainer-ce:latest 回车即可。 访问主机IP&#43;9000进入管" />
+<meta property="og:description" content="Docker宝库：Docker管理工具Portainer 控制台输入： docker run -d -p 9000:9000 \ -v /var/run/docker.sock:/var/run/docker.sock \ -v /dockerData/portainer:/data \ --restart=always \ --name portainer \ portainer/portainer-ce:latest 回车即可。 访问主机IP&#43;9000进入" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.hotine.wang/posts/20240312_docker%E5%AE%9D%E5%BA%93portainer/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-03-11T21:16:00+08:00" />
 <meta property="article:modified_time" content="2024-03-11T21:16:00+08:00" /><meta property="og:site_name" content="My cool site" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Docker宝库：Docker管理工具Portainer"/>
-<meta name="twitter:description" content="Docker宝库：Docker管理工具Portainer 控制台输入： docker run -d -p 9000:9000 \ -v /var/run/docker.sock:/var/run/docker.sock \ -v /dockerData/portainer:/data \ --restart=always \ --name portainer portainer/portainer-ce:latest 回车即可。 访问主机IP&#43;9000进入管"/>
+<meta name="twitter:description" content="Docker宝库：Docker管理工具Portainer 控制台输入： docker run -d -p 9000:9000 \ -v /var/run/docker.sock:/var/run/docker.sock \ -v /dockerData/portainer:/data \ --restart=always \ --name portainer \ portainer/portainer-ce:latest 回车即可。 访问主机IP&#43;9000进入"/>
 <meta name="application-name" content="Hotine的小窝">
 <meta name="apple-mobile-web-app-title" content="Hotine的小窝"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -25,7 +25,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/blog.hotine.wang\/posts\/20240312_docker%E5%AE%9D%E5%BA%93portainer\/"
-        },"genre": "posts","keywords": "Docker, NAS","wordcount":  74 ,
+        },"genre": "posts","keywords": "Docker, NAS","wordcount":  75 ,
         "url": "https:\/\/blog.hotine.wang\/posts\/20240312_docker%E5%AE%9D%E5%BA%93portainer\/","datePublished": "2024-03-11T21:16:00+08:00","dateModified": "2024-03-11T21:16:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,7 +69,7 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Docker宝库：Docker管理工具Portainer</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/nas/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>NAS</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-03-11">2024-03-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;74 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-03-11">2024-03-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;75 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
@@ -83,8 +83,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /var/run/docker.sock:/var/run/docker.sock <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /dockerData/portainer:/data <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>--restart<span class="o">=</span>always <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>--name portainer 
-</span></span><span class="line"><span class="cl">portainer/portainer-ce:latest
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--name portainer  <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>portainer/portainer-ce:latest
 </span></span></code></pre></div><p>回车即可。
 访问主机IP+9000进入管理页面。</p>
 </div><div class="post-footer" id="post-footer">
