@@ -3,9 +3,17 @@
         <title>Hotine的小窝</title>
         <link>https://blog.hotine.wang/</link>
         <description>Hotine的窝？</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 12 Mar 2024 18:01:00 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 11 May 2024 21:24:00 &#43;0800</lastBuildDate>
             <atom:link href="https://blog.hotine.wang/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>养花日记：养花虫害用药笔记</title>
+    <link>https://blog.hotine.wang/posts/20240511_%E5%85%BB%E8%8A%B1%E6%97%A5%E8%AE%B0%E5%85%BB%E8%8A%B1%E8%99%AB%E5%AE%B3%E7%94%A8%E8%8D%AF%E7%AC%94%E8%AE%B0/</link>
+    <pubDate>Sat, 11 May 2024 21:24:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240511_%E5%85%BB%E8%8A%B1%E6%97%A5%E8%AE%B0%E5%85%BB%E8%8A%B1%E8%99%AB%E5%AE%B3%E7%94%A8%E8%8D%AF%E7%AC%94%E8%AE%B0/</guid>
+    <description><![CDATA[养花日记：养花虫害用药笔记 常在家养花，哪能不生虫。养花生虫是一件非常头痛的事情，弄不好就一传十，十传百，一屋花卉遭殃。 所以我整理了常见病虫害]]></description>
+</item>
+<item>
     <title>FRP内网穿透</title>
     <link>https://blog.hotine.wang/posts/20240312_frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
     <pubDate>Tue, 12 Mar 2024 18:01:00 &#43;0800</pubDate>
@@ -80,14 +88,6 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20230917_%E5%AE%89%E5%8D%93%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B9%8Bautox.js/</guid>
     <description><![CDATA[安卓手机自动化神器AutoX.JS Auto.js 是一款基于 Android 平台的自动化测试和脚本编写工具。它允许用户编写脚本来模拟用户在 Android 设备上的操作，例如点击、滑动]]></description>
-</item>
-<item>
-    <title>远程浏览器，通过Docker安装Firefox远程版</title>
-    <link>https://blog.hotine.wang/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/</link>
-    <pubDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/</guid>
-    <description><![CDATA[远程浏览器，通过Docker安装Firefox远程版 通过VPS，可以挂一个远程浏览器，这样就可以变相实现魔法上网。 同时，也可以在远程浏览器中]]></description>
 </item>
 </channel>
 </rss>
