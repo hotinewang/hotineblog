@@ -12,6 +12,14 @@
     <description><![CDATA[]]></description>
 </item>
 <item>
+    <title>游记</title>
+    <link>https://blog.hotine.wang/tags/%E6%B8%B8%E8%AE%B0/</link>
+    <pubDate>Sun, 28 Apr 2024 21:20:56 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/%E6%B8%B8%E8%AE%B0/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>FRP</title>
     <link>https://blog.hotine.wang/tags/frp/</link>
     <pubDate>Tue, 12 Mar 2024 18:01:00 &#43;0800</pubDate>
@@ -73,14 +81,6 @@
     <pubDate>Wed, 07 Feb 2024 20:58:00 &#43;0800</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/tags/hugo/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>博客</title>
-    <link>https://blog.hotine.wang/tags/%E5%8D%9A%E5%AE%A2/</link>
-    <pubDate>Wed, 07 Feb 2024 20:58:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/%E5%8D%9A%E5%AE%A2/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
