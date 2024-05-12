@@ -9,7 +9,7 @@
     <pubDate>Mon, 11 Mar 2024 21:16:00 &#43;0800</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20240312_docker%E5%AE%9D%E5%BA%93portainer/</guid>
-    <description><![CDATA[Docker宝库：Docker管理工具Portainer 控制台输入： docker run -d -p 9000:9000 \ -v /var/run/docker.sock:/var/run/docker.sock \ -v /dockerData/portainer:/data \ --restart=always \ --name portainer portainer/portainer-ce:latest 回车即可。 访问主机IP+9000进入管]]></description>
+    <description><![CDATA[Docker宝库：Docker管理工具Portainer 控制台输入： docker run -d -p 9000:9000 \ -v /var/run/docker.sock:/var/run/docker.sock \ -v /dockerData/portainer:/data \ --restart=always \ --name portainer \ portainer/portainer-ce:latest 回车即可。 访问主机IP+9000进入]]></description>
 </item>
 <item>
     <title>Docker宝库：跨设备同步神器Syncthing</title>
