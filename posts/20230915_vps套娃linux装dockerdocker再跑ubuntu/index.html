@@ -89,25 +89,25 @@
 +kasmweb/ubuntu-jammy-desktop：集成工作空间，在desktop版的基础上，还增加了VSCode、办公软件、绘图软件等工具。</p>
 <p>安装使用以下命令：
 desktop版</p>
-<pre tabindex="0"><code>docker run -d --restart=unless-stopped \
---name ubuntu \
--p 6901:6901 \
--e VNC_PW=wbb@147258369 \
--v /mnt/ubuntushare:/mnt/share \
---shm-size=512m \
-kasmweb/desktop:1.14.0
-</code></pre><p>集成工作空间版</p>
-<pre tabindex="0"><code>docker run -d --restart=unless-stopped \
---name ubuntu  \
--p 6901:6901 \
--e VNC_PW=147258369 \
--e LANG=zh_CN.UTF-8 \
--e LANGUAGE=zh_CN:zh \
--e LC_ALL=zh_CN.UTF-8 \
--v /mnt/ubuntushare:/mnt/share \
---shm-size=512m \
-kasmweb/ubuntu-jammy-desktop:1.14.0
-</code></pre><p>注意：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -d --restart<span class="o">=</span>unless-stopped <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--name ubuntu <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-p 6901:6901 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-e <span class="nv">VNC_PW</span><span class="o">=</span>wbb@147258369 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /mnt/ubuntushare:/mnt/share <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--shm-size<span class="o">=</span>512m <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>kasmweb/desktop:1.14.0
+</span></span></code></pre></div><p>集成工作空间版</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -d --restart<span class="o">=</span>unless-stopped <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--name ubuntu  <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-p 6901:6901 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-e <span class="nv">VNC_PW</span><span class="o">=</span><span class="m">147258369</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-e <span class="nv">LANG</span><span class="o">=</span>zh_CN.UTF-8 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-e <span class="nv">LANGUAGE</span><span class="o">=</span>zh_CN:zh <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-e <span class="nv">LC_ALL</span><span class="o">=</span>zh_CN.UTF-8 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /mnt/ubuntushare:/mnt/share <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--shm-size<span class="o">=</span>512m <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>kasmweb/ubuntu-jammy-desktop:1.14.0
+</span></span></code></pre></div><p>注意：</p>
 <ul>
 <li><code>-e VNC_PW=147258369</code>中的147258369修改成自己的密码</li>
 <li><code>-v /mnt/ubuntushare:/mnt/share \</code>是指把VPS中 /mnt/ubuntushare目录挂载到docker容器中的/mnt/share目录。这样在容器中的Ubuntu系统中，文件只要放在/mnt/share目录下，就可以在VPS的/mnt/ubuntushare目录中访问到。</li>
@@ -115,8 +115,8 @@ kasmweb/ubuntu-jammy-desktop:1.14.0
 ★★★一定要用https访问★★★</li>
 </ul>
 <p>如需设置Ubuntu的root密码，可以使用以下命令</p>
-<pre tabindex="0"><code>docker exec -u root -it ubuntu-desktop passwd
-</code></pre></div><div class="post-footer" id="post-footer">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker <span class="nb">exec</span> -u root -it ubuntu-desktop passwd
+</span></span></code></pre></div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">

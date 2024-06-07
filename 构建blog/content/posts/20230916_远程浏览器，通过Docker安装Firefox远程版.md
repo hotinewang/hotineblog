@@ -15,7 +15,7 @@ draft: false
 VPS远程浏览器+NAS百度网盘=百度下载黄金搭档：Docker版浏览器用于资源添加到网盘，NAS里的Docker网盘用来操作资源下载，简直是绝配！
 
 以下是安装命令：
-```
+```bash
 docker run -d \
     --name=firefox \
     -p 5800:5800 \

@@ -113,17 +113,17 @@ ZeroTier简单来说，就是通过这个软件，把各个设备接入一个虚
 并安装windows客户端，安装完毕并运行后，在桌面右下角托盘区找到程序图标，点击并选择“Join New Network”（加入新网络），并输入之前在ZeroTier网站创建的网络的NetworkID即可。</li>
 <li>安卓设备：在谷歌市场下载APP：ZeroTier One，进入之后，在APP主页面点击“Add Network”,输入NetworkID，其他保持默认，点击最下方“Add”即可。回到主页面，右上方“Settings”中，可勾选“Use Mobile Data”，这样可以在移动网络下访问局域网设备（不勾选则只能在Wifi网络中访问局域网）。最后，回到主页面，点击刚刚新建的网络的右方的开关，即可连入局域网。</li>
 <li>Docker：如果是NAS设备（Linux系统）想接入局域网，可以安装Docker版的ZeroTier。用SSH工具接入已装好Docker的NAS设备的控制台后，输入以下命令安装ZeroTier镜像：
-<pre tabindex="0"><code>docker run -d \
---name ZeroTier \
---restart=always \
---device=/dev/net/tun \
---net=host \
---cap-add=NET_ADMIN \
---cap-add=SYS_ADMIN \
-zerotier/zerotier-synology:latest
-</code></pre>再输入以下命令加入局域网络：
-<pre tabindex="0"><code>docker exec -it ZeroTier zerotier-cli join 233ccaac272dfa91
-</code></pre>注意把join后边的那串文字替换成自己网络的NetworkID</li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -d <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--name ZeroTier <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--restart<span class="o">=</span>always <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--device<span class="o">=</span>/dev/net/tun <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--net<span class="o">=</span>host <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--cap-add<span class="o">=</span>NET_ADMIN <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--cap-add<span class="o">=</span>SYS_ADMIN <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>zerotier/zerotier-synology:latest
+</span></span></code></pre></div>再输入以下命令加入局域网络：
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker <span class="nb">exec</span> -it ZeroTier zerotier-cli join 233ccaac272dfa91
+</span></span></code></pre></div>注意把join后边的那串文字替换成自己网络的NetworkID</li>
 <li>批准设备入网：当有新设备加入网络中后，需要在<a href="https://www.zerotier.com/" target="_blank" rel="noopener noreffer">zerotier.com</a>
 中对应网络的设置页面进行批准。在设置页面往下拉，在Members一节中，会出现新申请入网的设备。在这里勾选这条记录，即可准入网络。此处可以看到自动分配给这个设备的局域网IP，这个很重要，是设备间互相访问所使用的IP。也可以在这里修改设备的备注名称和描述。</li>
 </ul>

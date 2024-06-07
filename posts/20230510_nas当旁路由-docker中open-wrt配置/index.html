@@ -25,7 +25,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/blog.hotine.wang\/posts\/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE\/"
-        },"genre": "posts","keywords": "旁路由, OpenWRT, Docker","wordcount":  1503 ,
+        },"genre": "posts","keywords": "旁路由, OpenWRT, Docker","wordcount":  1507 ,
         "url": "https:\/\/blog.hotine.wang\/posts\/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE\/","datePublished": "2023-05-10T00:00:00+08:00","dateModified": "2023-05-10T00:00:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,8 +69,8 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">NAS当旁路由-DOCKER中OPEN-WRT配置</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/%E6%97%81%E8%B7%AF%E7%94%B1/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>旁路由</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-05-10">2023-05-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1503 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-05-10">2023-05-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1507 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -100,52 +100,56 @@
 <h3 id="网卡开启混杂模式"><strong>网卡开启混杂模式</strong></h3>
 <p>用SSH工具连接服务器,需要先查看是否打开了网卡的混杂模式。
 查看网卡是否打开混杂模式（使用以下两个命令都可以）</p>
-<pre tabindex="0"><code>ip addr
-或者
-ifconfig
-</code></pre><p>会显示类似于下边的信息：</p>
-<pre tabindex="0"><code>1: lo: .LOOPBACK,UP,LOWER_UP. mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
-link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-inet 127.0.0.1/8 scope host lo
-valid_lft forever preferred_lft forever
-inet6 ::1/128 scope host
-valid_lft forever preferred_lft forever
-2: enp1s0: .BROADCAST,MULTICAST,PROMISC,UP,LOWER_UP. mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
-link/ether 68:1d:ef:16:9d:16 brd ff:ff:ff:ff:ff:ff
-inet 192.168.31.74/24 brd 192.168.31.255 scope global dynamic enp1s0
-valid_lft 33867sec preferred_lft 33867sec
-inet6 fe80::6a1d:efff:fe16:9d16/64 scope link
-valid_lft forever preferred_lft forever
-</code></pre><p>找到ip和主机地址一致的那个网卡，例如enp1s0，看后边有没有<code>PROMISC</code>字样，没有就是没开启的意思，使用以下命令开启混杂模式：</p>
-<pre tabindex="0"><code>sudo ip link set enp1s0 promisc on
-</code></pre><p>然后再通过<code>ip addr</code>或者<code>ifconfig</code>命令检查是否开启成功。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ip addr
+</span></span><span class="line"><span class="cl">或者
+</span></span><span class="line"><span class="cl">ifconfig
+</span></span></code></pre></div><p>会显示类似于下边的信息：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">1: lo: .LOOPBACK,UP,LOWER_UP. mtu <span class="m">65536</span> qdisc noqueue state UNKNOWN group default qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+</span></span><span class="line"><span class="cl">inet 127.0.0.1/8 scope host lo
+</span></span><span class="line"><span class="cl">valid_lft forever preferred_lft forever
+</span></span><span class="line"><span class="cl">inet6 ::1/128 scope host
+</span></span><span class="line"><span class="cl">valid_lft forever preferred_lft forever
+</span></span><span class="line"><span class="cl">2: enp1s0: .BROADCAST,MULTICAST,PROMISC,UP,LOWER_UP. mtu <span class="m">1500</span> qdisc pfifo_fast state UP group default qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">link/ether 68:1d:ef:16:9d:16 brd ff:ff:ff:ff:ff:ff
+</span></span><span class="line"><span class="cl">inet 192.168.31.74/24 brd 192.168.31.255 scope global dynamic enp1s0
+</span></span><span class="line"><span class="cl">valid_lft 33867sec preferred_lft 33867sec
+</span></span><span class="line"><span class="cl">inet6 fe80::6a1d:efff:fe16:9d16/64 scope link
+</span></span><span class="line"><span class="cl">valid_lft forever preferred_lft forever
+</span></span></code></pre></div><p>找到ip和主机地址一致的那个网卡，例如enp1s0，看后边有没有<code>PROMISC</code>字样，没有就是没开启的意思，使用以下命令开启混杂模式：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo ip link <span class="nb">set</span> enp1s0 promisc on
+</span></span></code></pre></div><p>然后再通过<code>ip addr</code>或者<code>ifconfig</code>命令检查是否开启成功。</p>
 <h3 id="docker安装openwrt"><strong>Docker安装OpenWRT</strong></h3>
 <p>创建docker网卡</p>
-<pre tabindex="0"><code>docker network create -d macvlan --subnet=192.168.31.0/24 --gateway=192.168.31.1 -o parent=enp1s0 macnet
-</code></pre><p>其中&ndash;subnet=192.168.31.0/24是网段和子网掩码，&ndash;gateway=192.168.31.1是网关（一般是路由器管理页面的ip地址）
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker network create -d macvlan --subnet<span class="o">=</span>192.168.31.0/24 --gateway<span class="o">=</span>192.168.31.1 -o <span class="nv">parent</span><span class="o">=</span>enp1s0 macnet
+</span></span></code></pre></div><p>其中&ndash;subnet=192.168.31.0/24是网段和子网掩码，&ndash;gateway=192.168.31.1是网关（一般是路由器管理页面的ip地址）
 可以用以下命令查看是否创建成功：</p>
-<pre tabindex="0"><code>docker network list
-</code></pre><p>查看自己系统的架构</p>
-<pre tabindex="0"><code>uname -a
-</code></pre><p>安装dock镜像，项目地址：<a href="https://hub.docker.com/r/sulinggg/openwrt" target="_blank" rel="noopener noreffer">https://hub.docker.com/r/sulinggg/openwrt</a>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker network list
+</span></span></code></pre></div><p>查看自己系统的架构</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">uname -a
+</span></span></code></pre></div><p>安装dock镜像，项目地址：<a href="https://hub.docker.com/r/sulinggg/openwrt" target="_blank" rel="noopener noreffer">https://hub.docker.com/r/sulinggg/openwrt</a>
 ，从网址中找到对应自己系统架构的镜像名称(dockerhub或阿里云镜像仓库 (上海))。并安装对应的镜像：</p>
-<pre tabindex="0"><code>docker run --restart always --name openwrt -d --network macnet --privileged registry.cn-shanghai.aliyuncs.com/suling/openwrt:x86_64 /sbin/init
-</code></pre><p>上述命令中，<code>--name openwrt</code>是指镜像名称，可修改；<code>--network macnet</code>中的macnet就是对应的新建网卡名称；<code>registry.cn-shanghai.aliyuncs.com/suling/openwrt:x86_64</code>是要安装镜像名称，用dockerhub或阿里云镜像仓库 (上海)都可以。
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run --restart always <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--name openwrt <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-d <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--network macnet <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--privileged registry.cn-shanghai.aliyuncs.com/suling/openwrt:x86_64 /sbin/init
+</span></span></code></pre></div><p>上述命令中，<code>--name openwrt</code>是指镜像名称，可修改；<code>--network macnet</code>中的macnet就是对应的新建网卡名称；<code>registry.cn-shanghai.aliyuncs.com/suling/openwrt:x86_64</code>是要安装镜像名称，用dockerhub或阿里云镜像仓库 (上海)都可以。
 安装完毕后，开始设置openwrt的ip。进入portainer管理界面，在容器列表里找到openwrt，点击QuickAction列表下的&gt;_，在下一个页面点击连接，进入命令行模式,输入:</p>
-<pre tabindex="0"><code>vim /etc/config/network
-</code></pre><p>修改以下部分</p>
-<pre tabindex="0"><code>option ipaddr &#39;192.168.123.100&#39;
-option gateway &#39;192.168.123.1&#39;
-option dns &#39;192.168.123.1&#39;
-</code></pre><p>为：</p>
-<pre tabindex="0"><code>option ipaddr &#39;192.168.31.5&#39;
-option gateway &#39;192.168.31.1&#39;
-option dns &#39;192.168.31.1&#39;
-</code></pre><p>按i进入编辑模式，修改完以后按esc退出，输入以下命令保存</p>
-<pre tabindex="0"><code>:wq
-</code></pre><p>重启网络:</p>
-<pre tabindex="0"><code>/etc/init.d/network restart
-</code></pre><p>随后访问<code>http://192.168.31.5/</code>即可进入openwrt界面，默认密码是：root或者password或者随便输一个也能进入。先修改密码。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim /etc/config/network
+</span></span></code></pre></div><p>修改以下部分</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">option ipaddr <span class="s1">&#39;192.168.123.100&#39;</span>
+</span></span><span class="line"><span class="cl">option gateway <span class="s1">&#39;192.168.123.1&#39;</span>
+</span></span><span class="line"><span class="cl">option dns <span class="s1">&#39;192.168.123.1&#39;</span>
+</span></span></code></pre></div><p>为：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">option ipaddr <span class="s1">&#39;192.168.31.5&#39;</span>
+</span></span><span class="line"><span class="cl">option gateway <span class="s1">&#39;192.168.31.1&#39;</span>
+</span></span><span class="line"><span class="cl">option dns <span class="s1">&#39;192.168.31.1&#39;</span>
+</span></span></code></pre></div><p>按i进入编辑模式，修改完以后按esc退出，输入以下命令保存</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">:wq
+</span></span></code></pre></div><p>重启网络:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/etc/init.d/network restart
+</span></span></code></pre></div><p>随后访问<code>http://192.168.31.5/</code>即可进入openwrt界面，默认密码是：root或者password或者随便输一个也能进入。先修改密码。</p>
 <h3 id="设置openwrt"><strong>设置openwrt</strong></h3>
 <ul>
 <li>网络-接口-LAN-修改，在基本设置里：把“使用自定义的DNS”清空，基本设置里勾选“忽略此接口”，IPv6设置里，全部禁用，之后保存应用。之后切到物理设置：取消勾选“桥接接口”。</li>

@@ -25,7 +25,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/blog.hotine.wang\/posts\/20221201_docker%E5%AE%9D%E5%BA%93%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8\/"
-        },"genre": "posts","keywords": "Docker, NAS","wordcount":  634 ,
+        },"genre": "posts","keywords": "Docker, NAS","wordcount":  639 ,
         "url": "https:\/\/blog.hotine.wang\/posts\/20221201_docker%E5%AE%9D%E5%BA%93%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8\/","datePublished": "2022-12-01T20:00:04+08:00","dateModified": "2022-12-01T20:00:04+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,7 +69,7 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Docker宝库：文件管理器</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/nas/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>NAS</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-01">2022-12-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;634 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-01">2022-12-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;639 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
@@ -79,8 +79,13 @@
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
             </div><div class="content" id="content"><p>文件管理器FileBrowser：如果想管理服务器中的文件，不依赖软件还是挺麻烦的。FileBrowser提供了一个网页版的文件管理器，让用户可以方便的管理服务器中的文件，而且支持文件预览、多用户管理和权限设置。
 Docker安装命令非常简单，使用SSH工具连接服务器，输入以下命令：</p>
-<pre tabindex="0"><code>docker run -d --name filebrowser -v /:/srv -v /opt/filebrowser/filebrowserconfig.json:/etc/config.json -v /opt/filebrowser/database.db:/etc/database.db -p 2038:80 filebrowser/filebrowser
-</code></pre><p>参数解释：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -d --name filebrowser <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /:/srv <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /opt/filebrowser/filebrowserconfig.json:/etc/config.json <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /opt/filebrowser/database.db:/etc/database.db <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-p 2038:80 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>filebrowser/filebrowser
+</span></span></code></pre></div><p>参数解释：</p>
 <ul>
 <li>&ndash;name filebrowser “filebrowser”是容器名称，可以自己修改</li>
 <li>-v /:/srv  把服务器（宿主机）的根目录（此路径可改）挂载到容器内的/srv路径上。这样容器访问/srv目录实际上访问的是服务器的根目录。这个设置代表了FileBrowser可以管理的最顶层目录。</li>

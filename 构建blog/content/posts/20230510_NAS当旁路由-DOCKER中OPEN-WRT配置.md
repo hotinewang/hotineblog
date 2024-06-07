@@ -17,13 +17,13 @@ featuredImage: /images/posts/20230510_NAS当旁路由-DOCKER中OPEN-WRT配置.jp
 ### **网卡开启混杂模式**
 用SSH工具连接服务器,需要先查看是否打开了网卡的混杂模式。
 查看网卡是否打开混杂模式（使用以下两个命令都可以）
-```
+```bash
 ip addr
 或者
 ifconfig
 ```
 会显示类似于下边的信息：
-```
+```bash
 1: lo: .LOOPBACK,UP,LOWER_UP. mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
 link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
 inet 127.0.0.1/8 scope host lo
@@ -38,7 +38,7 @@ inet6 fe80::6a1d:efff:fe16:9d16/64 scope link
 valid_lft forever preferred_lft forever
 ```
 找到ip和主机地址一致的那个网卡，例如enp1s0，看后边有没有`PROMISC`字样，没有就是没开启的意思，使用以下命令开启混杂模式：
-```
+```bash
 sudo ip link set enp1s0 promisc on
 ```
 然后再通过`ip addr`或者`ifconfig`命令检查是否开启成功。
@@ -46,45 +46,49 @@ sudo ip link set enp1s0 promisc on
 
 ### **Docker安装OpenWRT**
 创建docker网卡
-```
+```bash
 docker network create -d macvlan --subnet=192.168.31.0/24 --gateway=192.168.31.1 -o parent=enp1s0 macnet
 ```
 其中--subnet=192.168.31.0/24是网段和子网掩码，--gateway=192.168.31.1是网关（一般是路由器管理页面的ip地址）
 可以用以下命令查看是否创建成功：
-```
+```bash
 docker network list
 ```
 查看自己系统的架构
-```
+```bash
 uname -a
 ```
 安装dock镜像，项目地址：[https://hub.docker.com/r/sulinggg/openwrt](https://hub.docker.com/r/sulinggg/openwrt)，从网址中找到对应自己系统架构的镜像名称(dockerhub或阿里云镜像仓库 (上海))。并安装对应的镜像：
-```
-docker run --restart always --name openwrt -d --network macnet --privileged registry.cn-shanghai.aliyuncs.com/suling/openwrt:x86_64 /sbin/init
+```bash
+docker run --restart always \
+--name openwrt \
+-d \
+--network macnet \
+--privileged registry.cn-shanghai.aliyuncs.com/suling/openwrt:x86_64 /sbin/init
 ```
 上述命令中，`--name openwrt`是指镜像名称，可修改；`--network macnet`中的macnet就是对应的新建网卡名称；`registry.cn-shanghai.aliyuncs.com/suling/openwrt:x86_64`是要安装镜像名称，用dockerhub或阿里云镜像仓库 (上海)都可以。
 安装完毕后，开始设置openwrt的ip。进入portainer管理界面，在容器列表里找到openwrt，点击QuickAction列表下的>_，在下一个页面点击连接，进入命令行模式,输入:
-```
+```bash
 vim /etc/config/network
 ```
 修改以下部分
-```
+```bash
 option ipaddr '192.168.123.100'
 option gateway '192.168.123.1'
 option dns '192.168.123.1'
 ```
 为：
-```
+```bash
 option ipaddr '192.168.31.5'
 option gateway '192.168.31.1'
 option dns '192.168.31.1'
 ```
 按i进入编辑模式，修改完以后按esc退出，输入以下命令保存
-```
+```bash
 :wq
 ```
 重启网络:
-```
+```bash
 /etc/init.d/network restart
 ```
 随后访问`http://192.168.31.5/`即可进入openwrt界面，默认密码是：root或者password或者随便输一个也能进入。先修改密码。

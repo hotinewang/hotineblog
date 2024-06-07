@@ -15,47 +15,47 @@ tags: [
 ## NODEJS部署
 ### 下载Nodejs
 先在服务器上下载nodejs包，在控制台通过`cd`命令进入usr/local目录：
-```
+```bash
 cd /usr/local
 ```
 在nodejs.org官网找到nodejs的linux LTS（长期支持）版本下载地址，并复制，在控制台输入:
-```
+```bash
 wget https://nodejs.org/dist/nodejsxxxxxxx.tar.xz
 ```
 解压tar文件:
-```
+```bash
 tar -xvf nodejsxxxxxxx.tar.zx
 ```
 修改目录名称为node
-```
+```bash
 mv /usr/local/nodejsxxxxxxx /usr/local/node
 ```
 可以尝试查看nodejs版本号确定是否能正常运行
-```
+```bash
 /usr/local/node/bin/node -v
 ```
 回显：V版本号说明node能正常使用。
 ### 配置环境变量
 向/etc/profile文件中写入nodejs模块所在目录路径
-```
+```bash
 cat >> /etc/profile >>EOF
 export PATH=$PATH:/usr/local/node/bin
 ```
 也可以用SSH工具把/etc/profile文件下载到电脑桌面，用记事本在最后一行加入下面的内容然后再上传回去覆盖原文件：
-```
+```bash
 export PATH=$PATH:/usr/local/node/bin
 ```
 最后执行source命令让配置生效
-```
+```bash
 source /etc/profile
 ```
 配软连接，相当于全局变量
-```
+```bash
 ln -s /usr/local/node/bin/node /usr/local/bin/
 ln -s /usr/local/node/bin/npm /usr/local/bin/
 ```
 然后在控制台输入以下两个命令，测试是否配置nodejs成功。配置成功的话会回显版本号
-```
+```bash
 node -v
 npm -v
 ```
@@ -65,7 +65,7 @@ chatGPT对Express的介绍为：Express.js是一种用于构建Web应用程序�
 在配置好NODEJS的基础上，在服务器上新建一个文件夹，作为网站目录，并创建app.js、和index.html两个文件。
 + index.html是网站的主页文件，内容任意。
 + app.js内容如下：
-    ```
+    ```js
     let express = require("express"), app = express();
     // 可以同时设置多个别名访问路径：
     // app.use("/", express.static(__dirname + "/"));//配置静态网页访问目录【前端代码就放这个文件夹】（用于外部访问http://127.0.0.1/）
@@ -77,7 +77,7 @@ chatGPT对Express的介绍为：Express.js是一种用于构建Web应用程序�
     app.listen(port, () => console.log(`网站服务器启动，访问端口${port}`));
     ```
 通过cd命令定位到网站目录，例如：`cd /path/to/code/`,然后在控制台运行:
-```
+```bash
 npm i express &npm i forever -g & forever start app.js
 ```
 这段代码会自动使用npm安装express插件和forever插件，并用forever插件对app.js进程进行守护，防止app.js程序进程被结束。

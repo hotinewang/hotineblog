@@ -96,23 +96,23 @@ V途锐客户端的功能依赖于V途锐内核，因此需要安装内核,在�
 PS:如果以下命令执行中出现问题，建议先看官方安装文档，有可能安装方式有变化。</p>
 <h2 id="安装v途锐内核">安装V途锐内核</h2>
 <p>安装客户端提供的镜像脚本</p>
-<pre tabindex="0"><code>curl -Ls https://mirrors.v2raya.org/go.sh | sudo bash
-</code></pre><p>安装后可以关掉服务，因为客户端不依赖于该systemd服务。</p>
-<pre tabindex="0"><code>sudo systemctl disable v2ray --now
-</code></pre><h2 id="通过软件源安装客户端">通过软件源安装客户端</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -Ls https://mirrors.v2raya.org/go.sh <span class="p">|</span> sudo bash
+</span></span></code></pre></div><p>安装后可以关掉服务，因为客户端不依赖于该systemd服务。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl disable v2ray --now
+</span></span></code></pre></div><h2 id="通过软件源安装客户端">通过软件源安装客户端</h2>
 <p>添加公钥</p>
-<pre tabindex="0"><code>wget -qO - https://apt.v2raya.org/key/public-key.asc | sudo tee /etc/apt/trusted.gpg.d/v2raya.asc
-</code></pre><p>添加客户端软件源，更新软件列表</p>
-<pre tabindex="0"><code>echo &#34;deb https://apt.v2raya.org/ v2raya main&#34; | sudo tee /etc/apt/sources.list.d/v2raya.list
-sudo apt update
-</code></pre><p>安装客户端</p>
-<pre tabindex="0"><code>sudo apt install v2raya
-</code></pre><h2 id="启动客户端设置客户端自动启动">启动客户端/设置客户端自动启动</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget -qO - https://apt.v2raya.org/key/public-key.asc <span class="p">|</span> sudo tee /etc/apt/trusted.gpg.d/v2raya.asc
+</span></span></code></pre></div><p>添加客户端软件源，更新软件列表</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;deb https://apt.v2raya.org/ v2raya main&#34;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/v2raya.list
+</span></span><span class="line"><span class="cl">sudo apt update
+</span></span></code></pre></div><p>安装客户端</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install v2raya
+</span></span></code></pre></div><h2 id="启动客户端设置客户端自动启动">启动客户端/设置客户端自动启动</h2>
 <p>启动客户端</p>
-<pre tabindex="0"><code>sudo systemctl start v2raya.service
-</code></pre><p>设置开机自动启动</p>
-<pre tabindex="0"><code>sudo systemctl enable v2raya.service
-</code></pre><p>最后，通过 http://localhost:2017 进入管理界面,添加节点并选择节点，点击左上方“就绪”使其变为“启用”。
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl start v2raya.service
+</span></span></code></pre></div><p>设置开机自动启动</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> v2raya.service
+</span></span></code></pre></div><p>最后，通过 http://localhost:2017 进入管理界面,添加节点并选择节点，点击左上方“就绪”使其变为“启用”。
 右上角设置里，改为“启用：大陆白名单模式”即可。</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">

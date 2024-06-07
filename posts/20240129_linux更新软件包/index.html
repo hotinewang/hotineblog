@@ -25,7 +25,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/blog.hotine.wang\/posts\/20240129_linux%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%8C%85\/"
-        },"genre": "posts","keywords": "Linux, NAS","wordcount":  421 ,
+        },"genre": "posts","keywords": "Linux, NAS","wordcount":  422 ,
         "url": "https:\/\/blog.hotine.wang\/posts\/20240129_linux%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%8C%85\/","datePublished": "2024-01-29T20:12:00+08:00","dateModified": "2024-01-29T20:12:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,7 +69,7 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Linux更新软件包</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/%E5%85%B6%E4%BB%96/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>其他</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-01-29">2024-01-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;421 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-01-29">2024-01-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;422 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
@@ -88,21 +88,22 @@
 <p>在使用Debian或基于Debian的发行版（如Ubuntu）时，你可以使用APT（Advanced Package Tool）来更新系统中的软件包。以下是更新软件包的简单教程：</p>
 <h2 id="1-更新软件包列表">1. 更新软件包列表</h2>
 <p>在终端中运行以下命令，以获取最新的软件包信息：</p>
-<pre tabindex="0"><code>sudo apt update
-</code></pre><p>这个命令会连接到Debian的软件源并更新本地软件包列表。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt update
+</span></span></code></pre></div><p>这个命令会连接到Debian的软件源并更新本地软件包列表。</p>
 <h2 id="2-升级已安装的软件包">2. 升级已安装的软件包</h2>
 <p>运行以下命令，安装可用的更新：</p>
-<pre tabindex="0"><code>sudo apt upgrade
-</code></pre><p>这个命令会安装已经存在于系统中的软件包的新版本。在确认更新前，系统会显示将要更新的软件包的列表以及需要占用的磁盘空间。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt upgrade
+</span></span></code></pre></div><p>这个命令会安装已经存在于系统中的软件包的新版本。在确认更新前，系统会显示将要更新的软件包的列表以及需要占用的磁盘空间。</p>
 <p>如果你想批准所有的更新，你可以输入 <code>Y</code> 并按下回车。</p>
 <h2 id="3-升级系统版本">3. 升级系统版本</h2>
-<p>如果有系统级别的新版本可用，你可以运行以下命令：</p>
+<p>如果有系统级别的新版本可用，你可以运行以下命令：
+bash</p>
 <pre tabindex="0"><code>sudo apt dist-upgrade
 </code></pre><p>这个命令会在必要时升级系统的核心组件，包括可能涉及到库文件的更改。</p>
 <h2 id="4-清理不再需要的软件包">4. 清理不再需要的软件包</h2>
 <p>当你升级了软件包后，可能会有一些旧版本的软件包或者不再需要的依赖项。你可以通过以下命令来清理它们：</p>
-<pre tabindex="0"><code>sudo apt autoremove
-</code></pre><p>PS：这篇博客使用chatGPT生成的：）</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt autoremove
+</span></span></code></pre></div><p>PS：这篇博客使用chatGPT生成的：）</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">

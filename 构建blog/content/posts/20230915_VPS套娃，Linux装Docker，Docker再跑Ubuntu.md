@@ -18,7 +18,7 @@ draft: false
 安装使用以下命令：
 desktop版
 
-```
+```bash
 docker run -d --restart=unless-stopped \
 --name ubuntu \
 -p 6901:6901 \
@@ -30,7 +30,7 @@ kasmweb/desktop:1.14.0
 
 集成工作空间版
 
-```
+```bash
 docker run -d --restart=unless-stopped \
 --name ubuntu  \
 -p 6901:6901 \
@@ -52,6 +52,6 @@ kasmweb/ubuntu-jammy-desktop:1.14.0
 
 如需设置Ubuntu的root密码，可以使用以下命令
 
-```
+```bash
 docker exec -u root -it ubuntu-desktop passwd
 ```

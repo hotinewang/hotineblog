@@ -25,7 +25,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/blog.hotine.wang\/posts\/20221201_docker%E5%AE%9D%E5%BA%93heidmall%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA\/"
-        },"genre": "posts","keywords": "Docker, NAS","wordcount":  378 ,
+        },"genre": "posts","keywords": "Docker, NAS","wordcount":  383 ,
         "url": "https:\/\/blog.hotine.wang\/posts\/20221201_docker%E5%AE%9D%E5%BA%93heidmall%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA\/","datePublished": "2022-12-01T20:00:01+08:00","dateModified": "2022-12-01T20:00:01+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,7 +69,7 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Docker宝库：Heidmall网址导航</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/nas/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>NAS</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-01">2022-12-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;378 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-01">2022-12-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;383 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
@@ -79,8 +79,13 @@
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
             </div><div class="content" id="content"><p>NAS中安装的容器（程序）太多，端口号不好记，因此可以通过一个网址导航来省去记端口的烦恼。
 Docker安装命令非常简单，使用SSH工具连接服务器，输入以下命令：</p>
-<pre tabindex="0"><code>docker run -d --name=heimdall -p 8080:80 -p 8081:443 -v /opt/Heimdall/config:/config --restart unless-stopped linuxserver/heimdall
-</code></pre><p>参数解释：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -d --name<span class="o">=</span>heimdall <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-p 8080:80 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-p 8081:443 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /opt/Heimdall/config:/config <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--restart unless-stopped <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>linuxserver/heimdall
+</span></span></code></pre></div><p>参数解释：</p>
 <ul>
 <li>&ndash;name heimdall  “heimdall”是容器名称，可以自己修改</li>
 <li>-p 8080:80 -p 8081:443  通过8080端口来访问容器的80端口，8081端口访问容器的443端口（HTTPS协议），8080和8081均可修改。</li>

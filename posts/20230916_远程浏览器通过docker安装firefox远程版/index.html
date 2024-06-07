@@ -86,13 +86,13 @@
 <p>同时，也可以在远程浏览器中登录借来的百度云账号，只要不退出，就可以一直保持登录状态，这样就不用来回的给朋友要登录验证码了。</p>
 <p>VPS远程浏览器+NAS百度网盘=百度下载黄金搭档：Docker版浏览器用于资源添加到网盘，NAS里的Docker网盘用来操作资源下载，简直是绝配！</p>
 <p>以下是安装命令：</p>
-<pre tabindex="0"><code>docker run -d \
-    --name=firefox \
-    -p 5800:5800 \
-    -v /opt/firefox:/config:rw \
-    -e ENABLE_CJK_FONT=1 \
-    jlesage/firefox
-</code></pre><p>注意：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -d <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --name<span class="o">=</span>firefox <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -p 5800:5800 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -v /opt/firefox:/config:rw <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -e <span class="nv">ENABLE_CJK_FONT</span><span class="o">=</span><span class="m">1</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    jlesage/firefox
+</span></span></code></pre></div><p>注意：</p>
 <ul>
 <li><code>-v /opt/firefox:/config:rw</code>是指把VPS中 /opt/firefox目录挂载到docker容器中的/config目录。这样在容器中/config目录的配置文件就可以在 /opt/firefox目录下存储。</li>
 <li><code>-e ENABLE_CJK_FONT=1</code>主要是为了防止浏览器中文乱码。</li>

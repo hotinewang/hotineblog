@@ -12,8 +12,13 @@ draft: false
 ---
 NAS中安装的容器（程序）太多，端口号不好记，因此可以通过一个网址导航来省去记端口的烦恼。
 Docker安装命令非常简单，使用SSH工具连接服务器，输入以下命令：
-```
-docker run -d --name=heimdall -p 8080:80 -p 8081:443 -v /opt/Heimdall/config:/config --restart unless-stopped linuxserver/heimdall
+```bash
+docker run -d --name=heimdall \
+-p 8080:80 \
+-p 8081:443 \
+-v /opt/Heimdall/config:/config \
+--restart unless-stopped \
+linuxserver/heimdall
 ```
 参数解释：
 + --name heimdall  “heimdall”是容器名称，可以自己修改

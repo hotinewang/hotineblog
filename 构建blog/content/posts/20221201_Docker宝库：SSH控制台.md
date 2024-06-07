@@ -14,8 +14,16 @@ draft: false
 SSH控制台：如果电脑上不想安装相关的SSH控制台程序，就可使用这个网页版的SSH控制台。
 只需输入要连接的IP、端口号、用户名和密码，即可完成连接。
 Docker安装也非常简单，使用以下命令：
-```
-docker run -d --net=host --log-driver json-file --log-opt max-file=1 --log-opt max-size=100m --restart always --name webssh -e TZ=Asia/Shanghai -e savePass=true jrohy/webssh
+```bash
+docker run -d --net=host \
+--log-driver json-file \
+--log-opt max-file=1 \
+--log-opt max-size=100m \
+--restart always \
+--name webssh \
+-e TZ=Asia/Shanghai \
+-e savePass=true \
+jrohy/webssh
 ```
 参数解释：
 + --name webssh “webssh”是容器名称，可以自己修改

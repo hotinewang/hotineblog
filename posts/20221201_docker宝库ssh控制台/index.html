@@ -25,7 +25,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/blog.hotine.wang\/posts\/20221201_docker%E5%AE%9D%E5%BA%93ssh%E6%8E%A7%E5%88%B6%E5%8F%B0\/"
-        },"genre": "posts","keywords": "Docker, NAS","wordcount":  271 ,
+        },"genre": "posts","keywords": "Docker, NAS","wordcount":  279 ,
         "url": "https:\/\/blog.hotine.wang\/posts\/20221201_docker%E5%AE%9D%E5%BA%93ssh%E6%8E%A7%E5%88%B6%E5%8F%B0\/","datePublished": "2022-12-01T20:00:00+08:00","dateModified": "2022-12-01T20:00:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,7 +69,7 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Docker宝库：SSH控制台</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/nas/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>NAS</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-01">2022-12-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;271 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-01">2022-12-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;279 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
@@ -80,8 +80,16 @@
             </div><div class="content" id="content"><p>SSH控制台：如果电脑上不想安装相关的SSH控制台程序，就可使用这个网页版的SSH控制台。
 只需输入要连接的IP、端口号、用户名和密码，即可完成连接。
 Docker安装也非常简单，使用以下命令：</p>
-<pre tabindex="0"><code>docker run -d --net=host --log-driver json-file --log-opt max-file=1 --log-opt max-size=100m --restart always --name webssh -e TZ=Asia/Shanghai -e savePass=true jrohy/webssh
-</code></pre><p>参数解释：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -d --net<span class="o">=</span>host <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--log-driver json-file <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--log-opt max-file<span class="o">=</span><span class="m">1</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--log-opt max-size<span class="o">=</span>100m <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--restart always <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--name webssh <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-e <span class="nv">TZ</span><span class="o">=</span>Asia/Shanghai <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-e <span class="nv">savePass</span><span class="o">=</span><span class="nb">true</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>jrohy/webssh
+</span></span></code></pre></div><p>参数解释：</p>
 <ul>
 <li>&ndash;name webssh “webssh”是容器名称，可以自己修改</li>
 <li>&ndash;restart always 容器挂掉了会自动重启</li>

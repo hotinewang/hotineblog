@@ -98,12 +98,12 @@ GitHub：<a href="https://caddyserver.com/docs/" target="_blank" rel="noopener n
 <li><strong>安装</strong>：根据官方文档安装就可以，很简单。详见这里：<a href="https://caddyserver.com/docs/install" target="_blank" rel="noopener noreffer">快速安装</a>
 
 debian或ubuntu参考以下代码：
-<pre tabindex="0"><code>sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
-curl -1sLf &#39;https://dl.cloudsmith.io/public/caddy/stable/gpg.key&#39; | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
-curl -1sLf &#39;https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt&#39; | sudo tee /etc/apt/sources.list.d/caddy-stable.list
-sudo apt update
-sudo apt install caddy
-</code></pre>当然也可以试一下docker部署，官方也有教程。</li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
+</span></span><span class="line"><span class="cl">curl -1sLf <span class="s1">&#39;https://dl.cloudsmith.io/public/caddy/stable/gpg.key&#39;</span> <span class="p">|</span> sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+</span></span><span class="line"><span class="cl">curl -1sLf <span class="s1">&#39;https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt&#39;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/caddy-stable.list
+</span></span><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt install caddy
+</span></span></code></pre></div>当然也可以试一下docker部署，官方也有教程。</li>
 <li><strong>配置</strong>：最关键的当然是安装后的配置，Candy的默认配置文件是<code>/etc/caddy/Caddyfile</code>,可以直接记事本打开修改。下边是配置示例，实际使用请删除#和后边的注释：
 <pre tabindex="0"><code>hotine.wang { #配置hotine.wang域名的设置
   encode gzip #启用gzip压缩
