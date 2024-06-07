@@ -3,7 +3,15 @@
         <title>OpenWRT - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/openwrt/</link>
         <description>OpenWRT - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 10 May 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/openwrt/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 07 Jun 2024 22:48:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/openwrt/" rel="self" type="application/rss+xml" /><item>
+    <title>openWRT（Linux）挂载共享文件夹</title>
+    <link>https://blog.hotine.wang/posts/20240607_openwrt%E6%8C%82%E8%BD%BDsmb%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
+    <pubDate>Fri, 07 Jun 2024 22:48:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240607_openwrt%E6%8C%82%E8%BD%BDsmb%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
+    <description><![CDATA[openWRT（Linux）挂载共享文件夹 两个家中都有NAS，用ZerotierOne组网在了一起。其中一个通过SMB协议共享了电影，想在另]]></description>
+</item>
+<item>
     <title>NAS当旁路由-DOCKER中OPEN-WRT配置</title>
     <link>https://blog.hotine.wang/posts/20230510_nas%E5%BD%93%E6%97%81%E8%B7%AF%E7%94%B1-docker%E4%B8%ADopen-wrt%E9%85%8D%E7%BD%AE/</link>
     <pubDate>Wed, 10 May 2023 00:00:00 &#43;0800</pubDate>

@@ -3,7 +3,39 @@
         <title>Tags - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/</link>
         <description>Tags - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 12 May 2024 21:20:56 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 07 Jun 2024 22:48:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Linux</title>
+    <link>https://blog.hotine.wang/tags/linux/</link>
+    <pubDate>Fri, 07 Jun 2024 22:48:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/linux/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>NAS</title>
+    <link>https://blog.hotine.wang/tags/nas/</link>
+    <pubDate>Fri, 07 Jun 2024 22:48:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/nas/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>OpenWRT</title>
+    <link>https://blog.hotine.wang/tags/openwrt/</link>
+    <pubDate>Fri, 07 Jun 2024 22:48:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/openwrt/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>旁路由</title>
+    <link>https://blog.hotine.wang/tags/%E6%97%81%E8%B7%AF%E7%94%B1/</link>
+    <pubDate>Fri, 07 Jun 2024 22:48:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/%E6%97%81%E8%B7%AF%E7%94%B1/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>游记</title>
     <link>https://blog.hotine.wang/tags/%E6%B8%B8%E8%AE%B0/</link>
     <pubDate>Sun, 12 May 2024 21:20:56 &#43;0800</pubDate>
@@ -28,14 +60,6 @@
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>NAS</title>
-    <link>https://blog.hotine.wang/tags/nas/</link>
-    <pubDate>Tue, 12 Mar 2024 18:01:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/nas/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
     <title>内网穿透</title>
     <link>https://blog.hotine.wang/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
     <pubDate>Tue, 12 Mar 2024 18:01:00 &#43;0800</pubDate>
@@ -57,30 +81,6 @@
     <pubDate>Mon, 11 Mar 2024 21:16:00 &#43;0800</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/tags/docker/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>同步</title>
-    <link>https://blog.hotine.wang/tags/%E5%90%8C%E6%AD%A5/</link>
-    <pubDate>Wed, 28 Feb 2024 12:20:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/%E5%90%8C%E6%AD%A5/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>相册</title>
-    <link>https://blog.hotine.wang/tags/%E7%9B%B8%E5%86%8C/</link>
-    <pubDate>Sun, 18 Feb 2024 12:20:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/%E7%9B%B8%E5%86%8C/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Hugo</title>
-    <link>https://blog.hotine.wang/tags/hugo/</link>
-    <pubDate>Wed, 07 Feb 2024 20:58:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/hugo/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
