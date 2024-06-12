@@ -3,7 +3,15 @@
         <title>NAS - Category - Hotine的小窝</title>
         <link>https://blog.hotine.wang/categories/nas/</link>
         <description>NAS - Category - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 11 Mar 2024 21:16:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/nas/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 12 Jun 2024 12:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/nas/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker私有仓库搭建</title>
+    <link>https://blog.hotine.wang/posts/20240612_docker%E7%A7%81%E6%9C%89%E5%BA%93%E6%90%AD%E5%BB%BA/</link>
+    <pubDate>Wed, 12 Jun 2024 12:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240612_docker%E7%A7%81%E6%9C%89%E5%BA%93%E6%90%AD%E5%BB%BA/</guid>
+    <description><![CDATA[6月，大陆屏蔽了Docker仓库，NAS上装各类应用基本上是百搭了。好在还有VPS，除了通过代理可选上网来访问docker外，从VPS搭建一]]></description>
+</item>
+<item>
     <title>Docker宝库：Docker管理工具Portainer</title>
     <link>https://blog.hotine.wang/posts/20240312_docker%E5%AE%9D%E5%BA%93portainer/</link>
     <pubDate>Mon, 11 Mar 2024 21:16:00 &#43;0800</pubDate>
@@ -78,14 +86,6 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93%E8%BF%9C%E7%A8%8B%E8%BF%85%E9%9B%B7/</guid>
     <description><![CDATA[迅雷下载网页版，和PC版用起来差不多，每日支持添加3个下载连接，如果超过3个，可以使用迅雷手机app的远程下载功能添加下载。 docker run -d --name=xunlei \ -v /opt/xunlei/data:/xunlei/data \]]></description>
-</item>
-<item>
-    <title>Docker宝库：文件管理器</title>
-    <link>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/</link>
-    <pubDate>Thu, 01 Dec 2022 20:00:04 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/</guid>
-    <description><![CDATA[文件管理器FileBrowser：如果想管理服务器中的文件，不依赖软件还是挺麻烦的。FileBrowser提供了一个网页版的文件管理器，让用]]></description>
 </item>
 </channel>
 </rss>

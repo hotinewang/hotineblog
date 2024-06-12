@@ -3,7 +3,15 @@
         <title>NAS - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/nas/</link>
         <description>NAS - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 07 Jun 2024 22:48:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/nas/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 12 Jun 2024 12:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/nas/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker私有仓库搭建</title>
+    <link>https://blog.hotine.wang/posts/20240612_docker%E7%A7%81%E6%9C%89%E5%BA%93%E6%90%AD%E5%BB%BA/</link>
+    <pubDate>Wed, 12 Jun 2024 12:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240612_docker%E7%A7%81%E6%9C%89%E5%BA%93%E6%90%AD%E5%BB%BA/</guid>
+    <description><![CDATA[6月，大陆屏蔽了Docker仓库，NAS上装各类应用基本上是百搭了。好在还有VPS，除了通过代理可选上网来访问docker外，从VPS搭建一]]></description>
+</item>
+<item>
     <title>openWRT（Linux）挂载共享文件夹</title>
     <link>https://blog.hotine.wang/posts/20240607_openwrt%E6%8C%82%E8%BD%BDsmb%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
     <pubDate>Fri, 07 Jun 2024 22:48:00 &#43;0800</pubDate>
@@ -76,16 +84,6 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/</guid>
     <description><![CDATA[VPS套娃，Linux装Docker，Docker再跑Ubuntu 有一个VPS，想弄一个云端工作区。考虑过VPS直接装远程桌面之类的，但是过]]></description>
-</item>
-<item>
-    <title>ZeroTier内网穿透教程</title>
-    <link>https://blog.hotine.wang/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
-    <pubDate>Thu, 17 Aug 2023 21:20:59 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/20230817_ZeroTier%e5%86%85%e7%bd%91%e7%a9%bf%e9%80%8f.jpg" referrerpolicy="no-referrer">
-            </div>ZeroTier内网穿透简介 家有NAS，如何从外网进行访问或管理，这就需要使用内网穿透。对于家里宽带没有公网IP的人来说，用ZeroTier]]></description>
 </item>
 </channel>
 </rss>

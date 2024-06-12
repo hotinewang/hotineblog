@@ -3,7 +3,15 @@
         <title>All Posts - Hotine的小窝</title>
         <link>https://blog.hotine.wang/posts/</link>
         <description>All Posts | Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 07 Jun 2024 22:48:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 12 Jun 2024 12:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker私有仓库搭建</title>
+    <link>https://blog.hotine.wang/posts/20240612_docker%E7%A7%81%E6%9C%89%E5%BA%93%E6%90%AD%E5%BB%BA/</link>
+    <pubDate>Wed, 12 Jun 2024 12:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240612_docker%E7%A7%81%E6%9C%89%E5%BA%93%E6%90%AD%E5%BB%BA/</guid>
+    <description><![CDATA[6月，大陆屏蔽了Docker仓库，NAS上装各类应用基本上是百搭了。好在还有VPS，除了通过代理可选上网来访问docker外，从VPS搭建一]]></description>
+</item>
+<item>
     <title>openWRT（Linux）挂载共享文件夹</title>
     <link>https://blog.hotine.wang/posts/20240607_openwrt%E6%8C%82%E8%BD%BDsmb%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
     <pubDate>Fri, 07 Jun 2024 22:48:00 &#43;0800</pubDate>
@@ -80,14 +88,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/posts/20230817_Hugo%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.jpg" referrerpolicy="no-referrer">
             </div>Hugo修改发布位置 Hugo默认发布文件是保存在Hugo文件夹下的public文件夹中，如果需要修改发布的位置，例如直接发布在github的]]></description>
-</item>
-<item>
-    <title>Docker宝库：Visual Studio Code</title>
-    <link>https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/</link>
-    <pubDate>Wed, 07 Feb 2024 20:32:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/</guid>
-    <description><![CDATA[远程开发环境，通过Docker安装Visual Studio Code 通过Docker，可以在远程服务器上安装并运行Visual Studio Code，实现远程编程和开发。]]></description>
 </item>
 </channel>
 </rss>
