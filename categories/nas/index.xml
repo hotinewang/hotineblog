@@ -3,13 +3,41 @@
         <title>NAS - Category - Hotine的小窝</title>
         <link>https://blog.hotine.wang/categories/nas/</link>
         <description>NAS - Category - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 12 Jun 2024 12:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/nas/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 13 Jun 2024 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/nas/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker镜像导出与导入</title>
+    <link>https://blog.hotine.wang/posts/20240613_docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%87%BA%E4%B8%8E%E5%AF%BC%E5%85%A5/</link>
+    <pubDate>Thu, 13 Jun 2024 00:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240613_docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%87%BA%E4%B8%8E%E5%AF%BC%E5%85%A5/</guid>
+    <description><![CDATA[Docker被Ban，因此可以通过导入、导出镜像文件的方式来分享、安装镜像。 镜像导出 docker save -o &lt;导出路径与文件名&gt; &lt;镜像名&g]]></description>
+</item>
+<item>
+    <title>Docker宝库：V途锐客户端</title>
+    <link>https://blog.hotine.wang/posts/2024-06-12_docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</link>
+    <pubDate>Wed, 12 Jun 2024 21:44:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/2024-06-12_docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/posts/%e5%b0%81%e9%9d%a2%e5%9b%be.jpg" referrerpolicy="no-referrer">
+            </div>国内Docker被Ban，是时候在NAS上魔法上网了 通过一下命令，在Docker安装V2RayA docker run -d \ --restart=always \ --privileged \ --network=host \ --name v2raya \ -e V2RAYA_LOG_FILE=/tmp/v2raya.log \ -e V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray \ -e V2RAYA_NFTABLES_SUPPORT=off \]]></description>
+</item>
+<item>
+    <title>Docker宝库：V途锐客户端</title>
+    <link>https://blog.hotine.wang/posts/30000101_docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</link>
+    <pubDate>Wed, 12 Jun 2024 21:44:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/30000101_docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/posts/%e5%b0%81%e9%9d%a2%e5%9b%be.jpg" referrerpolicy="no-referrer">
+            </div>国内Docker被Ban，是时候在NAS上魔法上网了 通过一下命令，在Docker安装V2RayA docker run -d \ --restart=always \ --privileged \ --network=host \ --name v2raya \ -e V2RAYA_LOG_FILE=/tmp/v2raya.log \ -e V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray \ -e V2RAYA_NFTABLES_SUPPORT=off \]]></description>
+</item>
+<item>
     <title>Docker私有仓库搭建</title>
     <link>https://blog.hotine.wang/posts/20240612_docker%E7%A7%81%E6%9C%89%E5%BA%93%E6%90%AD%E5%BB%BA/</link>
     <pubDate>Wed, 12 Jun 2024 12:00:00 &#43;0800</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20240612_docker%E7%A7%81%E6%9C%89%E5%BA%93%E6%90%AD%E5%BB%BA/</guid>
-    <description><![CDATA[6月，大陆屏蔽了Docker仓库，NAS上装各类应用基本上是百搭了。好在还有VPS，除了通过代理可选上网来访问docker外，从VPS搭建一]]></description>
+    <description><![CDATA[6月，中国大陆屏蔽了Docker仓库，NAS上通过Docker装各类应用基本上是白搭了。好在还有VPS，除了通过代理科学上网来访问Docke]]></description>
 </item>
 <item>
     <title>Docker宝库：Docker管理工具Portainer</title>
@@ -62,30 +90,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/posts/20230817_ZeroTier%e5%86%85%e7%bd%91%e7%a9%bf%e9%80%8f.jpg" referrerpolicy="no-referrer">
             </div>ZeroTier内网穿透简介 家有NAS，如何从外网进行访问或管理，这就需要使用内网穿透。对于家里宽带没有公网IP的人来说，用ZeroTier]]></description>
-</item>
-<item>
-    <title>Docker宝库：BT下载</title>
-    <link>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93bt%E4%B8%8B%E8%BD%BD/</link>
-    <pubDate>Thu, 01 Dec 2022 20:00:06 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93bt%E4%B8%8B%E8%BD%BD/</guid>
-    <description><![CDATA[BT下载可以用TRANSMISSION，也可以用QBITTORENT。 TRANSMISSION：更傻瓜化，界面更简单，但是资源不好的时候，下]]></description>
-</item>
-<item>
-    <title>Docker宝库：百度网盘</title>
-    <link>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/</link>
-    <pubDate>Thu, 01 Dec 2022 20:00:06 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/</guid>
-    <description><![CDATA[百度网盘资源的远程下载，可以登录会员，且能长期保持登录状态。 2024年1月22日更新-发现一个更好用的百度网盘： docker run -d \ --name=baidunetdisk \ -p 15811:5800 \ -p 15911:5900 \ -v /opt/baidunetdisk/config:/config]]></description>
-</item>
-<item>
-    <title>Docker宝库：远程迅雷</title>
-    <link>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93%E8%BF%9C%E7%A8%8B%E8%BF%85%E9%9B%B7/</link>
-    <pubDate>Thu, 01 Dec 2022 20:00:05 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20221201_docker%E5%AE%9D%E5%BA%93%E8%BF%9C%E7%A8%8B%E8%BF%85%E9%9B%B7/</guid>
-    <description><![CDATA[迅雷下载网页版，和PC版用起来差不多，每日支持添加3个下载连接，如果超过3个，可以使用迅雷手机app的远程下载功能添加下载。 docker run -d --name=xunlei \ -v /opt/xunlei/data:/xunlei/data \]]></description>
 </item>
 </channel>
 </rss>

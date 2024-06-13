@@ -19,16 +19,9 @@ docker run -d \
 -e TZ=Asia/Shanghai \
 -p 8123:8123 \
 homeassistant/home-assistant:latest
-
-`#或者指定从阿里镜像源拉取镜像：`
-docker run -d \
---restart always \
---name hass \
--v /opt/homeassistant/config:/config \
--e TZ=Asia/Shanghai \
--p 8123:8123 \
-docker.m.daocloud.io/homeassistant/home-assistant:latest
 ```
+
+
 
 链接[hotine.wang](https://hotine.wang/)
 + 列表1
