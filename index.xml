@@ -24,16 +24,6 @@
             </div>国内Docker被Ban，是时候在NAS上魔法上网了 通过一下命令，在Docker安装V2RayA docker run -d \ --restart=always \ --privileged \ --network=host \ --name v2raya \ -e V2RAYA_LOG_FILE=/tmp/v2raya.log \ -e V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray \ -e V2RAYA_NFTABLES_SUPPORT=off \]]></description>
 </item>
 <item>
-    <title>Docker宝库：V途锐客户端</title>
-    <link>https://blog.hotine.wang/posts/30000101_docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</link>
-    <pubDate>Wed, 12 Jun 2024 21:44:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/30000101_docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/%e5%b0%81%e9%9d%a2%e5%9b%be.jpg" referrerpolicy="no-referrer">
-            </div>国内Docker被Ban，是时候在NAS上魔法上网了 通过一下命令，在Docker安装V2RayA docker run -d \ --restart=always \ --privileged \ --network=host \ --name v2raya \ -e V2RAYA_LOG_FILE=/tmp/v2raya.log \ -e V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray \ -e V2RAYA_NFTABLES_SUPPORT=off \]]></description>
-</item>
-<item>
     <title>Docker私有仓库搭建</title>
     <link>https://blog.hotine.wang/posts/20240612_docker%E7%A7%81%E6%9C%89%E5%BA%93%E6%90%AD%E5%BB%BA/</link>
     <pubDate>Wed, 12 Jun 2024 12:00:00 &#43;0800</pubDate>
@@ -92,6 +82,14 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/posts/20240228_Docker%e5%ae%9d%e5%ba%93%ef%bc%9a%e8%b7%a8%e8%ae%be%e5%a4%87%e5%90%8c%e6%ad%a5%e7%a5%9e%e5%99%a8Syncthing.jpg" referrerpolicy="no-referrer">
             </div>Docker宝库：跨设备同步神器Syncthing 简介 Syncthing 是一款开源且免费的跨平台文件同步工具，它可以在多个设备之间进行实时或异步的文件同步，]]></description>
+</item>
+<item>
+    <title>Docker宝库：好用的付费相册MT-Photos</title>
+    <link>https://blog.hotine.wang/posts/20240218_docker%E5%AE%9D%E5%BA%93%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BB%98%E8%B4%B9%E7%9B%B8%E5%86%8Cmt-photos/</link>
+    <pubDate>Sun, 18 Feb 2024 12:20:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240218_docker%E5%AE%9D%E5%BA%93%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BB%98%E8%B4%B9%E7%9B%B8%E5%86%8Cmt-photos/</guid>
+    <description><![CDATA[Docker宝库：好用的付费相册MT-Photos 简介 MT Photos（付费）是一款为NAS用户量身打造的照片管理系统。可自动将照片整理、分类]]></description>
 </item>
 </channel>
 </rss>

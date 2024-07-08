@@ -22,16 +22,6 @@
             </div>国内Docker被Ban，是时候在NAS上魔法上网了 通过一下命令，在Docker安装V2RayA docker run -d \ --restart=always \ --privileged \ --network=host \ --name v2raya \ -e V2RAYA_LOG_FILE=/tmp/v2raya.log \ -e V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray \ -e V2RAYA_NFTABLES_SUPPORT=off \]]></description>
 </item>
 <item>
-    <title>Docker宝库：V途锐客户端</title>
-    <link>https://blog.hotine.wang/posts/30000101_docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</link>
-    <pubDate>Wed, 12 Jun 2024 21:44:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/30000101_docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/%e5%b0%81%e9%9d%a2%e5%9b%be.jpg" referrerpolicy="no-referrer">
-            </div>国内Docker被Ban，是时候在NAS上魔法上网了 通过一下命令，在Docker安装V2RayA docker run -d \ --restart=always \ --privileged \ --network=host \ --name v2raya \ -e V2RAYA_LOG_FILE=/tmp/v2raya.log \ -e V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray \ -e V2RAYA_NFTABLES_SUPPORT=off \]]></description>
-</item>
-<item>
     <title>Docker私有仓库搭建</title>
     <link>https://blog.hotine.wang/posts/20240612_docker%E7%A7%81%E6%9C%89%E5%BA%93%E6%90%AD%E5%BB%BA/</link>
     <pubDate>Wed, 12 Jun 2024 12:00:00 &#43;0800</pubDate>
@@ -88,6 +78,16 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/</guid>
     <description><![CDATA[VPS套娃，Linux装Docker，Docker再跑Ubuntu 有一个VPS，想弄一个云端工作区。考虑过VPS直接装远程桌面之类的，但是过]]></description>
+</item>
+<item>
+    <title>ZeroTier内网穿透教程</title>
+    <link>https://blog.hotine.wang/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+    <pubDate>Thu, 17 Aug 2023 21:20:59 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/posts/20230817_ZeroTier%e5%86%85%e7%bd%91%e7%a9%bf%e9%80%8f.jpg" referrerpolicy="no-referrer">
+            </div>ZeroTier内网穿透简介 家有NAS，如何从外网进行访问或管理，这就需要使用内网穿透。对于家里宽带没有公网IP的人来说，用ZeroTier]]></description>
 </item>
 </channel>
 </rss>

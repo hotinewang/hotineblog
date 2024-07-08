@@ -22,16 +22,6 @@
             </div>国内Docker被Ban，是时候在NAS上魔法上网了 通过一下命令，在Docker安装V2RayA docker run -d \ --restart=always \ --privileged \ --network=host \ --name v2raya \ -e V2RAYA_LOG_FILE=/tmp/v2raya.log \ -e V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray \ -e V2RAYA_NFTABLES_SUPPORT=off \]]></description>
 </item>
 <item>
-    <title>Docker宝库：V途锐客户端</title>
-    <link>https://blog.hotine.wang/posts/30000101_docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</link>
-    <pubDate>Wed, 12 Jun 2024 21:44:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/30000101_docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/%e5%b0%81%e9%9d%a2%e5%9b%be.jpg" referrerpolicy="no-referrer">
-            </div>国内Docker被Ban，是时候在NAS上魔法上网了 通过一下命令，在Docker安装V2RayA docker run -d \ --restart=always \ --privileged \ --network=host \ --name v2raya \ -e V2RAYA_LOG_FILE=/tmp/v2raya.log \ -e V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray \ -e V2RAYA_NFTABLES_SUPPORT=off \]]></description>
-</item>
-<item>
     <title>Docker私有仓库搭建</title>
     <link>https://blog.hotine.wang/posts/20240612_docker%E7%A7%81%E6%9C%89%E5%BA%93%E6%90%AD%E5%BB%BA/</link>
     <pubDate>Wed, 12 Jun 2024 12:00:00 &#43;0800</pubDate>
@@ -88,6 +78,14 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/</guid>
     <description><![CDATA[远程开发环境，通过Docker安装Visual Studio Code 通过Docker，可以在远程服务器上安装并运行Visual Studio Code，实现远程编程和开发。]]></description>
+</item>
+<item>
+    <title>Linux更新软件包</title>
+    <link>https://blog.hotine.wang/posts/20240129_linux%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%8C%85/</link>
+    <pubDate>Mon, 29 Jan 2024 20:12:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240129_linux%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%8C%85/</guid>
+    <description><![CDATA[在Debian系统中更新软件包 在使用Debian或基于Debian的发行版（如Ubuntu）时，你可以使用APT（Advanced Package Tool]]></description>
 </item>
 </channel>
 </rss>
