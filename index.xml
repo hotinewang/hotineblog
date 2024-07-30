@@ -3,9 +3,25 @@
         <title>Hotine的小窝</title>
         <link>https://blog.hotine.wang/</link>
         <description>Hotine的窝？</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 13 Jun 2024 00:00:00 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 30 Jul 2024 09:52:00 &#43;0800</lastBuildDate>
             <atom:link href="https://blog.hotine.wang/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>WIFI棒子电脑驱动</title>
+    <link>https://blog.hotine.wang/posts/20240730_wifi%E6%A3%92%E5%AD%90%E7%94%B5%E8%84%91%E9%A9%B1%E5%8A%A8/</link>
+    <pubDate>Tue, 30 Jul 2024 09:52:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240730_wifi%E6%A3%92%E5%AD%90%E7%94%B5%E8%84%91%E9%A9%B1%E5%8A%A8/</guid>
+    <description><![CDATA[WIFI棒子刷DEBIN系统后，直接插电脑不会制动被识别。在设备管理器中会显示为：其他设备-RNDIS Communications Control 只需在该设备上点击右键，更新驱动程]]></description>
+</item>
+<item>
+    <title>Docker宝库：智能家居集成HomeAssistant</title>
+    <link>https://blog.hotine.wang/posts/20240730_docker%E5%AE%9D%E5%BA%93%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E9%9B%86%E6%88%90homeassistant/</link>
+    <pubDate>Tue, 30 Jul 2024 09:50:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240730_docker%E5%AE%9D%E5%BA%93%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E9%9B%86%E6%88%90homeassistant/</guid>
+    <description><![CDATA[安装HomeAssistant 通过一下命令，在Docker安装HomeAssistant docker run -d -it\ --restart always \ --name hass \ -v /opt/homeassistant/config:/config \ -e TZ=Asia/Shanghai \ -p 8123:8123 \ homeassistant/home-assistant:latest 之后通过lo]]></description>
+</item>
+<item>
     <title>Docker镜像导出与导入</title>
     <link>https://blog.hotine.wang/posts/20240613_docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%87%BA%E4%B8%8E%E5%AF%BC%E5%85%A5/</link>
     <pubDate>Thu, 13 Jun 2024 00:00:00 &#43;0800</pubDate>
@@ -72,24 +88,6 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20240312_docker%E5%AE%9D%E5%BA%93portainer/</guid>
     <description><![CDATA[Docker宝库：Docker管理工具Portainer 控制台输入： docker run -d -p 9000:9000 \ -v /var/run/docker.sock:/var/run/docker.sock \ -v /dockerData/portainer:/data \ --restart=always \ --name portainer \ portainer/portainer-ce:latest 回车即可。 访问主机IP+9000进入]]></description>
-</item>
-<item>
-    <title>Docker宝库：跨设备同步神器Syncthing</title>
-    <link>https://blog.hotine.wang/posts/20240228_docker%E5%AE%9D%E5%BA%93%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E7%A5%9E%E5%99%A8syncthing/</link>
-    <pubDate>Wed, 28 Feb 2024 12:20:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20240228_docker%E5%AE%9D%E5%BA%93%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E7%A5%9E%E5%99%A8syncthing/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/20240228_Docker%e5%ae%9d%e5%ba%93%ef%bc%9a%e8%b7%a8%e8%ae%be%e5%a4%87%e5%90%8c%e6%ad%a5%e7%a5%9e%e5%99%a8Syncthing.jpg" referrerpolicy="no-referrer">
-            </div>Docker宝库：跨设备同步神器Syncthing 简介 Syncthing 是一款开源且免费的跨平台文件同步工具，它可以在多个设备之间进行实时或异步的文件同步，]]></description>
-</item>
-<item>
-    <title>Docker宝库：好用的付费相册MT-Photos</title>
-    <link>https://blog.hotine.wang/posts/20240218_docker%E5%AE%9D%E5%BA%93%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BB%98%E8%B4%B9%E7%9B%B8%E5%86%8Cmt-photos/</link>
-    <pubDate>Sun, 18 Feb 2024 12:20:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20240218_docker%E5%AE%9D%E5%BA%93%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BB%98%E8%B4%B9%E7%9B%B8%E5%86%8Cmt-photos/</guid>
-    <description><![CDATA[Docker宝库：好用的付费相册MT-Photos 简介 MT Photos（付费）是一款为NAS用户量身打造的照片管理系统。可自动将照片整理、分类]]></description>
 </item>
 </channel>
 </rss>

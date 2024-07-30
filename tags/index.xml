@@ -3,12 +3,36 @@
         <title>Tags - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/</link>
         <description>Tags - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 13 Jun 2024 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 30 Jul 2024 09:52:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>WIFI棒子</title>
+    <link>https://blog.hotine.wang/tags/wifi%E6%A3%92%E5%AD%90/</link>
+    <pubDate>Tue, 30 Jul 2024 09:52:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/wifi%E6%A3%92%E5%AD%90/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Docker</title>
     <link>https://blog.hotine.wang/tags/docker/</link>
-    <pubDate>Thu, 13 Jun 2024 00:00:00 &#43;0800</pubDate>
+    <pubDate>Tue, 30 Jul 2024 09:50:00 &#43;0800</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/tags/docker/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>NAS</title>
+    <link>https://blog.hotine.wang/tags/nas/</link>
+    <pubDate>Tue, 30 Jul 2024 09:50:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/nas/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>智能家居</title>
+    <link>https://blog.hotine.wang/tags/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85/</link>
+    <pubDate>Tue, 30 Jul 2024 09:50:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
@@ -17,14 +41,6 @@
     <pubDate>Thu, 13 Jun 2024 00:00:00 &#43;0800</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/tags/linux/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>NAS</title>
-    <link>https://blog.hotine.wang/tags/nas/</link>
-    <pubDate>Thu, 13 Jun 2024 00:00:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/nas/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
@@ -65,22 +81,6 @@
     <pubDate>Sat, 11 May 2024 21:24:00 &#43;0800</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/tags/%E5%85%BB%E8%8A%B1/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>FRP</title>
-    <link>https://blog.hotine.wang/tags/frp/</link>
-    <pubDate>Tue, 12 Mar 2024 18:01:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/frp/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>内网穿透</title>
-    <link>https://blog.hotine.wang/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
-    <pubDate>Tue, 12 Mar 2024 18:01:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
