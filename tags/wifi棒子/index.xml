@@ -9,7 +9,7 @@
     <pubDate>Tue, 30 Jul 2024 09:52:00 &#43;0800</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20240730_wifi%E6%A3%92%E5%AD%90%E7%94%B5%E8%84%91%E9%A9%B1%E5%8A%A8/</guid>
-    <description><![CDATA[WIFI棒子刷DEBIN系统后，直接插电脑不会制动被识别。在设备管理器中会显示为：其他设备-RNDIS Communications Control 只需在该设备上点击右键，更新驱动程]]></description>
+    <description><![CDATA[WIFI棒子刷DEBIAN系统后，直接插电脑不会被自动识别。在设备管理器中会显示为：其他设备-RNDIS Communications Control 只需在该设备上点击右键，更新驱动]]></description>
 </item>
 </channel>
 </rss>

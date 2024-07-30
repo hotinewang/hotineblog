@@ -11,7 +11,7 @@
     <pubDate>Tue, 30 Jul 2024 09:52:00 &#43;0800</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20240730_wifi%E6%A3%92%E5%AD%90%E7%94%B5%E8%84%91%E9%A9%B1%E5%8A%A8/</guid>
-    <description><![CDATA[WIFI棒子刷DEBIN系统后，直接插电脑不会制动被识别。在设备管理器中会显示为：其他设备-RNDIS Communications Control 只需在该设备上点击右键，更新驱动程]]></description>
+    <description><![CDATA[WIFI棒子刷DEBIAN系统后，直接插电脑不会被自动识别。在设备管理器中会显示为：其他设备-RNDIS Communications Control 只需在该设备上点击右键，更新驱动]]></description>
 </item>
 <item>
     <title>Docker宝库：智能家居集成HomeAssistant</title>
@@ -31,13 +31,11 @@
 </item>
 <item>
     <title>Docker宝库：V途锐客户端</title>
-    <link>https://blog.hotine.wang/posts/2024-06-12_docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</link>
+    <link>https://blog.hotine.wang/posts/20240612_docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</link>
     <pubDate>Wed, 12 Jun 2024 21:44:00 &#43;0800</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/2024-06-12_docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/%e5%b0%81%e9%9d%a2%e5%9b%be.jpg" referrerpolicy="no-referrer">
-            </div>国内Docker被Ban，是时候在NAS上魔法上网了 通过一下命令，在Docker安装V2RayA docker run -d \ --restart=always \ --privileged \ --network=host \ --name v2raya \ -e V2RAYA_LOG_FILE=/tmp/v2raya.log \ -e V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray \ -e V2RAYA_NFTABLES_SUPPORT=off \]]></description>
+    <guid>https://blog.hotine.wang/posts/20240612_docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</guid>
+    <description><![CDATA[国内Docker被Ban，是时候在NAS上魔法上网了 通过一下命令，在Docker安装V2RayA docker run -d \ --restart=always \ --privileged \ --network=host \ --name v2raya \ -e V2RAYA_LOG_FILE=/tmp/v2raya.log \ -e V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray \ -e V2RAYA_NFTABLES_SUPPORT=off \]]></description>
 </item>
 <item>
     <title>Docker私有仓库搭建</title>
