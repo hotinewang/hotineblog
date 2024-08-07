@@ -25,7 +25,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/blog.hotine.wang\/posts\/20240612_docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF\/"
-        },"genre": "posts","keywords": "Docker, V途锐, NAS","wordcount":  134 ,
+        },"genre": "posts","keywords": "Docker, V途锐, NAS","wordcount":  347 ,
         "url": "https:\/\/blog.hotine.wang\/posts\/20240612_docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF\/","datePublished": "2024-06-12T21:44:00+08:00","dateModified": "2024-06-12T21:44:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,7 +69,7 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Docker宝库：V途锐客户端</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/nas/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>NAS</a>&nbsp;<a href="/categories/vpn/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>VPN</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-06-12">2024-06-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;134 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-06-12">2024-06-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;347 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
@@ -79,6 +79,7 @@
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#国内docker被ban是时候在nas上魔法上网了">国内Docker被Ban，是时候在NAS上魔法上网了</a></li>
+    <li><a href="#开启局域网共享">开启局域网共享</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="国内docker被ban是时候在nas上魔法上网了">国内Docker被Ban，是时候在NAS上魔法上网了</h2>
@@ -97,6 +98,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>  -v /opt/v2raya:/etc/v2raya <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>  mzz2017/v2raya:latest
 </span></span></code></pre></div><p>访问localhost:2017即可进入管理页面，注册账号、添加节点并启用后，便可实现NAS全局魔法。</p>
+<p>同时，该客户端可提供给同局域网内的其他设备使用。</p>
+<h2 id="开启局域网共享">开启局域网共享</h2>
+<p>在管理界面右上角，点击齿轮设置图标进入设置界面，点击“开启端口分享”。接着点击左下方“地址与端口”，在弹出的界面中可以找到“http端口(带分流规则)”对应的端口是20172。</p>
+<p>打开手机WIFI，连接到同局域网的WIFI后，在手机WIFI中找到已连接信号的网络详情，其中“代理”改成“手动”，在“主机名”填入V2RayA所在设备的IP，端口填写20172，确认即可。</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
