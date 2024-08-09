@@ -25,7 +25,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/blog.hotine.wang\/posts\/20240207_docker%E5%AE%9D%E5%BA%93vscode\/"
-        },"genre": "posts","keywords": "Docker, NAS","wordcount":  781 ,
+        },"genre": "posts","keywords": "Docker, NAS","wordcount":  1095 ,
         "url": "https:\/\/blog.hotine.wang\/posts\/20240207_docker%E5%AE%9D%E5%BA%93vscode\/","datePublished": "2024-02-07T20:32:00+08:00","dateModified": "2024-02-07T20:32:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,8 +69,8 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Docker宝库：Visual Studio Code</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/nas/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>NAS</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-02-07">2024-02-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;781 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-02-07">2024-02-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1095 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -80,6 +80,7 @@
   <ul>
     <li><a href="#安装">安装</a></li>
     <li><a href="#设置中文">设置中文</a></li>
+    <li><a href="#初始化git和github">初始化Git和GitHub</a></li>
     <li><a href="#其他">其他</a></li>
   </ul>
 </nav></div>
@@ -109,6 +110,10 @@
 <li>点击最左侧侧边栏的“插件”图标（四个方块），在插件搜索框输入“chinese”并回车，从下方出现的插件列表中选择“Chinese (Simplified) (简体中文) Language Pack for Visual S&hellip;”并点击Install安装。</li>
 <li>安装完毕后，界面右下角会弹出提示“Would you like to change code-server&rsquo;s display language to Chinese Simplified and restart?”,点击“change language and restart”即可。</li>
 </ol>
+<h2 id="初始化git和github">初始化Git和GitHub</h2>
+<p>首先进入欢迎界面，如果当前不在欢迎界面，则点击左上角的三道横线-帮助-欢迎
+欢迎界面中有一个“克隆Git仓库”，点击后，在上方搜索栏会出现“Clone From Github &hellip;”点击，并在弹出的对话框“扩展&quot;GitHub&quot;希望使用GitHub登录。”点“允许”。之后复制显示的验证码，进入Github网站，登录并输入验证码，并授权后，就OK了。
+回到VSCode，在搜索框中选择需要从Github克隆的项目，路径选择到“/home/coder/project/”就可以了。之后，便将这个项目拉取到的本地。修改后，只需要点击界面最左侧的“源码管理器”图标，即可进行修改确认、同步到GitHub。</p>
 <h2 id="其他">其他</h2>
 <p>由于Visual Studio Code的远程开发特性，你可以在本地机器上通过浏览器访问远程服务器上的VS Code实例，进行代码编辑、运行和调试，就像在本地开发一样。</p>
 <p>剪贴板的内容无法直接在远程VS Code中使用，但你可以通过VS Code的剪贴板共享功能来实现复制和粘贴。</p>

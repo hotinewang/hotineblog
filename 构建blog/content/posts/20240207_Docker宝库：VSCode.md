@@ -46,6 +46,11 @@ docker run -it -d --name vscode -p 8082:8080 \
 1. 点击最左侧侧边栏的“插件”图标（四个方块），在插件搜索框输入“chinese”并回车，从下方出现的插件列表中选择“Chinese (Simplified) (简体中文) Language Pack for Visual S...”并点击Install安装。
 2. 安装完毕后，界面右下角会弹出提示“Would you like to change code-server's display language to Chinese Simplified and restart?”,点击“change language and restart”即可。
 
+## 初始化Git和GitHub
+首先进入欢迎界面，如果当前不在欢迎界面，则点击左上角的三道横线-帮助-欢迎
+欢迎界面中有一个“克隆Git仓库”，点击后，在上方搜索栏会出现“Clone From Github ...”点击，并在弹出的对话框“扩展"GitHub"希望使用GitHub登录。”点“允许”。之后复制显示的验证码，进入Github网站，登录并输入验证码，并授权后，就OK了。
+回到VSCode，在搜索框中选择需要从Github克隆的项目，路径选择到“/home/coder/project/”就可以了。之后，便将这个项目拉取到的本地。修改后，只需要点击界面最左侧的“源码管理器”图标，即可进行修改确认、同步到GitHub。
+
 ## 其他
 
 由于Visual Studio Code的远程开发特性，你可以在本地机器上通过浏览器访问远程服务器上的VS Code实例，进行代码编辑、运行和调试，就像在本地开发一样。
