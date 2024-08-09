@@ -9,3 +9,5 @@ hotine's blog
 `hugo server --disableFastRender`预览博客（不含草稿）
 
 `hugo`在public文件夹下生成正式网站
+
+..
