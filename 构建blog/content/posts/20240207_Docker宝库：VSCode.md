@@ -53,6 +53,13 @@ docker run -it -d --name vscode -p 8082:8080 \
 
 回到VSCode，在搜索框中选择需要从Github克隆的项目，路径选择到“/home/coder/project/”就可以了。之后，便将这个项目拉取到的本地。修改后，只需要点击界面最左侧的“源码管理器”图标，即可进行修改确认、同步到GitHub。
 
+如果在Commit项目时提示“Make sure you configure your "user.name" and "user.email" in git.”，只需在控制台分别输入以下命令设置下名称与邮箱即可
+```bash
+git config user.name "你的名字"
+
+git config user.email "你的邮箱@example.com"
+```
+
 ## 其他
 
 由于Visual Studio Code的远程开发特性，你可以在本地机器上通过浏览器访问远程服务器上的VS Code实例，进行代码编辑、运行和调试，就像在本地开发一样。
