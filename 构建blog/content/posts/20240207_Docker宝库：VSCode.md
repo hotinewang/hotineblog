@@ -55,9 +55,9 @@ docker run -it -d --name vscode -p 8082:8080 \
 
 如果在Commit项目时提示“Make sure you configure your "user.name" and "user.email" in git.”，只需在控制台分别输入以下命令设置下名称与邮箱即可
 ```bash
-git config user.name "你的名字"
+git config --global user.name "你的名字"
 
-git config user.email "你的邮箱@example.com"
+git config --global user.email "你的邮箱@example.com"
 ```
 
 ## 其他
