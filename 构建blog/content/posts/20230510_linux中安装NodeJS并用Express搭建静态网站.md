@@ -13,6 +13,24 @@ tags: [
 ---
 
 ## NODEJS部署
+
+### 最简单的部署方式
+分别输入以下命令
+```bash
+sudo apt update
+
+sudo apt install nodejs
+
+sudo apt install npm
+```
+之后在控制台输入
+```bash
+node
+
+npm
+```
+如果能正常显示版本号，那就说明装好了。可以跳过本文后边的安装过程了。
+
 ### 下载Nodejs
 先在服务器上下载nodejs包，在控制台通过`cd`命令进入usr/local目录：
 ```bash
