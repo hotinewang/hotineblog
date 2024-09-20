@@ -25,7 +25,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/blog.hotine.wang\/posts\/20240207_docker%E5%AE%9D%E5%BA%93vscode\/"
-        },"genre": "posts","keywords": "Docker, NAS","wordcount":  1095 ,
+        },"genre": "posts","keywords": "Docker, NAS","wordcount":  1200 ,
         "url": "https:\/\/blog.hotine.wang\/posts\/20240207_docker%E5%AE%9D%E5%BA%93vscode\/","datePublished": "2024-02-07T20:32:00+08:00","dateModified": "2024-02-07T20:32:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,7 +69,7 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Docker宝库：Visual Studio Code</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/nas/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>NAS</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-02-07">2024-02-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1095 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-02-07">2024-02-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1200 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
@@ -114,7 +114,11 @@
 <p>首先进入欢迎界面，如果当前不在欢迎界面，则点击左上角的三道横线-帮助-欢迎</p>
 <p>欢迎界面中有一个“克隆Git仓库”，点击后，在上方搜索栏会出现“Clone From Github &hellip;”点击，并在弹出的对话框“扩展&quot;GitHub&quot;希望使用GitHub登录。”点“允许”。之后复制显示的验证码，进入Github网站，登录并输入验证码，并授权后，就OK了。</p>
 <p>回到VSCode，在搜索框中选择需要从Github克隆的项目，路径选择到“/home/coder/project/”就可以了。之后，便将这个项目拉取到的本地。修改后，只需要点击界面最左侧的“源码管理器”图标，即可进行修改确认、同步到GitHub。</p>
-<h2 id="其他">其他</h2>
+<p>如果在Commit项目时提示“Make sure you configure your &ldquo;user.name&rdquo; and &ldquo;user.email&rdquo; in git.”，只需在控制台分别输入以下命令设置下名称与邮箱即可</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config --global user.name <span class="s2">&#34;你的名字&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git config --global user.email <span class="s2">&#34;你的邮箱@example.com&#34;</span>
+</span></span></code></pre></div><h2 id="其他">其他</h2>
 <p>由于Visual Studio Code的远程开发特性，你可以在本地机器上通过浏览器访问远程服务器上的VS Code实例，进行代码编辑、运行和调试，就像在本地开发一样。</p>
 <p>剪贴板的内容无法直接在远程VS Code中使用，但你可以通过VS Code的剪贴板共享功能来实现复制和粘贴。</p>
 <p>因为每一个docker容器都相当于是一个微型linux系统，因此可以在VSCode中调出控制台，并在里面安装NodeJS、Python等。</p>
