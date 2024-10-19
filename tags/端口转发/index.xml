@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>端口转发 - Tag - Hotine的小窝</title>
+        <link>https://blog.hotine.wang/tags/%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</link>
+        <description>端口转发 - Tag - Hotine的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 19 Oct 2024 20:55:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/" rel="self" type="application/rss+xml" /><item>
+    <title>NAS(OpenWRT)设置端口转发</title>
+    <link>https://blog.hotine.wang/posts/20241019_nasopenwrt%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</link>
+    <pubDate>Sat, 19 Oct 2024 20:55:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20241019_nasopenwrt%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</guid>
+    <description><![CDATA[场景： 在城市A有台NAS-1，部署了Jellyfin服务。在城市B也有个NAS-2,并且通过ZerotireOne进行了虚拟组网，使两个NA]]></description>
+</item>
+</channel>
+</rss>

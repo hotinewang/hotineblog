@@ -3,7 +3,15 @@
         <title>NAS - Category - Hotine的小窝</title>
         <link>https://blog.hotine.wang/categories/nas/</link>
         <description>NAS - Category - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 30 Jul 2024 09:50:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/nas/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 19 Oct 2024 20:55:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/nas/" rel="self" type="application/rss+xml" /><item>
+    <title>NAS(OpenWRT)设置端口转发</title>
+    <link>https://blog.hotine.wang/posts/20241019_nasopenwrt%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</link>
+    <pubDate>Sat, 19 Oct 2024 20:55:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20241019_nasopenwrt%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</guid>
+    <description><![CDATA[场景： 在城市A有台NAS-1，部署了Jellyfin服务。在城市B也有个NAS-2,并且通过ZerotireOne进行了虚拟组网，使两个NA]]></description>
+</item>
+<item>
     <title>Docker宝库：智能家居集成HomeAssistant</title>
     <link>https://blog.hotine.wang/posts/20240730_docker%E5%AE%9D%E5%BA%93%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E9%9B%86%E6%88%90homeassistant/</link>
     <pubDate>Tue, 30 Jul 2024 09:50:00 &#43;0800</pubDate>
@@ -76,16 +84,6 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/</guid>
     <description><![CDATA[远程浏览器，通过Docker安装Firefox远程版 通过VPS，可以挂一个远程浏览器，这样就可以变相实现魔法上网。 同时，也可以在远程浏览器中]]></description>
-</item>
-<item>
-    <title>ZeroTier内网穿透教程</title>
-    <link>https://blog.hotine.wang/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
-    <pubDate>Thu, 17 Aug 2023 21:20:59 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20230817_zerotier%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/20230817_ZeroTier%e5%86%85%e7%bd%91%e7%a9%bf%e9%80%8f.jpg" referrerpolicy="no-referrer">
-            </div>ZeroTier内网穿透简介 家有NAS，如何从外网进行访问或管理，这就需要使用内网穿透。对于家里宽带没有公网IP的人来说，用ZeroTier]]></description>
 </item>
 </channel>
 </rss>

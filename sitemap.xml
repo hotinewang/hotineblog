@@ -2,17 +2,20 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://blog.hotine.wang/categories/</loc><lastmod>2024-07-30T09:52:00&#43;08:00</lastmod></url><url>
-            <loc>https://blog.hotine.wang/</loc><lastmod>2024-07-30T09:52:00&#43;08:00</lastmod></url><url>
-            <loc>https://blog.hotine.wang/posts/</loc><lastmod>2024-07-30T09:52:00&#43;08:00</lastmod></url><url>
-            <loc>https://blog.hotine.wang/tags/</loc><lastmod>2024-07-30T09:52:00&#43;08:00</lastmod></url><url>
+            <loc>https://blog.hotine.wang/categories/</loc><lastmod>2024-10-19T20:55:00&#43;08:00</lastmod></url><url>
+            <loc>https://blog.hotine.wang/</loc><lastmod>2024-10-19T20:55:00&#43;08:00</lastmod></url><url>
+            <loc>https://blog.hotine.wang/tags/nas/</loc><lastmod>2024-10-19T20:55:00&#43;08:00</lastmod></url><url>
+            <loc>https://blog.hotine.wang/categories/nas/</loc><lastmod>2024-10-19T20:55:00&#43;08:00</lastmod></url><url>
+            <loc>https://blog.hotine.wang/posts/20241019_nasopenwrt%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</loc><lastmod>2024-10-19T20:55:00&#43;08:00</lastmod></url><url>
+            <loc>https://blog.hotine.wang/tags/openwrt/</loc><lastmod>2024-10-19T20:55:00&#43;08:00</lastmod></url><url>
+            <loc>https://blog.hotine.wang/posts/</loc><lastmod>2024-10-19T20:55:00&#43;08:00</lastmod></url><url>
+            <loc>https://blog.hotine.wang/tags/</loc><lastmod>2024-10-19T20:55:00&#43;08:00</lastmod></url><url>
+            <loc>https://blog.hotine.wang/tags/%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</loc><lastmod>2024-10-19T20:55:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/tags/wifi%E6%A3%92%E5%AD%90/</loc><lastmod>2024-07-30T09:52:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/posts/20240730_wifi%E6%A3%92%E5%AD%90%E7%94%B5%E8%84%91%E9%A9%B1%E5%8A%A8/</loc><lastmod>2024-07-30T09:52:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/categories/%E5%85%B6%E4%BB%96/</loc><lastmod>2024-07-30T09:52:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/tags/docker/</loc><lastmod>2024-07-30T09:50:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/posts/20240730_docker%E5%AE%9D%E5%BA%93%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E9%9B%86%E6%88%90homeassistant/</loc><lastmod>2024-07-30T09:50:00&#43;08:00</lastmod></url><url>
-            <loc>https://blog.hotine.wang/tags/nas/</loc><lastmod>2024-07-30T09:50:00&#43;08:00</lastmod></url><url>
-            <loc>https://blog.hotine.wang/categories/nas/</loc><lastmod>2024-07-30T09:50:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/tags/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85/</loc><lastmod>2024-07-30T09:50:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/posts/20240613_docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%87%BA%E4%B8%8E%E5%AF%BC%E5%85%A5/</loc><lastmod>2024-06-13T00:00:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/tags/linux/</loc><lastmod>2024-06-13T00:00:00&#43;08:00</lastmod></url><url>
@@ -21,7 +24,6 @@
             <loc>https://blog.hotine.wang/categories/vpn/</loc><lastmod>2024-06-12T21:44:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/tags/v%E9%80%94%E9%94%90/</loc><lastmod>2024-06-12T21:44:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/posts/20240612_docker%E7%A7%81%E6%9C%89%E5%BA%93%E6%90%AD%E5%BB%BA/</loc><lastmod>2024-06-12T12:00:00&#43;08:00</lastmod></url><url>
-            <loc>https://blog.hotine.wang/tags/openwrt/</loc><lastmod>2024-06-07T22:48:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/posts/20240607_openwrt%E6%8C%82%E8%BD%BDsmb%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/</loc><lastmod>2024-06-07T22:48:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/tags/%E6%97%81%E8%B7%AF%E7%94%B1/</loc><lastmod>2024-06-07T22:48:00&#43;08:00</lastmod></url><url>
             <loc>https://blog.hotine.wang/categories/%E6%97%81%E8%B7%AF%E7%94%B1/</loc><lastmod>2024-06-07T22:48:00&#43;08:00</lastmod></url><url>

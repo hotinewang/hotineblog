@@ -3,9 +3,17 @@
         <title>Hotine的小窝</title>
         <link>https://blog.hotine.wang/</link>
         <description>Hotine的窝？</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 30 Jul 2024 09:52:00 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 19 Oct 2024 20:55:00 &#43;0800</lastBuildDate>
             <atom:link href="https://blog.hotine.wang/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>NAS(OpenWRT)设置端口转发</title>
+    <link>https://blog.hotine.wang/posts/20241019_nasopenwrt%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</link>
+    <pubDate>Sat, 19 Oct 2024 20:55:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20241019_nasopenwrt%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</guid>
+    <description><![CDATA[场景： 在城市A有台NAS-1，部署了Jellyfin服务。在城市B也有个NAS-2,并且通过ZerotireOne进行了虚拟组网，使两个NA]]></description>
+</item>
+<item>
     <title>WIFI棒子电脑驱动</title>
     <link>https://blog.hotine.wang/posts/20240730_wifi%E6%A3%92%E5%AD%90%E7%94%B5%E8%84%91%E9%A9%B1%E5%8A%A8/</link>
     <pubDate>Tue, 30 Jul 2024 09:52:00 &#43;0800</pubDate>
@@ -80,14 +88,6 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20240511_%E5%85%BB%E8%8A%B1%E6%97%A5%E8%AE%B0%E5%85%BB%E8%8A%B1%E8%99%AB%E5%AE%B3%E7%94%A8%E8%8D%AF%E7%AC%94%E8%AE%B0/</guid>
     <description><![CDATA[养花日记：养花虫害用药笔记 常在家养花，哪能不生虫。养花生虫是一件非常头痛的事情，弄不好就一传十，十传百，一屋花卉遭殃。 所以我整理了常见病虫害]]></description>
-</item>
-<item>
-    <title>FRP内网穿透</title>
-    <link>https://blog.hotine.wang/posts/20240312_frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
-    <pubDate>Tue, 12 Mar 2024 18:01:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20240312_frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
-    <description><![CDATA[FRP内网穿透 内网穿透的方案，除了用Zerotier虚拟组网外，还可以使用FRP进行端口映射，实现内网穿透。FRP（Fast Reverse Proxy）:]]></description>
 </item>
 </channel>
 </rss>
