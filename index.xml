@@ -14,6 +14,14 @@
     <description><![CDATA[场景： 在城市A有台NAS-1，部署了Jellyfin服务。在城市B也有个NAS-2,并且通过ZerotireOne进行了虚拟组网，使两个NA]]></description>
 </item>
 <item>
+    <title>Docker宝库：安装TMM电影刮削器</title>
+    <link>https://blog.hotine.wang/posts/20241020_docker%E5%AE%9D%E5%BA%93%E5%AE%89%E8%A3%85tmm%E7%94%B5%E5%BD%B1%E5%88%AE%E5%89%8A%E5%99%A8/</link>
+    <pubDate>Fri, 11 Oct 2024 09:57:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20241020_docker%E5%AE%9D%E5%BA%93%E5%AE%89%E8%A3%85tmm%E7%94%B5%E5%BD%B1%E5%88%AE%E5%89%8A%E5%99%A8/</guid>
+    <description><![CDATA[组建影音库离不开电影信息刮削，平常都是在电脑端安装TMM，但是，每次还要开电脑这么麻烦，所以，打算把TMM直接按在NAS上。 这里使用dzhu]]></description>
+</item>
+<item>
     <title>WIFI棒子电脑驱动</title>
     <link>https://blog.hotine.wang/posts/20240730_wifi%E6%A3%92%E5%AD%90%E7%94%B5%E8%84%91%E9%A9%B1%E5%8A%A8/</link>
     <pubDate>Tue, 30 Jul 2024 09:52:00 &#43;0800</pubDate>
@@ -80,14 +88,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/posts/20240512_%e5%8c%86%e5%bf%99%e7%9a%84%e4%ba%91%e5%8d%97%e4%b9%8b%e8%a1%8c.cover.jpg" referrerpolicy="no-referrer">
             </div>单位组织贵宾客户去云南游玩，有幸带队，一起去。因为知道这是购物团，有两个购物店（其实是3个，有个隐藏的），心里还有点小压力。 4月22日 DAY1 济宁]]></description>
-</item>
-<item>
-    <title>养花日记：养花虫害用药笔记</title>
-    <link>https://blog.hotine.wang/posts/20240511_%E5%85%BB%E8%8A%B1%E6%97%A5%E8%AE%B0%E5%85%BB%E8%8A%B1%E8%99%AB%E5%AE%B3%E7%94%A8%E8%8D%AF%E7%AC%94%E8%AE%B0/</link>
-    <pubDate>Sat, 11 May 2024 21:24:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20240511_%E5%85%BB%E8%8A%B1%E6%97%A5%E8%AE%B0%E5%85%BB%E8%8A%B1%E8%99%AB%E5%AE%B3%E7%94%A8%E8%8D%AF%E7%AC%94%E8%AE%B0/</guid>
-    <description><![CDATA[养花日记：养花虫害用药笔记 常在家养花，哪能不生虫。养花生虫是一件非常头痛的事情，弄不好就一传十，十传百，一屋花卉遭殃。 所以我整理了常见病虫害]]></description>
 </item>
 </channel>
 </rss>

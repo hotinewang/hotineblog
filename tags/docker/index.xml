@@ -3,7 +3,15 @@
         <title>Docker - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/docker/</link>
         <description>Docker - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 30 Jul 2024 09:50:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/docker/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 11 Oct 2024 09:57:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/docker/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker宝库：安装TMM电影刮削器</title>
+    <link>https://blog.hotine.wang/posts/20241020_docker%E5%AE%9D%E5%BA%93%E5%AE%89%E8%A3%85tmm%E7%94%B5%E5%BD%B1%E5%88%AE%E5%89%8A%E5%99%A8/</link>
+    <pubDate>Fri, 11 Oct 2024 09:57:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20241020_docker%E5%AE%9D%E5%BA%93%E5%AE%89%E8%A3%85tmm%E7%94%B5%E5%BD%B1%E5%88%AE%E5%89%8A%E5%99%A8/</guid>
+    <description><![CDATA[组建影音库离不开电影信息刮削，平常都是在电脑端安装TMM，但是，每次还要开电脑这么麻烦，所以，打算把TMM直接按在NAS上。 这里使用dzhu]]></description>
+</item>
+<item>
     <title>Docker宝库：智能家居集成HomeAssistant</title>
     <link>https://blog.hotine.wang/posts/20240730_docker%E5%AE%9D%E5%BA%93%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E9%9B%86%E6%88%90homeassistant/</link>
     <pubDate>Tue, 30 Jul 2024 09:50:00 &#43;0800</pubDate>
@@ -76,14 +84,6 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/</guid>
     <description><![CDATA[远程浏览器，通过Docker安装Firefox远程版 通过VPS，可以挂一个远程浏览器，这样就可以变相实现魔法上网。 同时，也可以在远程浏览器中]]></description>
-</item>
-<item>
-    <title>VPS套娃，Linux装Docker，Docker再跑Ubuntu</title>
-    <link>https://blog.hotine.wang/posts/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/</link>
-    <pubDate>Fri, 15 Sep 2023 00:00:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20230915_vps%E5%A5%97%E5%A8%83linux%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/</guid>
-    <description><![CDATA[VPS套娃，Linux装Docker，Docker再跑Ubuntu 有一个VPS，想弄一个云端工作区。考虑过VPS直接装远程桌面之类的，但是过]]></description>
 </item>
 </channel>
 </rss>
