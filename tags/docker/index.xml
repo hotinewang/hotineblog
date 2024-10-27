@@ -3,7 +3,15 @@
         <title>Docker - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/docker/</link>
         <description>Docker - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 11 Oct 2024 09:57:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/docker/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 27 Oct 2024 20:00:01 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/docker/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker宝库：SunPanel网址导航</title>
+    <link>https://blog.hotine.wang/posts/20241027_docker%E5%AE%9D%E5%BA%93sunpanel%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/</link>
+    <pubDate>Sun, 27 Oct 2024 20:00:01 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20241027_docker%E5%AE%9D%E5%BA%93sunpanel%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/</guid>
+    <description><![CDATA[SunPanel比Heidmall好用100倍！ 最大的两点是，这个网址导航支持内外网切换，也就是说同一个网站可以填写两个网址，一个内网用，一]]></description>
+</item>
+<item>
     <title>Docker宝库：安装TMM电影刮削器</title>
     <link>https://blog.hotine.wang/posts/20241020_docker%E5%AE%9D%E5%BA%93%E5%AE%89%E8%A3%85tmm%E7%94%B5%E5%BD%B1%E5%88%AE%E5%89%8A%E5%99%A8/</link>
     <pubDate>Fri, 11 Oct 2024 09:57:00 &#43;0800</pubDate>
@@ -76,14 +84,6 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/</guid>
     <description><![CDATA[远程开发环境，通过Docker安装Visual Studio Code 通过Docker，可以在远程服务器上安装并运行Visual Studio Code，实现远程编程和开发。]]></description>
-</item>
-<item>
-    <title>远程浏览器，通过Docker安装Firefox远程版</title>
-    <link>https://blog.hotine.wang/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/</link>
-    <pubDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20230916_%E8%BF%9C%E7%A8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%9A%E8%BF%87docker%E5%AE%89%E8%A3%85firefox%E8%BF%9C%E7%A8%8B%E7%89%88/</guid>
-    <description><![CDATA[远程浏览器，通过Docker安装Firefox远程版 通过VPS，可以挂一个远程浏览器，这样就可以变相实现魔法上网。 同时，也可以在远程浏览器中]]></description>
 </item>
 </channel>
 </rss>

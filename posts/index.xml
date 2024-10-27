@@ -3,7 +3,15 @@
         <title>All Posts - Hotine的小窝</title>
         <link>https://blog.hotine.wang/posts/</link>
         <description>All Posts | Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 19 Oct 2024 20:55:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 27 Oct 2024 20:00:01 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker宝库：SunPanel网址导航</title>
+    <link>https://blog.hotine.wang/posts/20241027_docker%E5%AE%9D%E5%BA%93sunpanel%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/</link>
+    <pubDate>Sun, 27 Oct 2024 20:00:01 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20241027_docker%E5%AE%9D%E5%BA%93sunpanel%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/</guid>
+    <description><![CDATA[SunPanel比Heidmall好用100倍！ 最大的两点是，这个网址导航支持内外网切换，也就是说同一个网站可以填写两个网址，一个内网用，一]]></description>
+</item>
+<item>
     <title>NAS(OpenWRT)设置端口转发</title>
     <link>https://blog.hotine.wang/posts/20241019_nasopenwrt%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</link>
     <pubDate>Sat, 19 Oct 2024 20:55:00 &#43;0800</pubDate>
@@ -76,16 +84,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/posts/20240513_%e5%a4%a9%e6%b4%a5%e7%ab%99%ef%bc%88%e5%b0%81%e9%9d%a2%ef%bc%89.jpg" referrerpolicy="no-referrer">
             </div>天津，一个不是旅游城市的旅游城市。 论旅游资源，天津好像也没什么东西，连个景区都没有，充其量就是马路边边上的意式建筑和老城区的老房子；但游客就]]></description>
-</item>
-<item>
-    <title>匆忙的云南之行</title>
-    <link>https://blog.hotine.wang/posts/20240512_%E5%8C%86%E5%BF%99%E7%9A%84%E4%BA%91%E5%8D%97%E4%B9%8B%E8%A1%8C/</link>
-    <pubDate>Sun, 12 May 2024 21:20:56 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20240512_%E5%8C%86%E5%BF%99%E7%9A%84%E4%BA%91%E5%8D%97%E4%B9%8B%E8%A1%8C/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/20240512_%e5%8c%86%e5%bf%99%e7%9a%84%e4%ba%91%e5%8d%97%e4%b9%8b%e8%a1%8c.cover.jpg" referrerpolicy="no-referrer">
-            </div>单位组织贵宾客户去云南游玩，有幸带队，一起去。因为知道这是购物团，有两个购物店（其实是3个，有个隐藏的），心里还有点小压力。 4月22日 DAY1 济宁]]></description>
 </item>
 </channel>
 </rss>
