@@ -12,7 +12,7 @@ draft: false
 ---
 
 SunPanel比Heidmall好用100倍！
-![SunPanel](/images/posts/20241027_sunpanel.png)
+![SunPanel](/images/posts/2024/20241027_sunpanel.png)
 最大的两点是，这个网址导航支持内外网切换，也就是说同一个网站可以填写两个网址，一个内网用，一个外网用。
 而且还可以显示NAS的CPU、内存、磁盘使用信息。
 
