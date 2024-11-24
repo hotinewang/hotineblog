@@ -3,10 +3,10 @@
         <title>VPN - Category - Hotine的小窝</title>
         <link>https://blog.hotine.wang/categories/vpn/</link>
         <description>VPN - Category - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 11 Oct 2024 09:57:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/vpn/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 20 Oct 2024 09:57:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/vpn/" rel="self" type="application/rss+xml" /><item>
     <title>Docker宝库：安装TMM电影刮削器</title>
     <link>https://blog.hotine.wang/posts/20241020_docker%E5%AE%9D%E5%BA%93%E5%AE%89%E8%A3%85tmm%E7%94%B5%E5%BD%B1%E5%88%AE%E5%89%8A%E5%99%A8/</link>
-    <pubDate>Fri, 11 Oct 2024 09:57:00 &#43;0800</pubDate>
+    <pubDate>Sun, 20 Oct 2024 09:57:00 &#43;0800</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20241020_docker%E5%AE%9D%E5%BA%93%E5%AE%89%E8%A3%85tmm%E7%94%B5%E5%BD%B1%E5%88%AE%E5%89%8A%E5%99%A8/</guid>
     <description><![CDATA[组建影音库离不开电影信息刮削，平常都是在电脑端安装TMM，但是，每次还要开电脑这么麻烦，所以，打算把TMM直接按在NAS上。 这里使用dzhu]]></description>

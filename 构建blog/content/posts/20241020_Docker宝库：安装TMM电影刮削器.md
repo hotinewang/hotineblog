@@ -1,6 +1,6 @@
 ---
 title: Docker宝库：安装TMM电影刮削器
-date: 2024-10-11T09:57:00+08:00
+date: 2024-10-20T09:57:00+08:00
 categories: ["NAS","VPN"]
 tags: ["Docker","TinyMediaManager","NAS"]
 draft: false

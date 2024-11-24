@@ -16,7 +16,7 @@
 <meta name="application-name" content="Hotine的小窝">
 <meta name="apple-mobile-web-app-title" content="Hotine的小窝"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.hotine.wang/posts/20241019_nasopenwrt%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/" /><link rel="prev" href="https://blog.hotine.wang/posts/20241020_docker%E5%AE%9D%E5%BA%93%E5%AE%89%E8%A3%85tmm%E7%94%B5%E5%BD%B1%E5%88%AE%E5%89%8A%E5%99%A8/" /><link rel="next" href="https://blog.hotine.wang/posts/20241027_docker%E5%AE%9D%E5%BA%93sunpanel%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.hotine.wang/posts/20241019_nasopenwrt%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/" /><link rel="prev" href="https://blog.hotine.wang/posts/20240730_wifi%E6%A3%92%E5%AD%90%E7%94%B5%E8%84%91%E9%A9%B1%E5%8A%A8/" /><link rel="next" href="https://blog.hotine.wang/posts/20241020_docker%E5%AE%9D%E5%BA%93%E5%AE%89%E8%A3%85tmm%E7%94%B5%E5%BD%B1%E5%88%AE%E5%89%8A%E5%99%A8/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -82,7 +82,23 @@
 <p>看了很多教程说是在openWRT系统菜单的<code>网络-&gt;防火墙-&gt;端口转发-&gt;添加</code>里进行设置。但是试了很多次不行。最后发现应该在Socat里进行设置（我的openWRT里已经预装了Socat）。</p>
 <p>设么是Socat？</p>
 <pre tabindex="0"><code>Socat（SOcket CAT）是一个功能强大的工具，用于在两个双向字节流之间建立通道，并支持多种协议和传输方式。它广泛应用于网络调试、端口转发、文件传输、串口通信等多种场景。Socat 可以被看作是 netcat（nc）的超级集，因为它不仅支持 TCP/UDP 流，还支持多种其他类型的连接，如 UNIX 域套接字、管道、文件、命名管道、串行端口、伪终端（pty）、OpenSSL 加密的套接字等。Socat 的强大之处在于它能够几乎在任意两个数据流之间创建双向通道，从而提供了极高的灵活性和强大的功能。
-</code></pre><p>只需要在openWRT的<code>网络-&gt;soCat-&gt;添加</code>中，填入要监听的端口、目标地址和目标端口，保存并应用即可。</p>
+</code></pre><p>只需要在openWRT的<code>网络-&gt;soCat-&gt;添加</code>中，填入要监听的端口、目标地址和目标端口，保存并应用即可。
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/posts/2024/20241019_NAS%ef%bc%88openWRT%ef%bc%89%e8%ae%be%e7%bd%ae%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%911.jpg"
+        data-srcset="/images/posts/2024/20241019_NAS%ef%bc%88openWRT%ef%bc%89%e8%ae%be%e7%bd%ae%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%911.jpg, /images/posts/2024/20241019_NAS%ef%bc%88openWRT%ef%bc%89%e8%ae%be%e7%bd%ae%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%911.jpg 1.5x, /images/posts/2024/20241019_NAS%ef%bc%88openWRT%ef%bc%89%e8%ae%be%e7%bd%ae%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%911.jpg 2x"
+        data-sizes="auto"
+        alt="/images/posts/2024/20241019_NAS（openWRT）设置端口转发1.jpg"
+        title="设置1" />
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/posts/2024/20241019_NAS%ef%bc%88openWRT%ef%bc%89%e8%ae%be%e7%bd%ae%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%912.jpg"
+        data-srcset="/images/posts/2024/20241019_NAS%ef%bc%88openWRT%ef%bc%89%e8%ae%be%e7%bd%ae%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%912.jpg, /images/posts/2024/20241019_NAS%ef%bc%88openWRT%ef%bc%89%e8%ae%be%e7%bd%ae%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%912.jpg 1.5x, /images/posts/2024/20241019_NAS%ef%bc%88openWRT%ef%bc%89%e8%ae%be%e7%bd%ae%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%912.jpg 2x"
+        data-sizes="auto"
+        alt="/images/posts/2024/20241019_NAS（openWRT）设置端口转发2.jpg"
+        title="设置2" /></p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -104,8 +120,8 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/20241020_docker%E5%AE%9D%E5%BA%93%E5%AE%89%E8%A3%85tmm%E7%94%B5%E5%BD%B1%E5%88%AE%E5%89%8A%E5%99%A8/" class="prev" rel="prev" title="Docker宝库：安装TMM电影刮削器"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Docker宝库：安装TMM电影刮削器</a>
-            <a href="/posts/20241027_docker%E5%AE%9D%E5%BA%93sunpanel%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/" class="next" rel="next" title="Docker宝库：SunPanel网址导航">Docker宝库：SunPanel网址导航<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/posts/20240730_wifi%E6%A3%92%E5%AD%90%E7%94%B5%E8%84%91%E9%A9%B1%E5%8A%A8/" class="prev" rel="prev" title="WIFI棒子电脑驱动"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>WIFI棒子电脑驱动</a>
+            <a href="/posts/20241020_docker%E5%AE%9D%E5%BA%93%E5%AE%89%E8%A3%85tmm%E7%94%B5%E5%BD%B1%E5%88%AE%E5%89%8A%E5%99%A8/" class="next" rel="next" title="Docker宝库：安装TMM电影刮削器">Docker宝库：安装TMM电影刮削器<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
