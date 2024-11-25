@@ -3,7 +3,15 @@
         <title>VSCode - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/vscode/</link>
         <description>VSCode - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 17 Sep 2023 21:36:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/vscode/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 07 Feb 2024 20:32:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/vscode/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker宝库：Visual Studio Code</title>
+    <link>https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/</link>
+    <pubDate>Wed, 07 Feb 2024 20:32:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/</guid>
+    <description><![CDATA[远程开发环境，通过Docker安装Visual Studio Code 通过Docker，可以在远程服务器上安装并运行Visual Studio Code，实现远程编程和开发。]]></description>
+</item>
+<item>
     <title>安卓手机自动化神器AutoX.JS</title>
     <link>https://blog.hotine.wang/posts/20230917_%E5%AE%89%E5%8D%93%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B9%8Bautox.js/</link>
     <pubDate>Sun, 17 Sep 2023 21:36:00 &#43;0800</pubDate>
