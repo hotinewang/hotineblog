@@ -3,7 +3,7 @@ title: Docker宝库：跨设备同步神器Syncthing
 date: 2024-02-28T12:20:00+08:00
 categories: ["NAS"]
 tags: ["Docker","同步","NAS"]
-featuredImage: /images/posts/20240228_Docker宝库：跨设备同步神器Syncthing.jpg
+featuredImage: /images/posts/2024/20240228_Docker宝库：跨设备同步神器Syncthing.jpg
 draft: false
 ---
 

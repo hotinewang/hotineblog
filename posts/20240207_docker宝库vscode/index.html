@@ -25,7 +25,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/blog.hotine.wang\/posts\/20240207_docker%E5%AE%9D%E5%BA%93vscode\/"
-        },"genre": "posts","keywords": "Docker, NAS","wordcount":  1200 ,
+        },"genre": "posts","keywords": "Docker, NAS, Python, Nodejs, VSCode","wordcount":  1525 ,
         "url": "https:\/\/blog.hotine.wang\/posts\/20240207_docker%E5%AE%9D%E5%BA%93vscode\/","datePublished": "2024-02-07T20:32:00+08:00","dateModified": "2024-02-07T20:32:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,8 +69,8 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Docker宝库：Visual Studio Code</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/nas/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>NAS</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-02-07">2024-02-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1200 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-02-07">2024-02-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1525 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -81,6 +81,9 @@
     <li><a href="#安装">安装</a></li>
     <li><a href="#设置中文">设置中文</a></li>
     <li><a href="#初始化git和github">初始化Git和GitHub</a></li>
+    <li><a href="#安装hugo">安装Hugo</a></li>
+    <li><a href="#安装python">安装Python</a></li>
+    <li><a href="#安装nodejs">安装Nodejs</a></li>
     <li><a href="#其他">其他</a></li>
   </ul>
 </nav></div>
@@ -118,10 +121,39 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config --global user.name <span class="s2">&#34;你的名字&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">git config --global user.email <span class="s2">&#34;你的邮箱@example.com&#34;</span>
-</span></span></code></pre></div><h2 id="其他">其他</h2>
+</span></span></code></pre></div><p>至此，VSCode已经基本配置好了。</p>
+<p>因为每一个docker容器都相当于是一个微型linux系统，因此可以在VSCode中调出控制台，并在里面安装NodeJS、Python等。</p>
+<h2 id="安装hugo">安装Hugo</h2>
+<p>直接在左资源管理器的任一文件右键-&gt;在集成终端中打开。或者Ctrl+J打开终端，并依次输入以下三个命令即可</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt update
+</span></span><span class="line"><span class="cl">apt upgrade
+</span></span><span class="line"><span class="cl">apt install hugo
+</span></span></code></pre></div><h2 id="安装python">安装Python</h2>
+<p>直接在左资源管理器的任一文件右键-&gt;在集成终端中打开。或者Ctrl+J打开终端，并依次输入以下三个命令即可</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt update
+</span></span><span class="line"><span class="cl">apt upgrade
+</span></span><span class="line"><span class="cl">apt install python3
+</span></span></code></pre></div><p>之后在终端输入以下命令测试是否安装成功(安装成功会显示版本号等信息)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python3 --version
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">quit<span class="o">()</span>
+</span></span></code></pre></div><p>这样可以在终端使用python3来运行py文件。如果想使用python来运行py文件，只需要增加一个软链接：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo ln -s /usr/bin/python3 /usr/bin/python
+</span></span></code></pre></div><h2 id="安装nodejs">安装Nodejs</h2>
+<p>分别输入以下命令</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo apt install nodejs
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo apt install npm
+</span></span></code></pre></div><p>之后在控制台输入</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">node
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">npm
+</span></span></code></pre></div><p>如果能正常显示版本号，那就说明装好了。可以跳过本文后边的安装过程了。</p>
+<h2 id="其他">其他</h2>
 <p>由于Visual Studio Code的远程开发特性，你可以在本地机器上通过浏览器访问远程服务器上的VS Code实例，进行代码编辑、运行和调试，就像在本地开发一样。</p>
 <p>剪贴板的内容无法直接在远程VS Code中使用，但你可以通过VS Code的剪贴板共享功能来实现复制和粘贴。</p>
-<p>因为每一个docker容器都相当于是一个微型linux系统，因此可以在VSCode中调出控制台，并在里面安装NodeJS、Python等。</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -131,13 +163,13 @@
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/" data-title="Docker宝库：Visual Studio Code" data-via="xxxx" data-hashtags="Docker,NAS"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/" data-hashtag="Docker"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/" data-title="Docker宝库：Visual Studio Code"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/" data-title="Docker宝库：Visual Studio Code" data-via="xxxx" data-hashtags="Docker,NAS,Python,Nodejs,VSCode"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/" data-hashtag="Docker"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://blog.hotine.wang/posts/20240207_docker%E5%AE%9D%E5%BA%93vscode/" data-title="Docker宝库：Visual Studio Code"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/docker/">Docker</a>,&nbsp;<a href="/tags/nas/">NAS</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/docker/">Docker</a>,&nbsp;<a href="/tags/nas/">NAS</a>,&nbsp;<a href="/tags/python/">Python</a>,&nbsp;<a href="/tags/nodejs/">NodeJS</a>,&nbsp;<a href="/tags/vscode/">VSCode</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>

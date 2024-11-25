@@ -74,7 +74,7 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20240228_docker%E5%AE%9D%E5%BA%93%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E7%A5%9E%E5%99%A8syncthing/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/20240228_Docker%e5%ae%9d%e5%ba%93%ef%bc%9a%e8%b7%a8%e8%ae%be%e5%a4%87%e5%90%8c%e6%ad%a5%e7%a5%9e%e5%99%a8Syncthing.jpg" referrerpolicy="no-referrer">
+                <img src="/images/posts/2024/20240228_Docker%e5%ae%9d%e5%ba%93%ef%bc%9a%e8%b7%a8%e8%ae%be%e5%a4%87%e5%90%8c%e6%ad%a5%e7%a5%9e%e5%99%a8Syncthing.jpg" referrerpolicy="no-referrer">
             </div>Docker宝库：跨设备同步神器Syncthing 简介 Syncthing 是一款开源且免费的跨平台文件同步工具，它可以在多个设备之间进行实时或异步的文件同步，]]></description>
 </item>
 <item>
