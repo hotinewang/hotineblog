@@ -3,7 +3,17 @@
         <title>All Posts - Hotine的小窝</title>
         <link>https://blog.hotine.wang/posts/</link>
         <description>All Posts | Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 27 Oct 2024 20:00:01 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 26 Nov 2024 11:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker宝库：自建音乐库Navidrome</title>
+    <link>https://blog.hotine.wang/posts/20241126_docker%E5%AE%9D%E5%BA%93%E8%87%AA%E5%BB%BA%E9%9F%B3%E4%B9%90%E5%BA%93navidrome/</link>
+    <pubDate>Tue, 26 Nov 2024 11:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/20241126_docker%E5%AE%9D%E5%BA%93%E8%87%AA%E5%BB%BA%E9%9F%B3%E4%B9%90%E5%BA%93navidrome/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/posts/2024/Docker%e5%ae%9d%e5%ba%93%ef%bc%9a%e8%87%aa%e5%bb%ba%e9%9f%b3%e4%b9%90%e5%ba%93Navidrome2.PNG" referrerpolicy="no-referrer">
+            </div>自己收藏音乐如何漂漂亮亮的整理在一起，做一个自己的音乐网站？又或是怕音乐App会员过期好歌就不能听了？不想看APP广告，只想要极简的音乐播放]]></description>
+</item>
+<item>
     <title>Docker宝库：SunPanel网址导航</title>
     <link>https://blog.hotine.wang/posts/20241027_docker%E5%AE%9D%E5%BA%93sunpanel%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/</link>
     <pubDate>Sun, 27 Oct 2024 20:00:01 &#43;0800</pubDate>
@@ -74,16 +84,6 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/20240607_openwrt%E6%8C%82%E8%BD%BDsmb%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
     <description><![CDATA[openWRT（Linux）挂载共享文件夹 两个家中都有NAS，用ZerotierOne组网在了一起。其中一个通过SMB协议共享了电影，想在另]]></description>
-</item>
-<item>
-    <title>天津特种兵式旅游记</title>
-    <link>https://blog.hotine.wang/posts/20240513_%E5%A4%A9%E6%B4%A5%E7%89%B9%E7%A7%8D%E5%85%B5%E5%BC%8F%E6%97%85%E6%B8%B8%E8%AE%B0/</link>
-    <pubDate>Mon, 13 May 2024 21:20:59 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20240513_%E5%A4%A9%E6%B4%A5%E7%89%B9%E7%A7%8D%E5%85%B5%E5%BC%8F%E6%97%85%E6%B8%B8%E8%AE%B0/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/2024/20240513_%e5%a4%a9%e6%b4%a5%e7%ab%99%ef%bc%88%e5%b0%81%e9%9d%a2%ef%bc%89.jpg" referrerpolicy="no-referrer">
-            </div>天津，一个不是旅游城市的旅游城市。 论旅游资源，天津好像也没什么东西，连个景区都没有，充其量就是马路边边上的意式建筑和老城区的老房子；但游客就]]></description>
 </item>
 </channel>
 </rss>
