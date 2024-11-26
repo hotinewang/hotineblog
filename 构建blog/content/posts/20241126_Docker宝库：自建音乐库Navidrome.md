@@ -3,7 +3,7 @@ title: Docker宝库：自建音乐库Navidrome
 date: 2024-11-26T11:00:00+08:00
 categories: ["NAS"]
 tags: ["Docker","NAS"]
-featuredImage: /images/posts/2024/Docker宝库：自建音乐库Navidrome2.PNG
+featuredImage: /images/posts/2024/Docker宝库：自建音乐库Navidrome2.png
 draft: false
 ---
 
@@ -31,7 +31,7 @@ deluan/navidrome:latest
 + `-p 4533:4533` 前边的4533可以修改为想使用的端口号；右边的4533为内部端口号不能修改。
 之后即可通过IP:4533访问Navidrome网站。
 注册账户后，如果不是中文界面，可在右上角点击头像，设置为中文界面。
-![设置中文](/images/posts/2024/Docker宝库：自建音乐库Navidrome1.PNG)
+![设置中文](/images/posts/2024/Docker宝库：自建音乐库Navidrome1.png)
 
 这个网站能够展示出音乐文件夹中全部的音乐，并能自建歌单。
 但是，展示的可能比较乱：有的音乐没有封面，有的同一专辑的歌曲被识别为多个专辑等。
@@ -53,15 +53,14 @@ xhongc/music_tag_web:latest
 + `-p 4534:8002 前边的4534可以修改为想使用的端口号；右边的8002为内部端口号不能修改。
 之后即可通过IP:4534访问MusicTag网站进行音乐管理。
 
-![MusicTag](/images/posts/2024/Docker宝库：自建音乐库Navidrome3.PNG)
+![MusicTag](/images/posts/2024/Docker宝库：自建音乐库Navidrome3.png)
 单击一个音频文件，并点击中间面板音乐标题右边的放大镜图标，可以搜索网上的对应音乐，并在最右边的搜索结果中，点击对应的信息，可以替换本地音乐的相应信息。如封面、歌词、标题等。
 勾选多个文件，可以进行批量修改信息等。
 
 除此之外，在电脑端安装一个MusicTag软件，也可以方便的管理音乐文件。
 
 最终，通过MusicTag整理后，在Navidrome中的音乐库如下图：
-![Navidrome](/images/posts/2024/Docker宝库：自建音乐库Navidrome2.PNG)
-
+![Navidrome](/images/posts/2024/Docker宝库：自建音乐库Navidrome2.png)
 
 **自用备份：**
 
