@@ -1,0 +1,23 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>脚本自动化 - Tag - Hotine的小窝</title>
+        <link>https://blog.hotine.wang/tags/%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
+        <description>脚本自动化 - Tag - Hotine的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 16 Jan 2025 09:12:00 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E5%8C%96/" rel="self" type="application/rss+xml" /><item>
+    <title>Linux上做个流量统计器</title>
+    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%B8%8A%E5%81%9A%E4%B8%AA%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%99%A8/</link>
+    <pubDate>Thu, 16 Jan 2025 09:12:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%B8%8A%E5%81%9A%E4%B8%AA%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%99%A8/</guid>
+    <description><![CDATA[VPS流量竟然用超了，于是打算做个流量统计与监控的脚本来自动统计每月和每天的流量使用情况。 查了下资料，Linux系统中，有一个虚拟文件，它提]]></description>
+</item>
+<item>
+    <title>Docker宝库：青龙面板&amp;NTFY消息推送</title>
+    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BFntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</link>
+    <pubDate>Sun, 05 Jan 2025 23:28:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BFntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</guid>
+    <description><![CDATA[青龙面板是一款基于Docker技术构建的支持 Python3、JavaScript、Shell、Typescript 的定时任务管理平台。 简单来]]></description>
+</item>
+</channel>
+</rss>

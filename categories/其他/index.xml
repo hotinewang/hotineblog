@@ -3,47 +3,13 @@
         <title>其他 - Category - Hotine的小窝</title>
         <link>https://blog.hotine.wang/categories/%E5%85%B6%E4%BB%96/</link>
         <description>其他 - Category - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 30 Jul 2024 09:52:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/%E5%85%B6%E4%BB%96/" rel="self" type="application/rss+xml" /><item>
-    <title>WIFI棒子电脑驱动</title>
-    <link>https://blog.hotine.wang/posts/20240730_wifi%E6%A3%92%E5%AD%90%E7%94%B5%E8%84%91%E9%A9%B1%E5%8A%A8/</link>
-    <pubDate>Tue, 30 Jul 2024 09:52:00 &#43;0800</pubDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 08 Jan 2025 02:30:51 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/%E5%85%B6%E4%BB%96/" rel="self" type="application/rss+xml" /><item>
+    <title>VMware虚拟机的端口转发</title>
+    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/vmware%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</link>
+    <pubDate>Wed, 08 Jan 2025 02:30:51 &#43;0000</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20240730_wifi%E6%A3%92%E5%AD%90%E7%94%B5%E8%84%91%E9%A9%B1%E5%8A%A8/</guid>
-    <description><![CDATA[WIFI棒子刷DEBIAN系统后，直接插电脑不会被自动识别。在设备管理器中会显示为：其他设备-RNDIS Communications Control 只需在该设备上点击右键，更新驱动]]></description>
-</item>
-<item>
-    <title>AI随感</title>
-    <link>https://blog.hotine.wang/posts/20240207_ai%E9%9A%8F%E6%84%9F/</link>
-    <pubDate>Wed, 07 Feb 2024 21:44:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20240207_ai%E9%9A%8F%E6%84%9F/</guid>
-    <description><![CDATA[AI随感 自从有了AI，人都变懒了，而且不用思考了，最近几篇Blog都是用AI写的。 《Linux更新软件包 》是用ChatGPT 写的、《Dock]]></description>
-</item>
-<item>
-    <title>Linux更新软件包</title>
-    <link>https://blog.hotine.wang/posts/20240129_linux%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%8C%85/</link>
-    <pubDate>Mon, 29 Jan 2024 20:12:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20240129_linux%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%8C%85/</guid>
-    <description><![CDATA[在Debian系统中更新软件包 在使用Debian或基于Debian的发行版（如Ubuntu）时，你可以使用APT（Advanced Package Tool]]></description>
-</item>
-<item>
-    <title>第一篇Hugo博文</title>
-    <link>https://blog.hotine.wang/posts/20230813_firstarticles/</link>
-    <pubDate>Mon, 14 Aug 2023 21:22:49 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20230813_firstarticles/</guid>
-    <description><![CDATA[第一篇Hugo博文 终于弄好了Hugo，发布了第一篇文章！]]></description>
-</item>
-<item>
-    <title>通过Docker实现B站视频推流</title>
-    <link>https://blog.hotine.wang/posts/20230616_docker%E5%AE%9D%E5%BA%93b%E7%AB%99%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81/</link>
-    <pubDate>Fri, 16 Jun 2023 00:00:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/20230616_docker%E5%AE%9D%E5%BA%93b%E7%AB%99%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/20230616_Docker%e5%ae%9d%e5%ba%93%ef%bc%9aB%e7%ab%99%e8%a7%86%e9%a2%91%e6%8e%a8%e6%b5%81.jpg" referrerpolicy="no-referrer">
-            </div>可以使用kplayer在B站做一个7*24小时的直播小电台。 安装流程： 首先是Kplayer的官方GitHub：bytelang/kplaye]]></description>
+    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/vmware%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</guid>
+    <description><![CDATA[在VMware虚拟机的NAT网络模式下，要从宿主机访问虚拟机内的端口，需要进行端口转发设置。以下是具体步骤： 1. 配置VMware的NAT端口转]]></description>
 </item>
 </channel>
 </rss>
