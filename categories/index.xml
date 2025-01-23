@@ -1,0 +1,55 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Categories - Category - Hotine的小窝</title>
+        <link>https://blog.hotine.wang/categories/</link>
+        <description>Categories - Category - Hotine的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 16 Jan 2025 09:12:00 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>VPS与建站</title>
+    <link>https://blog.hotine.wang/categories/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/</link>
+    <pubDate>Thu, 16 Jan 2025 09:12:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/categories/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>其他</title>
+    <link>https://blog.hotine.wang/categories/%E5%85%B6%E4%BB%96/</link>
+    <pubDate>Wed, 08 Jan 2025 02:30:51 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/categories/%E5%85%B6%E4%BB%96/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Docker</title>
+    <link>https://blog.hotine.wang/categories/docker/</link>
+    <pubDate>Mon, 06 Jan 2025 13:41:35 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/categories/docker/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>玩NAS</title>
+    <link>https://blog.hotine.wang/categories/%E7%8E%A9nas/</link>
+    <pubDate>Mon, 06 Jan 2025 19:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/categories/%E7%8E%A9nas/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>NAS</title>
+    <link>https://blog.hotine.wang/categories/nas/</link>
+    <pubDate>Wed, 27 Nov 2024 15:51:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/categories/nas/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>养花日记</title>
+    <link>https://blog.hotine.wang/categories/%E5%85%BB%E8%8A%B1%E6%97%A5%E8%AE%B0/</link>
+    <pubDate>Sat, 11 May 2024 21:24:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/categories/%E5%85%BB%E8%8A%B1%E6%97%A5%E8%AE%B0/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

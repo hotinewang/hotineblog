@@ -1,0 +1,27 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>建站 - Tag - Hotine的小窝</title>
+        <link>https://blog.hotine.wang/tags/%E5%BB%BA%E7%AB%99/</link>
+        <description>建站 - Tag - Hotine的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 30 Nov 2022 20:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/%E5%BB%BA%E7%AB%99/" rel="self" type="application/rss+xml" /><item>
+    <title>Linux中Docker的安装</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%93%8D%E4%BD%9C/</link>
+    <pubDate>Wed, 30 Nov 2022 20:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%93%8D%E4%BD%9C/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/posts/20221130_Linux%e4%b8%adDocker%e7%9a%84%e5%ae%89%e8%a3%85.cover.jpg" referrerpolicy="no-referrer">
+            </div>什么是DOCKER？ Docker 是一种开源的容器化平台，用于帮助开发人员构建、交付和运行应用程序。通过使用 Docker，开发人员可以将应用程序及其所有]]></description>
+</item>
+<item>
+    <title>Linux中Docker的安装</title>
+    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%93%8D%E4%BD%9C/</link>
+    <pubDate>Wed, 30 Nov 2022 20:00:00 &#43;0800</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%93%8D%E4%BD%9C/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/posts/20221130_Linux%e4%b8%adDocker%e7%9a%84%e5%ae%89%e8%a3%85.cover.jpg" referrerpolicy="no-referrer">
+            </div>什么是DOCKER？ Docker 是一种开源的容器化平台，用于帮助开发人员构建、交付和运行应用程序。通过使用 Docker，开发人员可以将应用程序及其所有]]></description>
+</item>
+</channel>
+</rss>
