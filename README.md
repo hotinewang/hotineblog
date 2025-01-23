@@ -1,2 +1,0 @@
-# hotineblog
-hotine's blog
