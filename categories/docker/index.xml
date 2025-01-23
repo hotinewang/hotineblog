@@ -5,20 +5,20 @@
         <description>Docker - Category - Hotine的小窝</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 06 Jan 2025 13:41:35 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/docker/" rel="self" type="application/rss+xml" /><item>
     <title>Docker添加镜像源及自行搭建方法</title>
-    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E6%B7%BB%E5%8A%A0%E9%95%9C%E5%83%8F%E6%BA%90%E5%8F%8A%E8%87%AA%E8%A1%8C%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/</link>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E6%B7%BB%E5%8A%A0%E9%95%9C%E5%83%8F%E6%BA%90%E5%8F%8A%E8%87%AA%E8%A1%8C%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/</link>
     <pubDate>Mon, 06 Jan 2025 13:41:35 &#43;0000</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E6%B7%BB%E5%8A%A0%E9%95%9C%E5%83%8F%E6%BA%90%E5%8F%8A%E8%87%AA%E8%A1%8C%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/</guid>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E6%B7%BB%E5%8A%A0%E9%95%9C%E5%83%8F%E6%BA%90%E5%8F%8A%E8%87%AA%E8%A1%8C%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/posts/%e5%b0%81%e9%9d%a2%e5%9b%be.jpg" referrerpolicy="no-referrer">
             </div>添加镜像源 目前（2024年10月22日）暂时可用的镜像源： https://jockerhub.com, https://dockerpull.com, https://docker.m.daocloud.io, https://noohub.ru, https://huecker.io, https://dockerhub.timeweb.cloud 修改本地的Docker/etc/docker/deamon.json d]]></description>
 </item>
 <item>
     <title>Docker宝库：青龙面板&amp;NTFY消息推送</title>
-    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BFntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</link>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BFntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</link>
     <pubDate>Sun, 05 Jan 2025 23:28:00 &#43;0800</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BFntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</guid>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BFntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</guid>
     <description><![CDATA[青龙面板是一款基于Docker技术构建的支持 Python3、JavaScript、Shell、Typescript 的定时任务管理平台。 简单来]]></description>
 </item>
 </channel>

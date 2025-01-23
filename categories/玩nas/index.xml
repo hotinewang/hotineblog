@@ -5,18 +5,18 @@
         <description>玩NAS - Category - Hotine的小窝</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 06 Jan 2025 19:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/%E7%8E%A9nas/" rel="self" type="application/rss+xml" /><item>
     <title>Docker使用指南与常用镜像</title>
-    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/0_docker%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E4%B8%8E%E5%B8%B8%E7%94%A8%E9%95%9C%E5%83%8F/</link>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/0_docker%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E4%B8%8E%E5%B8%B8%E7%94%A8%E9%95%9C%E5%83%8F/</link>
     <pubDate>Mon, 06 Jan 2025 19:00:00 &#43;0800</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/0_docker%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E4%B8%8E%E5%B8%B8%E7%94%A8%E9%95%9C%E5%83%8F/</guid>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/0_docker%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E4%B8%8E%E5%B8%B8%E7%94%A8%E9%95%9C%E5%83%8F/</guid>
     <description><![CDATA[什么是Docker Docker 是一种开源的容器化平台，用于帮助开发人员构建、交付和运行应用程序。通过使用Docker，开发人员可以将应用程序及其所有依]]></description>
 </item>
 <item>
     <title>远程浏览器，通过Docker安装Firefox远程版</title>
-    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93firefox/</link>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93firefox/</link>
     <pubDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93firefox/</guid>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93firefox/</guid>
     <description><![CDATA[远程浏览器，通过Docker安装Firefox远程版 通过VPS，可以挂一个远程浏览器，这样就可以变相实现魔法上网。 同时，也可以在远程浏览器中]]></description>
 </item>
 </channel>
