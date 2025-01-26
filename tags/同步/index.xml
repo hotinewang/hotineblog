@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>同步 - Tag - Hotine的小窝</title>
+        <link>https://blog.hotine.wang/tags/%E5%90%8C%E6%AD%A5/</link>
+        <description>同步 - Tag - Hotine的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 28 Feb 2024 04:20:00 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/%E5%90%8C%E6%AD%A5/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker宝库：跨设备同步神器Syncthing</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E7%A5%9E%E5%99%A8syncthing/</link>
+    <pubDate>Wed, 28 Feb 2024 04:20:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E7%A5%9E%E5%99%A8syncthing/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/Docker%e5%ae%9d%e5%ba%93%ef%bc%9a%e8%b7%a8%e8%ae%be%e5%a4%87%e5%90%8c%e6%ad%a5%e7%a5%9e%e5%99%a8Syncthing.jpg" referrerpolicy="no-referrer">
+            </div>简介 Syncthing 是一款开源且免费的跨平台文件同步工具，它可以在多个设备之间进行实时或异步的文件同步，支持版本管理、单向或双向同步等。 它基于点对点（P2]]></description>
+</item>
+</channel>
+</rss>

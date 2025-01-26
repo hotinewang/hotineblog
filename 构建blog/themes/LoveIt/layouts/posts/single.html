@@ -63,16 +63,7 @@
             </div>
         </div>
 
-        {{- /* Featured image */ -}}
-        {{- $image := $params.featuredimage -}}
-        {{- with .Resources.GetMatch "featured-image" -}}
-            {{- $image = .RelPermalink -}}
-        {{- end -}}
-        {{- with $image -}}
-            <div class="featured-image">
-                {{- dict "Src" . "Title" $.Description "Resources" $.Resources | partial "plugin/image.html" -}}
-            </div>
-        {{- end -}}
+        
 
         {{- /* Static TOC */ -}}
         {{- if ne $toc.enable false -}}

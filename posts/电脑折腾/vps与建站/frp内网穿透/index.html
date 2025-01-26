@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>FRP内网穿透 - Hotine的小窝</title><meta name="Description" content="Hotine的窝？"><meta property="og:title" content="FRP内网穿透" />
+<meta property="og:description" content="FRP内网穿透 内网穿透的方案，除了用Zerotier虚拟组网外，还可以使用FRP进行端口映射，实现内网穿透。FRP（Fast Reverse Proxy）:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-12T10:01:00+00:00" />
+<meta property="article:modified_time" content="2024-03-12T10:01:00+00:00" /><meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="FRP内网穿透"/>
+<meta name="twitter:description" content="FRP内网穿透 内网穿透的方案，除了用Zerotier虚拟组网外，还可以使用FRP进行端口映射，实现内网穿透。FRP（Fast Reverse Proxy）:"/>
+<meta name="application-name" content="Hotine的小窝">
+<meta name="apple-mobile-web-app-title" content="Hotine的小窝"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" /><link rel="prev" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93portainer/" /><link rel="next" href="https://blog.hotine.wang/posts/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/%E5%85%BB%E8%8A%B1%E6%97%A5%E8%AE%B0%E5%85%BB%E8%8A%B1%E8%99%AB%E5%AE%B3%E7%94%A8%E8%8D%AF%E7%AC%94%E8%AE%B0/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "FRP内网穿透",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.hotine.wang\/posts\/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE\/vps%E4%B8%8E%E5%BB%BA%E7%AB%99\/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F\/"
+        },"genre": "posts","keywords": "FRP, 内网穿透, NAS, 反向代理, Docker","wordcount":  1774 ,
+        "url": "https:\/\/blog.hotine.wang\/posts\/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE\/vps%E4%B8%8E%E5%BB%BA%E7%AB%99\/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F\/","datePublished": "2024-03-12T10:01:00+00:00","dateModified": "2024-03-12T10:01:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Hotine"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="文章列表"> 文章列表 </a><a class="menu-item" href="/categories/" title="分类"> 分类 </a><a class="menu-item" href="/tags/" title="标签"> 标签 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="文章列表">文章列表</a><a class="menu-item" href="/categories/" title="分类">分类</a><a class="menu-item" href="/tags/" title="标签">标签</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">FRP内网穿透</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>VPS与建站</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-03-12">2024-03-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1774 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#下载安装frp">下载安装FRP</a>
+      <ul>
+        <li><a href="#方法1使用docker安装">方法1：使用Docker安装</a></li>
+        <li><a href="#方法2直接安装">方法2：直接安装</a></li>
+      </ul>
+    </li>
+    <li><a href="#配置frp服务端与客户端文件">配置FRP服务端与客户端文件</a>
+      <ul>
+        <li><a href="#服务端配置文件设置">服务端配置文件设置</a></li>
+        <li><a href="#客户端配置文件设置">客户端配置文件设置</a></li>
+      </ul>
+    </li>
+    <li><a href="#其他事项">其他事项</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="frp内网穿透">FRP内网穿透</h1>
+<p>内网穿透的方案，除了用Zerotier虚拟组网外，还可以使用FRP进行端口映射，实现内网穿透。<strong>FRP（Fast Reverse Proxy）:</strong> FRP 是一种用于内网穿透的工具，它允许您通过公网访问位于私有网络内的服务器和服务。它支持多种协议，如 HTTP、HTTPS、TCP 和 UDP。</p>
+<p>这种方式，不需要访问者设备上安装特别的应用程序，只需要在内网机和服务器上分别安装FPR服务端可客户端即可。访问者通过“服务器域名或IP+映射端口”号来访问内网特定端口。</p>
+<h2 id="下载安装frp">下载安装FRP</h2>
+<h3 id="方法1使用docker安装">方法1：使用Docker安装</h3>
+<p>分别在服务器和内网机的控制台中新建<code>/opt/frps/</code>目录和<code>/opt/frpc/</code>目录。
+服务器端在<code>/opt/frps/</code>目录中新建<code>frps.toml</code>文件。
+之后在服务器控制台运行以下命令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-d <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--name frps  <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--network host <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /opt/frps/frps.toml:/etc/frp/frps.toml <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>snowdreamtech/frps
+</span></span></code></pre></div><p>内网机在<code>/opt/frpc/</code>目录中新建frpc.toml文件。
+之后在内网机的控制台运行以下命令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-d <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--name frpc  <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--network host <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /opt/frpc/frpc.toml:/etc/frp/frpc.toml <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>snowdreamtech/frpc
+</span></span></code></pre></div><h3 id="方法2直接安装">方法2：直接安装</h3>
+<p>首先从Github上下载FRP的最新版，(fatedier/frp)[https://github.com/fatedier/frp/releases] ,解压缩后会有4个比较重要的文件：</p>
+<pre tabindex="0"><code>frpc		客户端程序
+frpc.toml		客户端配置文件
+
+frps		服务端程序（公网主机用，比如VPS）
+frps.toml		服务端配置文件
+</code></pre><p>之后把frps、frps.toml上传到服务器；frpc、frpc.toml上传到要穿透的内网机。比方说分别放在服务器和内网机的<code>/opt/frps/</code>和<code>/opt/frps/</code>目录中。</p>
+<p>PS：此方法后续需要额外设置frp程序跟随系统自启动。否则系统重启后，服务将停止。建议使用docker部署。</p>
+<h2 id="配置frp服务端与客户端文件">配置FRP服务端与客户端文件</h2>
+<h3 id="服务端配置文件设置">服务端配置文件设置</h3>
+<p>修改服务端frps.toml：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>common<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">bind_port</span> <span class="o">=</span> <span class="m">7000</span> <span class="c1">#frp通信用的监听端口</span>
+</span></span><span class="line"><span class="cl"><span class="nv">vhost_http_port</span> <span class="o">=</span> <span class="m">7080</span> <span class="c1">#frp在代理内网机http协议80端口时对应的映射端口</span>
+</span></span><span class="line"><span class="cl"><span class="nv">vhost_https_port</span> <span class="o">=</span> <span class="m">7443</span> <span class="c1">#frp在代理内网机https协议443端口时对应的映射端口</span>
+</span></span><span class="line"><span class="cl"><span class="nv">subdomain_host</span><span class="o">=</span> on.hotine.wang <span class="c1">#要绑定的子域名，需要在DNS中提前设置好这个域名解析到服务器上。同时，还需设置*.on.hotine.wang也解析到服务器上。</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">token</span> <span class="o">=</span> hotinefrp <span class="c1">#frps和frpc建立连接时的密码</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">dashboard_port</span> <span class="o">=</span> <span class="m">7001</span> <span class="c1">#frps管理面板的对应端口。可以使用服务器IP:7001进行访问</span>
+</span></span><span class="line"><span class="cl"><span class="nv">dashboard_user</span> <span class="o">=</span> admin <span class="c1">#管理面板的用户名</span>
+</span></span><span class="line"><span class="cl"><span class="nv">dashboard_pwd</span> <span class="o">=</span> password <span class="c1">#管理面板的密码</span>
+</span></span></code></pre></div><p>保存并关闭配置文件。</p>
+<p>如果是Docker部署的，直接重启容器即可<code>docker restart frps</code>。</p>
+<p>如果是直接安装的，在控制台中导航到 FRP 服务器端目录，运行 <code>./frps -c frps.toml</code> 启动 FRP 服务器端。</p>
+<p>修改frps.toml文件后，均需要重启frps。</p>
+<h3 id="客户端配置文件设置">客户端配置文件设置</h3>
+<p>比如想把内网SMB协议、SSH协议、9009端口的网页穿透到公网，则修改客户端frpc.ini为：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>common<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">server_addr</span> <span class="o">=</span> 199.115.230.45 <span class="c1">#服务器地址，可以用IP或者域名</span>
+</span></span><span class="line"><span class="cl"><span class="nv">server_port</span> <span class="o">=</span> <span class="m">7000</span> <span class="c1">#frp通信用的监听端口，需要和服务端设置一致</span>
+</span></span><span class="line"><span class="cl"><span class="nv">token</span> <span class="o">=</span> hotinefrp <span class="c1">#frps和frpc建立连接时的密码，需要和服务端设置一致</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">log_file</span> <span class="o">=</span> /etc/frp/frpc.log
+</span></span><span class="line"><span class="cl"><span class="nv">log_level</span> <span class="o">=</span> info
+</span></span><span class="line"><span class="cl"><span class="nv">log_max_days</span> <span class="o">=</span> <span class="m">3</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 客户端配置web页面，配置后可以在localhost:7001页面修改本地配置</span>
+</span></span><span class="line"><span class="cl"><span class="nv">admin_addr</span> <span class="o">=</span> 0.0.0.0
+</span></span><span class="line"><span class="cl"><span class="nv">admin_port</span> <span class="o">=</span> <span class="m">7001</span>
+</span></span><span class="line"><span class="cl"><span class="nv">admin_user</span> <span class="o">=</span> admin
+</span></span><span class="line"><span class="cl"><span class="nv">admin_pwd</span> <span class="o">=</span> password
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>ssh<span class="o">]</span> <span class="c1">#SSH连接所需设置。外网可通过server_addr指定的地址、端口号7022进行SSH连接内网机。</span>
+</span></span><span class="line"><span class="cl"><span class="nv">name</span> <span class="o">=</span> <span class="s2">&#34;SSH&#34;</span> <span class="c1">#标识名称</span>
+</span></span><span class="line"><span class="cl"><span class="nb">type</span> <span class="o">=</span> <span class="s2">&#34;tcp&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">local_ip</span> <span class="o">=</span> <span class="s2">&#34;127.0.0.1&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">local_port</span> <span class="o">=</span> <span class="m">22</span>
+</span></span><span class="line"><span class="cl"><span class="nv">remote_port</span> <span class="o">=</span> <span class="m">7022</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>sync<span class="o">]</span> <span class="c1">#http穿透演示</span>
+</span></span><span class="line"><span class="cl"><span class="nv">name</span> <span class="o">=</span> <span class="s2">&#34;test&#34;</span> <span class="c1">#标识名称</span>
+</span></span><span class="line"><span class="cl"><span class="nb">type</span> <span class="o">=</span> <span class="s2">&#34;http&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">local_ip</span> <span class="o">=</span> <span class="s2">&#34;127.0.0.1&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">local_port</span> <span class="o">=</span> <span class="m">8384</span> <span class="c1">#内网中要穿透的端口号</span>
+</span></span><span class="line"><span class="cl"><span class="nv">subdomain</span> <span class="o">=</span> <span class="nb">test</span> <span class="c1">#映射到subdomain_host（例如上文中的on.hotine.wang）时所用的子域名。之后可以通过test.on.hotine.wang:7080访问。</span>
+</span></span></code></pre></div><p>之后重启docker，<code>docker restart frpc</code>。
+如果是直接安装的，在控制台中导航到 FRP 内网机目录，运行 <code>./frpc -c frpc.toml</code> 启动 FRP 客户端。</p>
+<p>修改frpc.toml文件后，均需要重启frpc。或者使用网页管理面板修改，可免除重启。</p>
+<p>完成上述步骤后，就可以通过<code>test.on.hotine.wang:7080</code>访问内网对应资源了。</p>
+<p>请确保网络配置正确，端口映射和防火墙设置没有问题。另外，务必考虑安全性和身份验证等问题，以确保共享文件不会暴露在公开网络中。</p>
+<h2 id="其他事项">其他事项</h2>
+<ul>
+<li>
+<p>虽然说<code>server_addr</code>可以使用IP或者域名，但是如果启用了Cloudflare IP保护功能的话，使用域名将无法连接。</p>
+</li>
+<li>
+<p>上文中的子域名泛解析<code>*.on.hotine.wang</code>,也不能启动IP保护功能。</p>
+</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-03-12</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" data-title="FRP内网穿透" data-via="xxxx" data-hashtags="FRP,内网穿透,NAS,反向代理,Docker"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" data-hashtag="FRP"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" data-title="FRP内网穿透"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/frp/">FRP</a>,&nbsp;<a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">内网穿透</a>,&nbsp;<a href="/tags/nas/">NAS</a>,&nbsp;<a href="/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/">反向代理</a>,&nbsp;<a href="/tags/docker/">Docker</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93portainer/" class="prev" rel="prev" title="Docker宝库：Docker管理工具Portainer"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Docker宝库：Docker管理工具Portainer</a>
+            <a href="/posts/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/%E5%85%BB%E8%8A%B1%E6%97%A5%E8%AE%B0%E5%85%BB%E8%8A%B1%E8%99%AB%E5%AE%B3%E7%94%A8%E8%8D%AF%E7%AC%94%E8%AE%B0/" class="next" rel="next" title="养花日记：养花虫害用药笔记">养花日记：养花虫害用药笔记<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><br /></div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2021 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Hotine</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.5.4/dist/index.umd.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"Hotine.Wang的小窝","id-2":"Hotine.Wang的小窝"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Obsidian - Tag - Hotine的小窝</title>
+        <link>https://blog.hotine.wang/tags/obsidian/</link>
+        <description>Obsidian - Tag - Hotine的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 26 Jan 2025 13:06:56 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/obsidian/" rel="self" type="application/rss+xml" /><item>
+    <title>Obsidian转Hugo的小脚本</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/obsidian%E8%BD%AChugo%E7%9A%84%E5%B0%8F%E8%84%9A%E6%9C%AC/</link>
+    <pubDate>Sun, 26 Jan 2025 13:06:56 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/obsidian%E8%BD%AChugo%E7%9A%84%E5%B0%8F%E8%84%9A%E6%9C%AC/</guid>
+    <description><![CDATA[费劲巴拉，写了个Obsidian转换Hugo的小脚本。因为Obsidian上的那两个转Hugo的插件都不好用。C！ /** * 功能，把Obsidai]]></description>
+</item>
+</channel>
+</rss>

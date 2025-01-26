@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Docker宝库：好用的付费相册MT-Photos - Hotine的小窝</title><meta name="Description" content="Hotine的窝？"><meta property="og:title" content="Docker宝库：好用的付费相册MT-Photos" />
+<meta property="og:description" content="简介 MT Photos（付费）是一款为NAS用户量身打造的照片管理系统。可自动将照片整理、分类，包括但不限于时间、地点、人物、照片类型。 同时也提" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BB%98%E8%B4%B9%E7%9B%B8%E5%86%8Cmt-photos/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-02-18T04:20:00+00:00" />
+<meta property="article:modified_time" content="2024-02-18T04:20:00+00:00" /><meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Docker宝库：好用的付费相册MT-Photos"/>
+<meta name="twitter:description" content="简介 MT Photos（付费）是一款为NAS用户量身打造的照片管理系统。可自动将照片整理、分类，包括但不限于时间、地点、人物、照片类型。 同时也提"/>
+<meta name="application-name" content="Hotine的小窝">
+<meta name="apple-mobile-web-app-title" content="Hotine的小窝"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BB%98%E8%B4%B9%E7%9B%B8%E5%86%8Cmt-photos/" /><link rel="prev" href="https://blog.hotine.wang/posts/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/ai%E9%9A%8F%E6%84%9F20240207/" /><link rel="next" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E7%A5%9E%E5%99%A8syncthing/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Docker宝库：好用的付费相册MT-Photos",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.hotine.wang\/posts\/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE\/%E7%8E%A9nas\/docker%E5%AE%9D%E5%BA%93%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BB%98%E8%B4%B9%E7%9B%B8%E5%86%8Cmt-photos\/"
+        },"genre": "posts","keywords": "Docker, 相册, NAS","wordcount":  1713 ,
+        "url": "https:\/\/blog.hotine.wang\/posts\/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE\/%E7%8E%A9nas\/docker%E5%AE%9D%E5%BA%93%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BB%98%E8%B4%B9%E7%9B%B8%E5%86%8Cmt-photos\/","datePublished": "2024-02-18T04:20:00+00:00","dateModified": "2024-02-18T04:20:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Hotine"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="文章列表"> 文章列表 </a><a class="menu-item" href="/categories/" title="分类"> 分类 </a><a class="menu-item" href="/tags/" title="标签"> 标签 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="文章列表">文章列表</a><a class="menu-item" href="/categories/" title="分类">分类</a><a class="menu-item" href="/tags/" title="标签">标签</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Docker宝库：好用的付费相册MT-Photos</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/%E7%8E%A9nas/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>玩NAS</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-02-18">2024-02-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1713 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#简介">简介</a></li>
+    <li><a href="#mtphotos安装流程">mtphotos安装流程</a>
+      <ul>
+        <li><a href="#1-准备工作">1. 准备工作</a></li>
+        <li><a href="#2-确定必要的目录">2. 确定必要的目录</a></li>
+        <li><a href="#3-运行docker容器">3. 运行Docker容器</a></li>
+      </ul>
+    </li>
+    <li><a href="#访问与配置mtphotos">访问与配置mtphotos</a></li>
+    <li><a href="#进阶设置">进阶设置</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="简介">简介</h2>
+<p><strong>MT Photos</strong>（付费）是一款为NAS用户量身打造的照片管理系统。可自动将照片整理、分类，包括但不限于时间、地点、人物、照片类型。
+同时也提供网页、安卓、苹果app，可以方便的管理服务器上的照片，也可以设置备份手机端相册。</p>
+<p><strong>官网上描述的功能特性包括：</strong></p>
+<ul>
+<li>以<strong>时间线</strong> 的方式，展示您的照片</li>
+<li>以<strong>文件夹</strong> 的方式，展示您的照片</li>
+<li>通过<strong>图库</strong> 您可以方便地将现有存储中的照片，提供给用户</li>
+<li>手机App<strong>备份照片、视频支持丰富的命名规则</strong> （按年月分文件夹、按拍摄日期命名文件等）；</li>
+<li>通过人脸识别，自动生成<strong>人物相册</strong></li>
+<li>基于照片的GPS信息，自动生成<strong>地点相册</strong></li>
+<li>支持<strong>Live Photos</strong> 的无损备份、下载、显示</li>
+<li>按<strong>文件类型</strong> ，自动分类屏幕截图、自拍照、视频、动态照片</li>
+<li>基于照片内容，自动生成<strong>场景相册</strong></li>
+<li>通过<strong>影集分享</strong> ，您可以方便地将照片分享给家人</li>
+<li><strong>图片、视频查重</strong></li>
+</ul>
+<p><strong>使用费用为：</strong></p>
+<ul>
+<li>免费试用一个月</li>
+<li>3元/月    25元/年    99元/终身</li>
+</ul>
+<h2 id="mtphotos安装流程">mtphotos安装流程</h2>
+<h3 id="1-准备工作">1. 准备工作</h3>
+<p>确保您的系统上已经安装了Docker。如果还没有安装，您可以访问Docker官网下载并安装适合您操作系统的Docker版本。</p>
+<h3 id="2-确定必要的目录">2. 确定必要的目录</h3>
+<p>在您的系统中创建并确定三个目录：用于存放配置文件（以及缓存文件）、上传/备份的照片以及照片库（可以是多个）。这些目录需要根据您的实际路径进行调整。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p /opt/mtphotos/config
+</span></span><span class="line"><span class="cl">mkdir -p /path/to/Backups/Photos
+</span></span><span class="line"><span class="cl">mkdir -p /path/to/PhotoAlbum
+</span></span><span class="line"><span class="cl">mkdir -p /path/to/PhotoAlbum2
+</span></span></code></pre></div><h3 id="3-运行docker容器">3. 运行Docker容器</h3>
+<p>使用以下Docker命令来启动mtphotos容器。这个命令会创建一个名为mt-photos的容器，并将您的本地目录挂载到容器内部，同时设置时区为中国上海时间，并在容器停止时自动重启。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -d <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--name<span class="o">=</span><span class="s2">&#34;mt-photos&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /opt/mtphotos/config:/config <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /path/to/Backups/Photos:/upload <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /path/to/PhotoAlbum:/photoalbum <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /path/to/PhotoAlbum2:/photoalbum2 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-p 8063:8063 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-e <span class="nv">TZ</span><span class="o">=</span><span class="s2">&#34;Asia/Shanghai&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>--restart<span class="o">=</span><span class="s2">&#34;unless-stopped&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>mtphotos/mt-photos:latest
+</span></span></code></pre></div><p>代码解释：</p>
+<ul>
+<li><code>-d</code>：后台运行容器。</li>
+<li><code>--name=&quot;mt-photos&quot;</code>：给容器命名为mt-photos（可自行修改）。</li>
+<li><code>-v /opt/mtphotos/config:/config</code>：将本地的/opt/mtphotos/config目录挂载到容器的/config目录,默认情况下，这个目录中会有一个cache文件夹，用于存放缩略图等文件可能会比较大，可以通过环境变量CACHE_DIR_PATH来单独指定cache的存放位置：<code>-e CACHE_DIR_PATH=&quot;/photoalbum/cache/&quot;``* -v /path/to/Backups/Photos:/upload</code>：将本地的/path/to/Backups/Photos目录挂载到容器的/upload目录，用于存放上传的照片。</li>
+<li><code>-v /path/to/PhotoAlbum:/photoalbum</code>：将本地的/path/to/PhotoAlbum目录挂载到容器的/photoalbum目录，用于指定一个照片库。容器内的目录名可以自定义。</li>
+<li><code>-v /path/to/PhotoAlbum2:/photoalbum2</code>：将本地的/path/to/PhotoAlbum2目录挂载到容器的/photoalbum2目录，用于指定另一个照片库。容器内的目录名可以自定义。</li>
+<li><code>-p 8063:8063</code>：将容器的8063端口映射到宿主机的8063端口。</li>
+<li><code>-e TZ=&quot;Asia/Shanghai&quot;</code>：设置容器的时区为上海时间。</li>
+<li><code>--restart=&quot;unless-stopped&quot;</code>：除非手动停止，否则容器在退出时会自动重启。</li>
+<li><code>mtphotos/mt-photos:latest</code>：指定要运行的Docker镜像和标签。</li>
+</ul>
+<h2 id="访问与配置mtphotos">访问与配置mtphotos</h2>
+<p>启动容器后，您可以通过浏览器访问http://localhost:8063来查看和使用mtphotos。您可能需要根据实际情况调整端口号。</p>
+<p>在浏览器中访问mtphotos后，您可能需要进行一些基本的配置，比如设置用户权限、相册等。请根据mtphotos的界面提示进行操作。</p>
+<h2 id="进阶设置">进阶设置</h2>
+<ul>
+<li>可以在系统配置里，根据需求，按提示增加智能识别API和GPS信息识别，便于对照片进行归档整理。</li>
+<li>人脸识别在nas中处理会比较慢，大批量处理照片时可以在系统配置里直接关闭人脸识别选项，在需要使用时，在系统配置-人脸识别（保持关闭）-辅助处理浏览器端。使用手机或电脑的浏览器进行辅助处理，速度很快。</li>
+</ul>
+<p>人脸识别的Insightface模型API</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -i -p 8066:8066 -e <span class="nv">API_AUTH_KEY</span><span class="o">=</span>mt_photos_ai_nas100 --name mt-photos-insightface-unofficial --restart<span class="o">=</span><span class="s2">&#34;unless-stopped&#34;</span> devfox101/mt-photos-insightface-unofficial:latest
+</span></span></code></pre></div><p>智能识别API</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -i -p 8060:8060 -e <span class="nv">API_AUTH_KEY</span><span class="o">=</span>mt_photos_ai_nas100 --name mt-photos-ai mtphotos/mt-photos-ai:latest
+</span></span></code></pre></div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-02-18</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BB%98%E8%B4%B9%E7%9B%B8%E5%86%8Cmt-photos/" data-title="Docker宝库：好用的付费相册MT-Photos" data-via="xxxx" data-hashtags="Docker,相册,NAS"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BB%98%E8%B4%B9%E7%9B%B8%E5%86%8Cmt-photos/" data-hashtag="Docker"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BB%98%E8%B4%B9%E7%9B%B8%E5%86%8Cmt-photos/" data-title="Docker宝库：好用的付费相册MT-Photos"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/docker/">Docker</a>,&nbsp;<a href="/tags/%E7%9B%B8%E5%86%8C/">相册</a>,&nbsp;<a href="/tags/nas/">NAS</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/ai%E9%9A%8F%E6%84%9F20240207/" class="prev" rel="prev" title="AI随感"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>AI随感</a>
+            <a href="/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E7%A5%9E%E5%99%A8syncthing/" class="next" rel="next" title="Docker宝库：跨设备同步神器Syncthing">Docker宝库：跨设备同步神器Syncthing<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><br /></div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2021 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Hotine</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.5.4/dist/index.umd.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"Hotine.Wang的小窝","id-2":"Hotine.Wang的小窝"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

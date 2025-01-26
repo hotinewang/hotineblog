@@ -3,37 +3,57 @@
         <title>脚本自动化 - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
         <description>脚本自动化 - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 16 Jan 2025 09:12:00 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E5%8C%96/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 26 Jan 2025 13:06:56 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E5%8C%96/" rel="self" type="application/rss+xml" /><item>
+    <title>Obsidian转Hugo的小脚本</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/obsidian%E8%BD%AChugo%E7%9A%84%E5%B0%8F%E8%84%9A%E6%9C%AC/</link>
+    <pubDate>Sun, 26 Jan 2025 13:06:56 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/obsidian%E8%BD%AChugo%E7%9A%84%E5%B0%8F%E8%84%9A%E6%9C%AC/</guid>
+    <description><![CDATA[费劲巴拉，写了个Obsidian转换Hugo的小脚本。因为Obsidian上的那两个转Hugo的插件都不好用。C！ /** * 功能，把Obsidai]]></description>
+</item>
+<item>
+    <title>天天基金网API</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/%E5%A4%A9%E5%A4%A9%E5%9F%BA%E9%87%91%E7%BD%91api/</link>
+    <pubDate>Thu, 23 Jan 2025 14:41:54 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/%E5%A4%A9%E5%A4%A9%E5%9F%BA%E9%87%91%E7%BD%91api/</guid>
+    <description><![CDATA[天天基金网获取某基金净值的API接口主要有以下几个： 基金实时信息接口：用于获取基金的实时信息，包括单位净值等数据。 http://fundgz]]></description>
+</item>
+<item>
     <title>Linux上做个流量统计器</title>
     <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%B8%8A%E5%81%9A%E4%B8%AA%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%99%A8/</link>
-    <pubDate>Thu, 16 Jan 2025 09:12:00 &#43;0000</pubDate>
+    <pubDate>Tue, 14 Jan 2025 14:17:47 &#43;0000</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%B8%8A%E5%81%9A%E4%B8%AA%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%99%A8/</guid>
     <description><![CDATA[VPS流量竟然用超了，于是打算做个流量统计与监控的脚本来自动统计每月和每天的流量使用情况。 查了下资料，Linux系统中，有一个虚拟文件，它提]]></description>
 </item>
 <item>
-    <title>Linux上做个流量统计器</title>
-    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%B8%8A%E5%81%9A%E4%B8%AA%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%99%A8/</link>
-    <pubDate>Thu, 16 Jan 2025 09:12:00 &#43;0000</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%B8%8A%E5%81%9A%E4%B8%AA%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%99%A8/</guid>
-    <description><![CDATA[VPS流量竟然用超了，于是打算做个流量统计与监控的脚本来自动统计每月和每天的流量使用情况。 查了下资料，Linux系统中，有一个虚拟文件，它提]]></description>
-</item>
-<item>
     <title>Docker宝库：青龙面板&amp;NTFY消息推送</title>
     <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BFntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</link>
-    <pubDate>Sun, 05 Jan 2025 23:28:00 &#43;0800</pubDate>
+    <pubDate>Sun, 05 Jan 2025 15:28:00 &#43;0000</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BFntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</guid>
-    <description><![CDATA[青龙面板是一款基于Docker技术构建的支持 Python3、JavaScript、Shell、Typescript 的定时任务管理平台。 简单来]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/Docker%e5%ae%9d%e5%ba%93%ef%bc%9a%e9%9d%92%e9%be%99%e9%9d%a2%e6%9d%bf&amp;NTFY%e6%b6%88%e6%81%af%e6%8e%a8%e9%80%811.png" referrerpolicy="no-referrer">
+            </div>青龙面板是一款基于Docker技术构建的支持 Python3、JavaScript、Shell、Typescript 的定时任务管理平台。 简单来]]></description>
 </item>
 <item>
-    <title>Docker宝库：青龙面板&amp;NTFY消息推送</title>
-    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BFntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</link>
-    <pubDate>Sun, 05 Jan 2025 23:28:00 &#43;0800</pubDate>
+    <title>NTFY消息推送</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/ntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</link>
+    <pubDate>Fri, 27 Dec 2024 07:51:00 &#43;0000</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BFntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</guid>
-    <description><![CDATA[青龙面板是一款基于Docker技术构建的支持 Python3、JavaScript、Shell、Typescript 的定时任务管理平台。 简单来]]></description>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/ntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e5%85%b6%e4%bb%96/NTFY%e6%b6%88%e6%81%af%e6%8e%a8%e9%80%81.jpg" referrerpolicy="no-referrer">
+            </div>研究了好几天，作为消息推送、订阅服务，首先查到的就是基于MQTT协议的相关服务，包括出名的EMQX、Mosquitto等，但是研究了半天，这]]></description>
+</item>
+<item>
+    <title>安卓手机自动化神器AutoX.JS</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/%E5%AE%89%E5%8D%93%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B9%8Bautox.js/</link>
+    <pubDate>Sun, 17 Sep 2023 13:36:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/%E5%AE%89%E5%8D%93%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B9%8Bautox.js/</guid>
+    <description><![CDATA[安卓手机自动化神器AutoX.JS Auto.js 是一款基于 Android 平台的自动化测试和脚本编写工具。它允许用户编写脚本来模拟用户在 Android 设备上的操作，例如点击、滑动]]></description>
 </item>
 </channel>
 </rss>

@@ -3,89 +3,95 @@
         <title>Docker - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/docker/</link>
         <description>Docker - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 06 Jan 2025 13:41:35 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/docker/" rel="self" type="application/rss+xml" /><item>
-    <title>Docker添加镜像源及自行搭建方法</title>
-    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E6%B7%BB%E5%8A%A0%E9%95%9C%E5%83%8F%E6%BA%90%E5%8F%8A%E8%87%AA%E8%A1%8C%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/</link>
-    <pubDate>Mon, 06 Jan 2025 13:41:35 &#43;0000</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E6%B7%BB%E5%8A%A0%E9%95%9C%E5%83%8F%E6%BA%90%E5%8F%8A%E8%87%AA%E8%A1%8C%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/%e5%b0%81%e9%9d%a2%e5%9b%be.jpg" referrerpolicy="no-referrer">
-            </div>添加镜像源 目前（2024年10月22日）暂时可用的镜像源： https://jockerhub.com, https://dockerpull.com, https://docker.m.daocloud.io, https://noohub.ru, https://huecker.io, https://dockerhub.timeweb.cloud 修改本地的Docker/etc/docker/deamon.json d]]></description>
-</item>
-<item>
-    <title>Docker添加镜像源及自行搭建方法</title>
-    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E6%B7%BB%E5%8A%A0%E9%95%9C%E5%83%8F%E6%BA%90%E5%8F%8A%E8%87%AA%E8%A1%8C%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/</link>
-    <pubDate>Mon, 06 Jan 2025 13:41:35 &#43;0000</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E6%B7%BB%E5%8A%A0%E9%95%9C%E5%83%8F%E6%BA%90%E5%8F%8A%E8%87%AA%E8%A1%8C%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/%e5%b0%81%e9%9d%a2%e5%9b%be.jpg" referrerpolicy="no-referrer">
-            </div>添加镜像源 目前（2024年10月22日）暂时可用的镜像源： https://jockerhub.com, https://dockerpull.com, https://docker.m.daocloud.io, https://noohub.ru, https://huecker.io, https://dockerhub.timeweb.cloud 修改本地的Docker/etc/docker/deamon.json d]]></description>
-</item>
-<item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 06 Jan 2025 11:00:00 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/docker/" rel="self" type="application/rss+xml" /><item>
     <title>Docker使用指南与常用镜像</title>
     <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/0_docker%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E4%B8%8E%E5%B8%B8%E7%94%A8%E9%95%9C%E5%83%8F/</link>
-    <pubDate>Mon, 06 Jan 2025 19:00:00 &#43;0800</pubDate>
+    <pubDate>Mon, 06 Jan 2025 11:00:00 &#43;0000</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/0_docker%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E4%B8%8E%E5%B8%B8%E7%94%A8%E9%95%9C%E5%83%8F/</guid>
-    <description><![CDATA[什么是Docker Docker 是一种开源的容器化平台，用于帮助开发人员构建、交付和运行应用程序。通过使用Docker，开发人员可以将应用程序及其所有依]]></description>
-</item>
-<item>
-    <title>Docker使用指南与常用镜像</title>
-    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/0_docker%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E4%B8%8E%E5%B8%B8%E7%94%A8%E9%95%9C%E5%83%8F/</link>
-    <pubDate>Mon, 06 Jan 2025 19:00:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/0_docker%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E4%B8%8E%E5%B8%B8%E7%94%A8%E9%95%9C%E5%83%8F/</guid>
-    <description><![CDATA[什么是Docker Docker 是一种开源的容器化平台，用于帮助开发人员构建、交付和运行应用程序。通过使用Docker，开发人员可以将应用程序及其所有依]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/0_Docker%e4%bd%bf%e7%94%a8%e6%8c%87%e5%8d%97%e4%b8%8e%e5%b8%b8%e7%94%a8%e9%95%9c%e5%83%8f.jpg" referrerpolicy="no-referrer">
+            </div>什么是Docker Docker 是一种开源的容器化平台，用于帮助开发人员构建、交付和运行应用程序。通过使用Docker，开发人员可以将应用程序及其所有依]]></description>
 </item>
 <item>
     <title>Docker宝库：青龙面板&amp;NTFY消息推送</title>
     <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BFntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</link>
-    <pubDate>Sun, 05 Jan 2025 23:28:00 &#43;0800</pubDate>
+    <pubDate>Sun, 05 Jan 2025 15:28:00 &#43;0000</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BFntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</guid>
-    <description><![CDATA[青龙面板是一款基于Docker技术构建的支持 Python3、JavaScript、Shell、Typescript 的定时任务管理平台。 简单来]]></description>
-</item>
-<item>
-    <title>Docker宝库：青龙面板&amp;NTFY消息推送</title>
-    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BFntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</link>
-    <pubDate>Sun, 05 Jan 2025 23:28:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BFntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</guid>
-    <description><![CDATA[青龙面板是一款基于Docker技术构建的支持 Python3、JavaScript、Shell、Typescript 的定时任务管理平台。 简单来]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/Docker%e5%ae%9d%e5%ba%93%ef%bc%9a%e9%9d%92%e9%be%99%e9%9d%a2%e6%9d%bf&amp;NTFY%e6%b6%88%e6%81%af%e6%8e%a8%e9%80%811.png" referrerpolicy="no-referrer">
+            </div>青龙面板是一款基于Docker技术构建的支持 Python3、JavaScript、Shell、Typescript 的定时任务管理平台。 简单来]]></description>
 </item>
 <item>
     <title>Docker宝库：Alist网盘集成</title>
     <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93alist%E7%BD%91%E7%9B%98%E9%9B%86%E6%88%90/</link>
-    <pubDate>Wed, 27 Nov 2024 15:51:00 &#43;0800</pubDate>
+    <pubDate>Wed, 27 Nov 2024 07:51:00 &#43;0000</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93alist%E7%BD%91%E7%9B%98%E9%9B%86%E6%88%90/</guid>
-    <description><![CDATA[Alist 是一个支持多种存储的文件列表程序。包括本地存储、阿里云盘、OneDrive、Google Drive 等，且易于拓展。支持视频、音频、文档、PDF、图]]></description>
-</item>
-<item>
-    <title>Docker宝库：Alist网盘集成</title>
-    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93alist%E7%BD%91%E7%9B%98%E9%9B%86%E6%88%90/</link>
-    <pubDate>Wed, 27 Nov 2024 15:51:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93alist%E7%BD%91%E7%9B%98%E9%9B%86%E6%88%90/</guid>
-    <description><![CDATA[Alist 是一个支持多种存储的文件列表程序。包括本地存储、阿里云盘、OneDrive、Google Drive 等，且易于拓展。支持视频、音频、文档、PDF、图]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/Docker%e5%ae%9d%e5%ba%93%ef%bc%9aAlist%e7%bd%91%e7%9b%98%e9%9b%86%e6%88%90.png" referrerpolicy="no-referrer">
+            </div>Alist 是一个支持多种存储的文件列表程序。包括本地存储、阿里云盘、OneDrive、Google Drive 等，且易于拓展。支持视频、音频、文档、PDF、图]]></description>
 </item>
 <item>
     <title>Docker宝库：自建音乐库Navidrome</title>
     <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93navidrome%E8%87%AA%E5%BB%BA%E9%9F%B3%E4%B9%90%E5%BA%93/</link>
-    <pubDate>Tue, 26 Nov 2024 19:00:00 &#43;0800</pubDate>
+    <pubDate>Tue, 26 Nov 2024 11:00:00 &#43;0000</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93navidrome%E8%87%AA%E5%BB%BA%E9%9F%B3%E4%B9%90%E5%BA%93/</guid>
-    <description><![CDATA[自己收藏音乐如何漂漂亮亮的整理在一起，做一个自己的音乐网站？又或是怕音乐App会员过期好歌就不能听了？不想看APP广告，只想要极简的音乐播放]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/Docker%e5%ae%9d%e5%ba%93%ef%bc%9aNavidrome%e8%87%aa%e5%bb%ba%e9%9f%b3%e4%b9%90%e5%ba%933.png" referrerpolicy="no-referrer">
+            </div>自己收藏音乐如何漂漂亮亮的整理在一起，做一个自己的音乐网站？又或是怕音乐App会员过期好歌就不能听了？不想看APP广告，只想要极简的音乐播放]]></description>
 </item>
 <item>
-    <title>Docker宝库：自建音乐库Navidrome</title>
-    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93navidrome%E8%87%AA%E5%BB%BA%E9%9F%B3%E4%B9%90%E5%BA%93/</link>
-    <pubDate>Tue, 26 Nov 2024 19:00:00 &#43;0800</pubDate>
+    <title>Docker宝库：SunPanel网址导航</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93sunpanel%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/</link>
+    <pubDate>Sun, 27 Oct 2024 12:00:01 &#43;0000</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93navidrome%E8%87%AA%E5%BB%BA%E9%9F%B3%E4%B9%90%E5%BA%93/</guid>
-    <description><![CDATA[自己收藏音乐如何漂漂亮亮的整理在一起，做一个自己的音乐网站？又或是怕音乐App会员过期好歌就不能听了？不想看APP广告，只想要极简的音乐播放]]></description>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93sunpanel%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/Docker%e5%ae%9d%e5%ba%93%ef%bc%9aSunPanel%e7%bd%91%e5%9d%80%e5%af%bc%e8%88%aa.png" referrerpolicy="no-referrer">
+            </div>Docker开的程序多了，端口号记不过来，就需要专门有个网址导航去记录。 SunPanel比Heidmall好用100倍！ 最大的亮点是，这个网]]></description>
+</item>
+<item>
+    <title>Docker添加镜像源及自行搭建方法</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E6%B7%BB%E5%8A%A0%E9%95%9C%E5%83%8F%E6%BA%90%E5%8F%8A%E8%87%AA%E8%A1%8C%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/</link>
+    <pubDate>Tue, 22 Oct 2024 13:40:14 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E6%B7%BB%E5%8A%A0%E9%95%9C%E5%83%8F%E6%BA%90%E5%8F%8A%E8%87%AA%E8%A1%8C%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/</guid>
+    <description><![CDATA[添加镜像源 目前（2024年10月22日）暂时可用的镜像源： https://jockerhub.com, https://dockerpull.com, https://docker.m.daocloud.io, https://noohub.ru, https://huecker.io, https://dockerhub.timeweb.cloud 修改本地的Docker/etc/docker/deamon.json d]]></description>
+</item>
+<item>
+    <title>Docker宝库：安装TMM电影刮削器</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E5%AE%89%E8%A3%85tmm%E7%94%B5%E5%BD%B1%E5%88%AE%E5%89%8A%E5%99%A8/</link>
+    <pubDate>Sun, 20 Oct 2024 01:57:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E5%AE%89%E8%A3%85tmm%E7%94%B5%E5%BD%B1%E5%88%AE%E5%89%8A%E5%99%A8/</guid>
+    <description><![CDATA[组建影音库离不开电影信息刮削，平常都是在电脑端安装TMM，但是，每次还要开电脑这么麻烦，所以，打算把TMM直接按在NAS上。 这里使用dzhu]]></description>
+</item>
+<item>
+    <title>Docker宝库：智能家居集成HomeAssistant</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E9%9B%86%E6%88%90homeassistant/</link>
+    <pubDate>Tue, 30 Jul 2024 01:50:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E9%9B%86%E6%88%90homeassistant/</guid>
+    <description><![CDATA[安装HomeAssistant 通过一下命令，在Docker安装HomeAssistant docker run -d -it\ --restart always \ --name hass \ -v /opt/homeassistant/config:/config \ -e TZ=Asia/Shanghai \ -p 8123:8123 \ homeassistant/home-assistant:latest 之后通过lo]]></description>
+</item>
+<item>
+    <title>Docker镜像导出与导入</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%87%BA%E4%B8%8E%E5%AF%BC%E5%85%A5/</link>
+    <pubDate>Wed, 12 Jun 2024 16:00:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%87%BA%E4%B8%8E%E5%AF%BC%E5%85%A5/</guid>
+    <description><![CDATA[Docker被Ban，因此可以通过导入、导出镜像文件的方式来分享、安装镜像。 镜像导出 docker save -o &lt;导出路径与文件名&gt; &lt;镜像名&g]]></description>
+</item>
+<item>
+    <title>Docker宝库：V途锐客户端</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</link>
+    <pubDate>Wed, 12 Jun 2024 13:44:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</guid>
+    <description><![CDATA[国内Docker被Ban，是时候在NAS上魔法上网了 通过一下命令，在Docker安装V2RayA docker run -d \ --restart=always \ --privileged \ --network=host \ --name v2raya \ -e V2RAYA_LOG_FILE=/tmp/v2raya.log \ -e V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray \ -e V2RAYA_NFTABLES_SUPPORT=off \]]></description>
 </item>
 </channel>
 </rss>

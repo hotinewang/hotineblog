@@ -3,21 +3,23 @@
         <title>端口转发 - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</link>
         <description>端口转发 - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 08 Jan 2025 02:30:51 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 08 Jan 2025 02:29:17 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/" rel="self" type="application/rss+xml" /><item>
     <title>VMware虚拟机的端口转发</title>
     <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/vmware%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</link>
-    <pubDate>Wed, 08 Jan 2025 02:30:51 &#43;0000</pubDate>
+    <pubDate>Wed, 08 Jan 2025 02:29:17 &#43;0000</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/vmware%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</guid>
     <description><![CDATA[在VMware虚拟机的NAT网络模式下，要从宿主机访问虚拟机内的端口，需要进行端口转发设置。以下是具体步骤： 1. 配置VMware的NAT端口转]]></description>
 </item>
 <item>
-    <title>VMware虚拟机的端口转发</title>
-    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/vmware%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</link>
-    <pubDate>Wed, 08 Jan 2025 02:30:51 &#43;0000</pubDate>
+    <title>NAS(OpenWRT)设置端口转发</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/openwrt%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</link>
+    <pubDate>Sat, 19 Oct 2024 12:55:00 &#43;0000</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/vmware%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</guid>
-    <description><![CDATA[在VMware虚拟机的NAT网络模式下，要从宿主机访问虚拟机内的端口，需要进行端口转发设置。以下是具体步骤： 1. 配置VMware的NAT端口转]]></description>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/openwrt%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/VPS%e4%b8%8e%e5%bb%ba%e7%ab%99/openWRT%e8%ae%be%e7%bd%ae%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%911.jpg" referrerpolicy="no-referrer">
+            </div>场景： 在城市A有台NAS-1，部署了Jellyfin服务。在城市B也有个NAS-2,并且通过ZerotireOne进行了虚拟组网，使两个NA]]></description>
 </item>
 </channel>
 </rss>

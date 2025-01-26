@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>通过Docker实现B站视频推流 - Hotine的小窝</title><meta name="Description" content="Hotine的窝？"><meta property="og:title" content="通过Docker实现B站视频推流" />
+<meta property="og:description" content="可以使用kplayer在B站做一个7*24小时的直播小电台。 安装流程： 首先是Kplayer的官方GitHub：bytelang/kplaye" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93b%E7%AB%99%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81kplayer/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-15T16:00:00+00:00" />
+<meta property="article:modified_time" content="2023-06-15T16:00:00+00:00" /><meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="通过Docker实现B站视频推流"/>
+<meta name="twitter:description" content="可以使用kplayer在B站做一个7*24小时的直播小电台。 安装流程： 首先是Kplayer的官方GitHub：bytelang/kplaye"/>
+<meta name="application-name" content="Hotine的小窝">
+<meta name="apple-mobile-web-app-title" content="Hotine的小窝"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93b%E7%AB%99%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81kplayer/" /><link rel="prev" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%B8%AD%E5%AE%89%E8%A3%85nodejs%E5%B9%B6%E7%94%A8express%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/" /><link rel="next" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E7%B3%BB%E7%BB%9F%E4%B8%ADv%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "通过Docker实现B站视频推流",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.hotine.wang\/posts\/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE\/%E7%8E%A9nas\/docker%E5%AE%9D%E5%BA%93b%E7%AB%99%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81kplayer\/"
+        },"genre": "posts","keywords": "Docker, 直播推流","wordcount":  805 ,
+        "url": "https:\/\/blog.hotine.wang\/posts\/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE\/%E7%8E%A9nas\/docker%E5%AE%9D%E5%BA%93b%E7%AB%99%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81kplayer\/","datePublished": "2023-06-15T16:00:00+00:00","dateModified": "2023-06-15T16:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Hotine"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="文章列表"> 文章列表 </a><a class="menu-item" href="/categories/" title="分类"> 分类 </a><a class="menu-item" href="/tags/" title="标签"> 标签 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="文章列表">文章列表</a><a class="menu-item" href="/categories/" title="分类">分类</a><a class="menu-item" href="/tags/" title="标签">标签</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">通过Docker实现B站视频推流</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/%E7%8E%A9nas/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>玩NAS</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-06-15">2023-06-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;805 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/Docker%e5%ae%9d%e5%ba%93%ef%bc%9aB%e7%ab%99%e8%a7%86%e9%a2%91%e6%8e%a8%e6%b5%81.jpg"
+        data-srcset="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/Docker%e5%ae%9d%e5%ba%93%ef%bc%9aB%e7%ab%99%e8%a7%86%e9%a2%91%e6%8e%a8%e6%b5%81.jpg, /blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/Docker%e5%ae%9d%e5%ba%93%ef%bc%9aB%e7%ab%99%e8%a7%86%e9%a2%91%e6%8e%a8%e6%b5%81.jpg 1.5x, /blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/Docker%e5%ae%9d%e5%ba%93%ef%bc%9aB%e7%ab%99%e8%a7%86%e9%a2%91%e6%8e%a8%e6%b5%81.jpg 2x"
+        data-sizes="auto"
+        alt="/blog/电脑折腾/附件/玩NAS/Docker宝库：B站视频推流.jpg"
+        title="Docker宝库：B站视频推流.jpg" />
+可以使用kplayer在B站做一个7*24小时的直播小电台。</p>
+<p><strong>安装流程：</strong></p>
+<p>首先是Kplayer的官方GitHub：<a href="https://github.com/bytelang/kplayer-go" target="_blank" rel="noopener noreffer">bytelang/kplayer-go</a>
+,然后是<a href="https://docs.kplayer.net/" target="_blank" rel="noopener noreffer">官方文档</a>
+。
+如果是Linux系统直接安装，根据官方文档安装就可以，很简单。如果是Docker安装，参照以下流程：</p>
+<p><strong>DOCKER安装：</strong></p>
+<p>在官方档案里也有docker安装教程，写的比较简单，可以参考，当然我写的会更详细。
+用SSH工具连接主机，直接执行以下命令安装并运行docker镜像：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo docker run -it --name kplayer <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /srv/dev-disk-by-uuid-BE0EC6590EC60A7B/live:/video <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /srv/dev-disk-by-uuid-BE0EC6590EC60A7B/kplayercache:/kplayer/cache <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /opt/kplayer/config.json:/kplayer/config.json <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /opt/kplayer/log:/kplayer/log <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>bytelang/kplayer:latest
+</span></span></code></pre></div><p>提示：</p>
+<ul>
+<li>/srv/dev-disk-by-uuid-BE0EC6590EC60A7B/live要替换成自己机器上放置视频文件的路径（必填）。</li>
+<li>/srv/dev-disk-by-uuid-BE0EC6590EC60A7B/kplayercache这个是指定视频缓存文件的位置，这一行不写也行。</li>
+<li>/opt/kplayer/config.json这个是KPlayer的配置文件，很重要，稍后需要修改内容（必填）。</li>
+<li>/opt/kplayer/log这个是KPlayer的Log文件，可以查看运行时的一些日志记录，排除故障等。</li>
+</ul>
+<p>运行之后，找到对应的config.json文件夹，例如上文对应的是<code>/opt/kplayer/config.json</code>，文件的内容，建议如下：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;version&#34;</span><span class="p">:</span> <span class="s2">&#34;2.0.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;resource&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;lists&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;/video/&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;extensions&#34;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&#34;mp4&#34;</span><span class="p">,</span> <span class="s2">&#34;flv&#34;</span> <span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;play&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;play_model&#34;</span><span class="p">:</span> <span class="s2">&#34;loop&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;encode_model&#34;</span><span class="p">:</span> <span class="s2">&#34;rtmp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;skip_invalid_resource&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;fill_strategy&#34;</span><span class="p">:</span> <span class="s2">&#34;ratio&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;cache_on&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;rpc&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;on&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;port&#34;</span><span class="p">:</span> <span class="mi">4156</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;address&#34;</span><span class="p">:</span> <span class="s2">&#34;127.0.0.1&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;encode&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;video_width&#34;</span><span class="p">:</span> <span class="mi">1280</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;video_height&#34;</span><span class="p">:</span> <span class="mi">720</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;video_fps&#34;</span><span class="p">:</span> <span class="mi">24</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;audio_channel_layout&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;audio_channels&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;audio_sample_rate&#34;</span><span class="p">:</span> <span class="mi">48000</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;output&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;reconnect_internal&#34;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;lists&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;path&#34;</span><span class="p">:</span> <span class="s2">&#34;rtmp://这里是推流链接&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>在B站直播页面，&ldquo;开播设置&quot;里，找到自己的推流链接（服务器地址+串流秘钥），替换到上方的json文件对应位置(参照下图)并保存。
+修改完成后，在控制台输入下列内容，即可重启docker，使配置文件生效：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker restart kplayer
+</span></span></code></pre></div><p>如果推流不正常，可以查看/opt/kplayer/log文件夹中的log记录，排查问题。</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-06-15</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93b%E7%AB%99%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81kplayer/" data-title="通过Docker实现B站视频推流" data-via="xxxx" data-hashtags="Docker,直播推流"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93b%E7%AB%99%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81kplayer/" data-hashtag="Docker"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93b%E7%AB%99%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81kplayer/" data-title="通过Docker实现B站视频推流" data-image="/blog/电脑折腾/附件/玩NAS/Docker宝库：B站视频推流.jpg"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/docker/">Docker</a>,&nbsp;<a href="/tags/%E7%9B%B4%E6%92%AD%E6%8E%A8%E6%B5%81/">直播推流</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%B8%AD%E5%AE%89%E8%A3%85nodejs%E5%B9%B6%E7%94%A8express%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/" class="prev" rel="prev" title="Linux中安装NodeJS并用Express搭建静态网站"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Linux中安装NodeJS并用Express搭建静态网站</a>
+            <a href="/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E7%B3%BB%E7%BB%9F%E4%B8%ADv%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85/" class="next" rel="next" title="Linux系统中V途锐客户端安装">Linux系统中V途锐客户端安装<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><br /></div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2021 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Hotine</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.5.4/dist/index.umd.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"Hotine.Wang的小窝","id-2":"Hotine.Wang的小窝"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

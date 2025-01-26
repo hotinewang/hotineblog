@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>智能家居 - Tag - Hotine的小窝</title>
+        <link>https://blog.hotine.wang/tags/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85/</link>
+        <description>智能家居 - Tag - Hotine的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 30 Jul 2024 01:50:00 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker宝库：智能家居集成HomeAssistant</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E9%9B%86%E6%88%90homeassistant/</link>
+    <pubDate>Tue, 30 Jul 2024 01:50:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E9%9B%86%E6%88%90homeassistant/</guid>
+    <description><![CDATA[安装HomeAssistant 通过一下命令，在Docker安装HomeAssistant docker run -d -it\ --restart always \ --name hass \ -v /opt/homeassistant/config:/config \ -e TZ=Asia/Shanghai \ -p 8123:8123 \ homeassistant/home-assistant:latest 之后通过lo]]></description>
+</item>
+</channel>
+</rss>

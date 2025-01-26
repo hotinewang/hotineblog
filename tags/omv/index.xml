@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>OMV - Tag - Hotine的小窝</title>
+        <link>https://blog.hotine.wang/tags/omv/</link>
+        <description>OMV - Tag - Hotine的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 29 Nov 2022 12:00:00 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/omv/" rel="self" type="application/rss+xml" /><item>
+    <title>用OMV系统搭建家用NAS</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/%E5%AE%B6%E7%94%A8nas%E6%90%AD%E5%BB%BAomv%E7%B3%BB%E7%BB%9F/</link>
+    <pubDate>Tue, 29 Nov 2022 12:00:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/%E5%AE%B6%E7%94%A8nas%E6%90%AD%E5%BB%BAomv%E7%B3%BB%E7%BB%9F/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/%e5%ae%b6%e7%94%a8NAS%e6%90%ad%e5%bb%ba%ef%bc%9aOMV%e7%b3%bb%e7%bb%9f.cover.jpg" referrerpolicy="no-referrer">
+            </div>超低成本私有NAS 用OMV5打造轻量级家庭云服务器 序言： 你想不想&hellip;？ 家里的电影，一人下载，全家同享。无论是手机、电视、电脑，打]]></description>
+</item>
+</channel>
+</rss>

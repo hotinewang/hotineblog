@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Obsidian转Hugo的小脚本 - Hotine的小窝</title><meta name="Description" content="Hotine的窝？"><meta property="og:title" content="Obsidian转Hugo的小脚本" />
+<meta property="og:description" content="费劲巴拉，写了个Obsidian转换Hugo的小脚本。因为Obsidian上的那两个转Hugo的插件都不好用。C！ /** * 功能，把Obsidai" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/obsidian%E8%BD%AChugo%E7%9A%84%E5%B0%8F%E8%84%9A%E6%9C%AC/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-01-26T13:06:56+00:00" />
+<meta property="article:modified_time" content="2025-01-26T13:06:56+00:00" /><meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Obsidian转Hugo的小脚本"/>
+<meta name="twitter:description" content="费劲巴拉，写了个Obsidian转换Hugo的小脚本。因为Obsidian上的那两个转Hugo的插件都不好用。C！ /** * 功能，把Obsidai"/>
+<meta name="application-name" content="Hotine的小窝">
+<meta name="apple-mobile-web-app-title" content="Hotine的小窝"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/obsidian%E8%BD%AChugo%E7%9A%84%E5%B0%8F%E8%84%9A%E6%9C%AC/" /><link rel="prev" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/esp32/arduino%E5%BC%80%E5%8F%91esp32c3/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Obsidian转Hugo的小脚本",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.hotine.wang\/posts\/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE\/vps%E4%B8%8E%E5%BB%BA%E7%AB%99\/obsidian%E8%BD%AChugo%E7%9A%84%E5%B0%8F%E8%84%9A%E6%9C%AC\/"
+        },"genre": "posts","keywords": "脚本自动化, 博客, Hugo, Obsidian","wordcount":  2181 ,
+        "url": "https:\/\/blog.hotine.wang\/posts\/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE\/vps%E4%B8%8E%E5%BB%BA%E7%AB%99\/obsidian%E8%BD%AChugo%E7%9A%84%E5%B0%8F%E8%84%9A%E6%9C%AC\/","datePublished": "2025-01-26T13:06:56+00:00","dateModified": "2025-01-26T13:06:56+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Hotine"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="文章列表"> 文章列表 </a><a class="menu-item" href="/categories/" title="分类"> 分类 </a><a class="menu-item" href="/tags/" title="标签"> 标签 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="文章列表">文章列表</a><a class="menu-item" href="/categories/" title="分类">分类</a><a class="menu-item" href="/tags/" title="标签">标签</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Obsidian转Hugo的小脚本</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>VPS与建站</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-01-26">2025-01-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2181 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;5 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p>费劲巴拉，写了个Obsidian转换Hugo的小脚本。因为Obsidian上的那两个转Hugo的插件都不好用。C！</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 功能，把Obsidain的MD文件，批量转换成Hugo博客格式的MD文件
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 图片，全部更换链接
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * md引用，全部替换成html的url
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 封面图（如有）全部更新链接
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * categories如果缺失，则根据md文件所在的文件夹命名categories
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * npm install gray-matter
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 常量定义
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">OBSIDIAN_PATH</span> <span class="o">=</span> <span class="s1">&#39;Y:\\documents\\notes&#39;</span><span class="p">;</span> <span class="c1">// Obsidian的根目录
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">HUGO_PATH</span> <span class="o">=</span> <span class="s1">&#39;D:\\Github\\hotineblog\\构建blog&#39;</span><span class="p">;</span> <span class="c1">// Hugo的根目录
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">HUGO_STATIC_PATH</span> <span class="o">=</span> <span class="s1">&#39;\\static\\blog&#39;</span><span class="p">;</span><span class="c1">//static文件夹下附件目录
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">HUGO_POSTS_PATH</span> <span class="o">=</span> <span class="s1">&#39;\\content\\posts&#39;</span><span class="p">;</span><span class="c1">//博客文件夹
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">HUGO_TAG</span> <span class="o">=</span> <span class="s1">&#39;blog&#39;</span><span class="p">;</span> <span class="c1">// 标记需要转换的文章的标签
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 引入必要的模块
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">matter</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;gray-matter&#39;</span><span class="p">);</span> <span class="c1">// 用于解析Markdown文件的元数据
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 记录文件列表数据
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">fileListData</span> <span class="o">=</span> <span class="p">[];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 扫描Obsidian目录中的全部文件和文件夹，生成一个文件记录列表
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @param {*} dirPath 
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">traverseDirectory</span><span class="p">(</span><span class="nx">dirPath</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">files</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readdirSync</span><span class="p">(</span><span class="nx">dirPath</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">files</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">file</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 检查文件名是否以点开头
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="p">(</span><span class="nx">file</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span><span class="p">;</span> <span class="c1">// 如果是隐藏文件或文件夹，跳过
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">filePath</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">dirPath</span><span class="p">,</span> <span class="nx">file</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">fileStat</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">statSync</span><span class="p">(</span><span class="nx">filePath</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nx">fileStat</span><span class="p">.</span><span class="nx">isDirectory</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">traverseDirectory</span><span class="p">(</span><span class="nx">filePath</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">fileListData</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">name</span><span class="o">:</span> <span class="nx">file</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">ext</span><span class="o">:</span> <span class="nx">path</span><span class="p">.</span><span class="nx">extname</span><span class="p">(</span><span class="nx">file</span><span class="p">).</span><span class="nx">toLowerCase</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">obs_path</span><span class="o">:</span> <span class="nx">filePath</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">hugo_path</span><span class="o">:</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">});</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;遍历-&#34;</span><span class="p">,</span> <span class="nx">file</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 复制文件到目标路径
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">copyFile</span><span class="p">(</span><span class="nx">oldPath</span><span class="p">,</span> <span class="nx">newPath</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 检查源文件是否存在
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">fs</span><span class="p">.</span><span class="nx">existsSync</span><span class="p">(</span><span class="nx">oldPath</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="sb">`【E】拷贝文件时，源文件不存在: </span><span class="si">${</span><span class="nx">oldPath</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 获取目标文件的目录路径
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">newDir</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">dirname</span><span class="p">(</span><span class="nx">newPath</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 检查目标目录是否存在，如果不存在则创建
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">fs</span><span class="p">.</span><span class="nx">existsSync</span><span class="p">(</span><span class="nx">newDir</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">fs</span><span class="p">.</span><span class="nx">mkdirSync</span><span class="p">(</span><span class="nx">newDir</span><span class="p">,</span> <span class="p">{</span> <span class="nx">recursive</span><span class="o">:</span> <span class="kc">true</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//console.log(`目标目录不存在，已创建: ${newDir}`);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 拷贝文件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">fs</span><span class="p">.</span><span class="nx">copyFile</span><span class="p">(</span><span class="nx">oldPath</span><span class="p">,</span> <span class="nx">newPath</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="sb">`【E】拷贝文件时出错: </span><span class="si">${</span><span class="nx">err</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//console.log(`【i】文件已成功拷贝到: ${newPath}`);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 把路径中的\都换成/
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @param {*} filePath 
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @returns 
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">path2url</span><span class="p">(</span><span class="nx">filePath</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">filePath</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\\/g</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 修改文章附件连接为HUGO标准链接：![备注]{链接}
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 同时把连接中的md文件修改为对应的html文件
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * ==================================================有未完善的BUG=============================================
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 目前除了md文件输出[xx]{url}，默认都作为图片文件输出成了![xx]{url}的格式。
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @param {*} match 原始链接内容
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @param {*} altText 连接中的提示词
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @param {*} url 连接中的url
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @returns 新的链接内容
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">fixMDContent</span><span class="p">(</span><span class="nx">match</span><span class="p">,</span> <span class="nx">altText</span><span class="p">,</span> <span class="nx">url</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 如果是本地链接（不是http开头的）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="sr">/^http/</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">url</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//如果没有文件后缀名，则认定为md文件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">extname</span><span class="p">(</span><span class="nx">url</span><span class="p">).</span><span class="nx">toLowerCase</span><span class="p">()</span> <span class="o">===</span> <span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">url</span> <span class="o">+=</span> <span class="s1">&#39;.md&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//获取文件名和格式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kr">const</span> <span class="nx">filename</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">basename</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="nx">fileListData</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">item</span> <span class="p">=&gt;</span> <span class="nx">item</span><span class="p">.</span><span class="nx">name</span> <span class="o">===</span> <span class="nx">filename</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">//如果找到了对应文件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//如果附件在文件遍历数组中未登记hugo_path（说明文件未复制到hugo目录）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">if</span> <span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">hugo_path</span> <span class="o">===</span> <span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">extname</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span> <span class="o">===</span> <span class="s2">&#34;.md&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">obj</span><span class="p">.</span><span class="nx">hugo_path</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">obs_path</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">OBSIDIAN_PATH</span><span class="p">,</span> <span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">HUGO_PATH</span> <span class="o">+</span> <span class="nx">HUGO_POSTS_PATH</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">//文件名全部转换成小写并且移除标点符号
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="kd">let</span> <span class="nx">n</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">obj</span><span class="p">.</span><span class="nx">hugo_path</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">hugo_path</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">n</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">n</span> <span class="o">=</span> <span class="nx">n</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\.md$/</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">n</span> <span class="o">=</span> <span class="nx">n</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/[.,!?;:&#39;&#34;(){}[\]&lt;&gt;/?！，。？；：“”‘’（）【】《》、|]/g</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">obj</span><span class="p">.</span><span class="nx">hugo_path</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">hugo_path</span><span class="p">,</span> <span class="nx">n</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">//返回对应的html url
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="k">return</span> <span class="sb">`[</span><span class="si">${</span><span class="nx">altText</span><span class="si">}</span><span class="sb">](</span><span class="si">${</span><span class="nx">path2url</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">hugo_path</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">HUGO_PATH</span><span class="p">,</span> <span class="s2">&#34;content&#34;</span><span class="p">),</span> <span class="s2">&#34;&#34;</span><span class="p">)).</span><span class="nx">toLowerCase</span><span class="p">()</span><span class="si">}</span><span class="sb">)`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">obj</span><span class="p">.</span><span class="nx">hugo_path</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">obs_path</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">OBSIDIAN_PATH</span><span class="p">,</span> <span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">HUGO_PATH</span> <span class="o">+</span> <span class="nx">HUGO_STATIC_PATH</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">//console.log(&#34;新路径&#34;,obj.hugo_path)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="nx">copyFile</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">obs_path</span><span class="p">,</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">hugo_path</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">//返回修改后的MD链接
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="k">return</span> <span class="sb">`![</span><span class="si">${</span><span class="nx">altText</span><span class="si">}</span><span class="sb">](</span><span class="si">${</span><span class="nx">path2url</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">hugo_path</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">HUGO_PATH</span><span class="p">,</span> <span class="s2">&#34;static&#34;</span><span class="p">),</span> <span class="s2">&#34;&#34;</span><span class="p">))</span><span class="si">}</span><span class="sb">)`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">extname</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span> <span class="o">===</span> <span class="s2">&#34;.md&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="sb">`[</span><span class="si">${</span><span class="nx">altText</span><span class="si">}</span><span class="sb">](</span><span class="si">${</span><span class="nx">path2url</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">hugo_path</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">HUGO_PATH</span><span class="p">,</span> <span class="s2">&#34;content&#34;</span><span class="p">),</span> <span class="s2">&#34;&#34;</span><span class="p">)).</span><span class="nx">toLowerCase</span><span class="p">()</span><span class="si">}</span><span class="sb">)`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="sb">`![</span><span class="si">${</span><span class="nx">altText</span><span class="si">}</span><span class="sb">](</span><span class="si">${</span><span class="nx">path2url</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">hugo_path</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">HUGO_PATH</span><span class="p">,</span> <span class="s2">&#34;static&#34;</span><span class="p">),</span> <span class="s2">&#34;&#34;</span><span class="p">))</span><span class="si">}</span><span class="sb">)`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//如果附件中指定的文件不存在，则返回原始链接（一定要返回原始链接，防止误识别附件）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`【E】附件不存在：</span><span class="si">${</span><span class="nx">url</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="nx">match</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">match</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 遍历全部的md文件，并转换成HUGO格式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">convertMarkdownFiles</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">fileListData</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">fileInfo</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nx">fileInfo</span><span class="p">.</span><span class="nx">ext</span> <span class="o">===</span> <span class="s1">&#39;.md&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//读取MD文件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="kr">const</span> <span class="nx">fileContent</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="nx">fileInfo</span><span class="p">.</span><span class="nx">obs_path</span><span class="p">,</span> <span class="s1">&#39;utf8&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="kr">const</span> <span class="p">{</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">content</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">matter</span><span class="p">(</span><span class="nx">fileContent</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1">// 检查是否包含HUGO_TAG
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">if</span> <span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">tags</span> <span class="o">&amp;&amp;</span> <span class="nx">data</span><span class="p">.</span><span class="nx">tags</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="nx">HUGO_TAG</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`【i】处理MD文件：</span><span class="si">${</span><span class="nx">fileInfo</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb">@</span><span class="si">${</span><span class="nx">fileInfo</span><span class="p">.</span><span class="nx">obs_path</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// 删除HUGO_TAG
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="nx">data</span><span class="p">.</span><span class="nx">tags</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">tags</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">tag</span> <span class="p">=&gt;</span> <span class="nx">tag</span> <span class="o">!==</span> <span class="nx">HUGO_TAG</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="c1">// 把不标准的附件链接转换成标准附件链接：
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="c1">// ![xx](./da/bb.jpg)或 [xx](./da/bb.jpg)格式，解析并处理文件中的图片、文件、URL链接：
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="kd">let</span> <span class="nx">newContent</span> <span class="o">=</span> <span class="nx">content</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/!\[(.*?)\]\((.*?)\)|\[(.*?)\]\((.*?)\)/g</span><span class="p">,</span> <span class="p">(</span><span class="nx">match</span><span class="p">,</span> <span class="nx">altText1</span><span class="p">,</span> <span class="nx">url1</span><span class="p">,</span> <span class="nx">altText2</span><span class="p">,</span> <span class="nx">url2</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="kd">let</span> <span class="nx">altText</span> <span class="o">=</span> <span class="nx">altText1</span> <span class="o">||</span> <span class="nx">altText2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="kd">let</span> <span class="nx">url</span> <span class="o">=</span> <span class="nx">url1</span> <span class="o">||</span> <span class="nx">url2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">//console.log(match,altText,url);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="k">return</span> <span class="nx">fixMDContent</span><span class="p">(</span><span class="nx">match</span><span class="p">,</span> <span class="nx">altText</span><span class="p">,</span> <span class="nx">url</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="c1">//![[xxx/cover.jpg]]或[[xxx/cover.jpg]]格式，解析并处理文件中的图片、文件、URL链接：
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="nx">newContent</span> <span class="o">=</span> <span class="nx">newContent</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/!\[\[(.*?)\]\]|\[\[(.*?)\]\]/g</span><span class="p">,</span> <span class="p">(</span><span class="nx">match</span><span class="p">,</span> <span class="nx">url1</span><span class="p">,</span> <span class="nx">url2</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="kd">let</span> <span class="nx">url</span> <span class="o">=</span> <span class="nx">url1</span> <span class="o">||</span> <span class="nx">url2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="kd">let</span> <span class="nx">altText</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">basename</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="nx">fixMDContent</span><span class="p">(</span><span class="nx">match</span><span class="p">,</span> <span class="nx">altText</span><span class="p">,</span> <span class="nx">url</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="c1">// 处理文章封面图（null=有featuredImage属性但是为空，undefined=未设置featuredImage属性）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="c1">// 如果指定了封面
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">data</span><span class="p">.</span><span class="nx">featuredImage</span><span class="o">===</span><span class="s1">&#39;undefined&#39;</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">featuredImage</span> <span class="o">===</span> <span class="kc">null</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="kd">let</span> <span class="nx">f</span> <span class="o">=</span> <span class="nx">fixMDContent</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="nx">data</span><span class="p">.</span><span class="nx">featuredImage</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="kd">let</span> <span class="nx">url</span> <span class="o">=</span> <span class="nx">f</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/\!\[.*?\]\((.*?)\)/</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="p">(</span><span class="nx">url</span> <span class="o">&amp;&amp;</span> <span class="nx">url</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="nx">data</span><span class="p">.</span><span class="nx">featuredImage</span> <span class="o">=</span> <span class="nx">url</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">featuredImage</span> <span class="o">===</span> <span class="kc">null</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">//如果无封面设置，则自动生成一个封面图
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="kr">const</span> <span class="nx">match</span> <span class="o">=</span> <span class="nx">newContent</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/\!\[.*?\]\((.*?)\)/</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                    <span class="c1">// 如果匹配成功，返回第一个图片的 URL
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="k">if</span> <span class="p">(</span><span class="nx">match</span> <span class="o">&amp;&amp;</span> <span class="nx">match</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="nx">data</span><span class="p">.</span><span class="nx">featuredImage</span><span class="o">=</span> <span class="nx">match</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="c1">//为文章生成categories
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="c1">//如果文章没有指定categories
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">data</span><span class="p">.</span><span class="nx">categories</span> <span class="o">||</span> <span class="nx">data</span><span class="p">.</span><span class="nx">categories</span> <span class="o">===</span> <span class="s2">&#34;&#34;</span> <span class="o">||</span> <span class="nx">data</span><span class="p">.</span><span class="nx">categories</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="kd">let</span> <span class="nx">c</span> <span class="o">=</span> <span class="nx">path2url</span><span class="p">(</span><span class="nx">fileInfo</span><span class="p">.</span><span class="nx">obs_path</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">OBSIDIAN_PATH</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                    <span class="kd">let</span> <span class="nx">cat</span> <span class="o">=</span> <span class="nx">c</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/[^/]+(?=\/[^/]+$)/</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">data</span><span class="p">.</span><span class="nx">categories</span> <span class="o">=</span> <span class="p">[</span><span class="nx">cat</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="c1">// 生成新的Markdown文件内容
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="kr">const</span> <span class="nx">newFileContent</span> <span class="o">=</span> <span class="nx">matter</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">newContent</span><span class="p">,</span> <span class="nx">data</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="c1">// 创建Hugo内容目录
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="kr">const</span> <span class="nx">newDirPath</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">HUGO_PATH</span> <span class="o">+</span> <span class="nx">HUGO_POSTS_PATH</span><span class="p">,</span> <span class="nx">path</span><span class="p">.</span><span class="nx">dirname</span><span class="p">(</span><span class="nx">fileInfo</span><span class="p">.</span><span class="nx">obs_path</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">OBSIDIAN_PATH</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)));</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">fs</span><span class="p">.</span><span class="nx">existsSync</span><span class="p">(</span><span class="nx">newDirPath</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">fs</span><span class="p">.</span><span class="nx">mkdirSync</span><span class="p">(</span><span class="nx">newDirPath</span><span class="p">,</span> <span class="p">{</span> <span class="nx">recursive</span><span class="o">:</span> <span class="kc">true</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="c1">// 写入新的Markdown文件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="kr">const</span> <span class="nx">newFilePath</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">newDirPath</span><span class="p">,</span> <span class="nx">fileInfo</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">fs</span><span class="p">.</span><span class="nx">writeFileSync</span><span class="p">(</span><span class="nx">newFilePath</span><span class="p">,</span> <span class="nx">newFileContent</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`【i】跳过MD文件：</span><span class="si">${</span><span class="nx">fileInfo</span><span class="p">.</span><span class="nx">obs_path</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 主函数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">traverseDirectory</span><span class="p">(</span><span class="nx">OBSIDIAN_PATH</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">convertMarkdownFiles</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 执行主函数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">main</span><span class="p">();</span>
+</span></span></code></pre></div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2025-01-26</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/obsidian%E8%BD%AChugo%E7%9A%84%E5%B0%8F%E8%84%9A%E6%9C%AC/" data-title="Obsidian转Hugo的小脚本" data-via="xxxx" data-hashtags="脚本自动化,博客,Hugo,Obsidian"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/obsidian%E8%BD%AChugo%E7%9A%84%E5%B0%8F%E8%84%9A%E6%9C%AC/" data-hashtag="脚本自动化"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/obsidian%E8%BD%AChugo%E7%9A%84%E5%B0%8F%E8%84%9A%E6%9C%AC/" data-title="Obsidian转Hugo的小脚本"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E5%8C%96/">脚本自动化</a>,&nbsp;<a href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>,&nbsp;<a href="/tags/hugo/">Hugo</a>,&nbsp;<a href="/tags/obsidian/">Obsidian</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/esp32/arduino%E5%BC%80%E5%8F%91esp32c3/" class="prev" rel="prev" title="Arduino开发ESP32C3"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Arduino开发ESP32C3</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><br /></div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2021 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Hotine</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.5.4/dist/index.umd.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"Hotine.Wang的小窝","id-2":"Hotine.Wang的小窝"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

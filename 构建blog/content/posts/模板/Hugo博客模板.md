@@ -1,14 +1,8 @@
 ---
 title: Hugo文章模板标题
-date: "{{date:YYYY-MM-DD}}T{{time:HH-mm-ss}}+08:00"
+date: '{{date:YYYY-MM-DD}}T{{time:HH:mm:ss}}+08:00'
 categories:
-  - 其他
-  - 脚本自动化
-  - 旁路由
-  - 养花日记
-  - 我的游记
-  - 玩NAS
-  - VPS与建站
+  - 模板
 tags:
   - 内网穿透
   - NAS
@@ -21,41 +15,7 @@ tags:
   - 博客
   - 同步
   - 养花
-  - blog
-featuredImage: /images/posts/封面图.jpg
+featuredImage: 此处填写图片URL（或者删除此项可自动生成封面图）.txt
 draft: true
-lastmod: 2025-01-07T01:56:58.255Z
 ---
-## 这里是章节标题
 
-正文开始，发布时，需要删除上文的draft:true或者改成draft:false
-
-链接[hotine.wang](https://hotine.wang/)
-
-* 列表1
-* 次级1
-* 次级2
-* 次级3\
-  +次次级
-* 列表2
-* 列表3
-
-| 列标题 | 列标题 | 列标题 |
-| --- | --- | --- |
-| 111 | 222 | 333 |
-| 111 | 222 | 333 |
-| 111 | 222 | 333 |
-| 111 | 222 | 333 |
-| 111 | 222 | 333 |
-| 111 | 222 | 333 |
-
-![温泉](/images/posts/20240512_匆忙的云南之行.day4.温泉.jpg)
-
-行内代码`这样子`\
-代码块：
-
-```
-这样子
-和这样子
-整个代码块可用缩进控制在正文中的位置
-```

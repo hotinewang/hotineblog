@@ -3,87 +3,91 @@
         <title>All Posts - Hotine的小窝</title>
         <link>https://blog.hotine.wang/posts/</link>
         <description>All Posts | Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 16 Jan 2025 09:12:00 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 26 Jan 2025 13:06:56 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Obsidian转Hugo的小脚本</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/obsidian%E8%BD%AChugo%E7%9A%84%E5%B0%8F%E8%84%9A%E6%9C%AC/</link>
+    <pubDate>Sun, 26 Jan 2025 13:06:56 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/obsidian%E8%BD%AChugo%E7%9A%84%E5%B0%8F%E8%84%9A%E6%9C%AC/</guid>
+    <description><![CDATA[费劲巴拉，写了个Obsidian转换Hugo的小脚本。因为Obsidian上的那两个转Hugo的插件都不好用。C！ /** * 功能，把Obsidai]]></description>
+</item>
+<item>
+    <title>Arduino开发ESP32C3</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/esp32/arduino%E5%BC%80%E5%8F%91esp32c3/</link>
+    <pubDate>Sun, 26 Jan 2025 13:00:21 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/esp32/arduino%E5%BC%80%E5%8F%91esp32c3/</guid>
+    <description><![CDATA[配置ArduinoIDE开发环境： 安装IDE，从[[https://www.arduino.cc/]]下载即可。 在IDE中 文件-首选项-其他]]></description>
+</item>
+<item>
+    <title>Docker宝库：文档处理OnlyOffice</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E6%96%87%E6%A1%A3%E5%A4%84%E7%90%86onlyoffice/</link>
+    <pubDate>Sun, 26 Jan 2025 12:55:48 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E6%96%87%E6%A1%A3%E5%A4%84%E7%90%86onlyoffice/</guid>
+    <description><![CDATA[OnlyOffice 是一款由 Ascensio System SIA开发的开源办公套件，提供了文档编辑、协作、管理和存储功能。它支持多种文件格式，包括DOCX、XLSX、PPTX、PDF等]]></description>
+</item>
+<item>
+    <title>天天基金网API</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/%E5%A4%A9%E5%A4%A9%E5%9F%BA%E9%87%91%E7%BD%91api/</link>
+    <pubDate>Thu, 23 Jan 2025 14:41:54 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/%E5%A4%A9%E5%A4%A9%E5%9F%BA%E9%87%91%E7%BD%91api/</guid>
+    <description><![CDATA[天天基金网获取某基金净值的API接口主要有以下几个： 基金实时信息接口：用于获取基金的实时信息，包括单位净值等数据。 http://fundgz]]></description>
+</item>
+<item>
     <title>Linux上做个流量统计器</title>
     <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%B8%8A%E5%81%9A%E4%B8%AA%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%99%A8/</link>
-    <pubDate>Thu, 16 Jan 2025 09:12:00 &#43;0000</pubDate>
+    <pubDate>Tue, 14 Jan 2025 14:17:47 &#43;0000</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%B8%8A%E5%81%9A%E4%B8%AA%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%99%A8/</guid>
     <description><![CDATA[VPS流量竟然用超了，于是打算做个流量统计与监控的脚本来自动统计每月和每天的流量使用情况。 查了下资料，Linux系统中，有一个虚拟文件，它提]]></description>
 </item>
 <item>
+    <title>Linux修改SSH端口号</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%BF%AE%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/</link>
+    <pubDate>Tue, 14 Jan 2025 07:03:58 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%BF%AE%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/</guid>
+    <description><![CDATA[在Debian系统中，修改SSH端口号到2077的步骤如下： 一、备份配置文件 首先，备份sshd_config文件，以防止修改过程中出现错误导]]></description>
+</item>
+<item>
     <title>VMware虚拟机的端口转发</title>
     <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/vmware%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</link>
-    <pubDate>Wed, 08 Jan 2025 02:30:51 &#43;0000</pubDate>
+    <pubDate>Wed, 08 Jan 2025 02:29:17 &#43;0000</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/vmware%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</guid>
     <description><![CDATA[在VMware虚拟机的NAT网络模式下，要从宿主机访问虚拟机内的端口，需要进行端口转发设置。以下是具体步骤： 1. 配置VMware的NAT端口转]]></description>
 </item>
 <item>
-    <title>Docker添加镜像源及自行搭建方法</title>
-    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E6%B7%BB%E5%8A%A0%E9%95%9C%E5%83%8F%E6%BA%90%E5%8F%8A%E8%87%AA%E8%A1%8C%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/</link>
-    <pubDate>Mon, 06 Jan 2025 13:41:35 &#43;0000</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E6%B7%BB%E5%8A%A0%E9%95%9C%E5%83%8F%E6%BA%90%E5%8F%8A%E8%87%AA%E8%A1%8C%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/posts/%e5%b0%81%e9%9d%a2%e5%9b%be.jpg" referrerpolicy="no-referrer">
-            </div>添加镜像源 目前（2024年10月22日）暂时可用的镜像源： https://jockerhub.com, https://dockerpull.com, https://docker.m.daocloud.io, https://noohub.ru, https://huecker.io, https://dockerhub.timeweb.cloud 修改本地的Docker/etc/docker/deamon.json d]]></description>
-</item>
-<item>
     <title>Docker使用指南与常用镜像</title>
     <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/0_docker%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E4%B8%8E%E5%B8%B8%E7%94%A8%E9%95%9C%E5%83%8F/</link>
-    <pubDate>Mon, 06 Jan 2025 19:00:00 &#43;0800</pubDate>
+    <pubDate>Mon, 06 Jan 2025 11:00:00 &#43;0000</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/0_docker%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E4%B8%8E%E5%B8%B8%E7%94%A8%E9%95%9C%E5%83%8F/</guid>
-    <description><![CDATA[什么是Docker Docker 是一种开源的容器化平台，用于帮助开发人员构建、交付和运行应用程序。通过使用Docker，开发人员可以将应用程序及其所有依]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/0_Docker%e4%bd%bf%e7%94%a8%e6%8c%87%e5%8d%97%e4%b8%8e%e5%b8%b8%e7%94%a8%e9%95%9c%e5%83%8f.jpg" referrerpolicy="no-referrer">
+            </div>什么是Docker Docker 是一种开源的容器化平台，用于帮助开发人员构建、交付和运行应用程序。通过使用Docker，开发人员可以将应用程序及其所有依]]></description>
 </item>
 <item>
     <title>Docker宝库：青龙面板&amp;NTFY消息推送</title>
     <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BFntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</link>
-    <pubDate>Sun, 05 Jan 2025 23:28:00 &#43;0800</pubDate>
+    <pubDate>Sun, 05 Jan 2025 15:28:00 &#43;0000</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BFntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</guid>
-    <description><![CDATA[青龙面板是一款基于Docker技术构建的支持 Python3、JavaScript、Shell、Typescript 的定时任务管理平台。 简单来]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/Docker%e5%ae%9d%e5%ba%93%ef%bc%9a%e9%9d%92%e9%be%99%e9%9d%a2%e6%9d%bf&amp;NTFY%e6%b6%88%e6%81%af%e6%8e%a8%e9%80%811.png" referrerpolicy="no-referrer">
+            </div>青龙面板是一款基于Docker技术构建的支持 Python3、JavaScript、Shell、Typescript 的定时任务管理平台。 简单来]]></description>
 </item>
 <item>
-    <title>Docker宝库：Alist网盘集成</title>
-    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93alist%E7%BD%91%E7%9B%98%E9%9B%86%E6%88%90/</link>
-    <pubDate>Wed, 27 Nov 2024 15:51:00 &#43;0800</pubDate>
+    <title>NTFY消息推送</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/ntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</link>
+    <pubDate>Fri, 27 Dec 2024 07:51:00 &#43;0000</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93alist%E7%BD%91%E7%9B%98%E9%9B%86%E6%88%90/</guid>
-    <description><![CDATA[Alist 是一个支持多种存储的文件列表程序。包括本地存储、阿里云盘、OneDrive、Google Drive 等，且易于拓展。支持视频、音频、文档、PDF、图]]></description>
-</item>
-<item>
-    <title>Docker宝库：自建音乐库Navidrome</title>
-    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93navidrome%E8%87%AA%E5%BB%BA%E9%9F%B3%E4%B9%90%E5%BA%93/</link>
-    <pubDate>Tue, 26 Nov 2024 19:00:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93navidrome%E8%87%AA%E5%BB%BA%E9%9F%B3%E4%B9%90%E5%BA%93/</guid>
-    <description><![CDATA[自己收藏音乐如何漂漂亮亮的整理在一起，做一个自己的音乐网站？又或是怕音乐App会员过期好歌就不能听了？不想看APP广告，只想要极简的音乐播放]]></description>
-</item>
-<item>
-    <title>Docker宝库：SunPanel网址导航</title>
-    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93sunpanel%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/</link>
-    <pubDate>Sun, 27 Oct 2024 20:00:01 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93sunpanel%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/</guid>
-    <description><![CDATA[Docker开的程序多了，端口号记不过来，就需要专门有个网址导航去记录。 SunPanel比Heidmall好用100倍！ 最大的亮点是，这个网]]></description>
-</item>
-<item>
-    <title>养花日记：养花虫害用药笔记</title>
-    <link>https://blog.hotine.wang/posts/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/%E5%85%BB%E8%8A%B1%E6%97%A5%E8%AE%B0%E5%85%BB%E8%8A%B1%E8%99%AB%E5%AE%B3%E7%94%A8%E8%8D%AF%E7%AC%94%E8%AE%B0/</link>
-    <pubDate>Sat, 11 May 2024 21:24:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/%E5%85%BB%E8%8A%B1%E6%97%A5%E8%AE%B0%E5%85%BB%E8%8A%B1%E8%99%AB%E5%AE%B3%E7%94%A8%E8%8D%AF%E7%AC%94%E8%AE%B0/</guid>
-    <description><![CDATA[养花日记：养花虫害用药笔记 常在家养花，哪能不生虫。养花生虫是一件非常头痛的事情，弄不好就一传十，十传百，一屋花卉遭殃。 所以我整理了常见病虫害]]></description>
-</item>
-<item>
-    <title>Docker宝库：Docker管理工具Portainer</title>
-    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93portainer/</link>
-    <pubDate>Mon, 11 Mar 2024 21:16:00 &#43;0800</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93portainer/</guid>
-    <description><![CDATA[Docker宝库：Docker管理工具Portainer Portainer是一款轻量级且功能强大的Docker可视化管理工具，其主要用途包括]]></description>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/ntfy%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e5%85%b6%e4%bb%96/NTFY%e6%b6%88%e6%81%af%e6%8e%a8%e9%80%81.jpg" referrerpolicy="no-referrer">
+            </div>研究了好几天，作为消息推送、订阅服务，首先查到的就是基于MQTT协议的相关服务，包括出名的EMQX、Mosquitto等，但是研究了半天，这]]></description>
 </item>
 </channel>
 </rss>

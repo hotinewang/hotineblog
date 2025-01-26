@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>直播推流 - Tag - Hotine的小窝</title>
+        <link>https://blog.hotine.wang/tags/%E7%9B%B4%E6%92%AD%E6%8E%A8%E6%B5%81/</link>
+        <description>直播推流 - Tag - Hotine的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 15 Jun 2023 16:00:00 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/%E7%9B%B4%E6%92%AD%E6%8E%A8%E6%B5%81/" rel="self" type="application/rss+xml" /><item>
+    <title>通过Docker实现B站视频推流</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93b%E7%AB%99%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81kplayer/</link>
+    <pubDate>Thu, 15 Jun 2023 16:00:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93b%E7%AB%99%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81kplayer/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/Docker%e5%ae%9d%e5%ba%93%ef%bc%9aB%e7%ab%99%e8%a7%86%e9%a2%91%e6%8e%a8%e6%b5%81.jpg" referrerpolicy="no-referrer">
+            </div>可以使用kplayer在B站做一个7*24小时的直播小电台。 安装流程： 首先是Kplayer的官方GitHub：bytelang/kplaye]]></description>
+</item>
+</channel>
+</rss>

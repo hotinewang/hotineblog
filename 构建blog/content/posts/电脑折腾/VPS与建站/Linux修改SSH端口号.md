@@ -1,13 +1,11 @@
 ---
 title: Linux修改SSH端口号
-date: 2025-01-14T15-03-58+08:00
+date: 2025-01-14T07:03:58.000Z
 categories:
   - VPS与建站
 tags:
   - Linux
-  - blog
-draft: true
-lastmod: 2025-01-15T02:31:29.659Z
+draft: false
 ---
 在Debian系统中，修改SSH端口号到2077的步骤如下：
 
@@ -23,6 +21,7 @@ sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config_backup
 
 使用文本编辑器（如`nano`或`vim`）打开`sshd_config`文件。
 
+
 ```bash
 sudo nano /etc/ssh/sshd_config
 ```
@@ -35,6 +34,7 @@ sudo vim /etc/ssh/sshd_config
 
 在文件中找到以`#Port 22`开头的行（这行表示SSH默认的端口号是22，并且前面的`#`表示注释）。将其修改为：
 
+
 ```bash
 Port 2077
 ```
@@ -42,7 +42,6 @@ Port 2077
 如果文件中没有`Port`配置项，直接在文件末尾添加`Port 2077`即可。
 
 如果想开启root登录SSH的权限，需要找到`#PermitRootLogin prohibit-password`的位置，添加：
-
 ```
 PermitRootLogin yes
 ```

@@ -1,0 +1,39 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Linux - Tag - Hotine的小窝</title>
+        <link>https://blog.hotine.wang/tags/linux/</link>
+        <description>Linux - Tag - Hotine的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 14 Jan 2025 07:03:58 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>Linux修改SSH端口号</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%BF%AE%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/</link>
+    <pubDate>Tue, 14 Jan 2025 07:03:58 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%BF%AE%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/</guid>
+    <description><![CDATA[在Debian系统中，修改SSH端口号到2077的步骤如下： 一、备份配置文件 首先，备份sshd_config文件，以防止修改过程中出现错误导]]></description>
+</item>
+<item>
+    <title>Docker镜像导出与导入</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%87%BA%E4%B8%8E%E5%AF%BC%E5%85%A5/</link>
+    <pubDate>Wed, 12 Jun 2024 16:00:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%87%BA%E4%B8%8E%E5%AF%BC%E5%85%A5/</guid>
+    <description><![CDATA[Docker被Ban，因此可以通过导入、导出镜像文件的方式来分享、安装镜像。 镜像导出 docker save -o &lt;导出路径与文件名&gt; &lt;镜像名&g]]></description>
+</item>
+<item>
+    <title>openWRT（Linux）挂载共享文件夹</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/openwrt%E6%8C%82%E8%BD%BDsmb%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
+    <pubDate>Fri, 07 Jun 2024 14:48:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/openwrt%E6%8C%82%E8%BD%BDsmb%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
+    <description><![CDATA[openWRT（Linux）挂载共享文件夹 两个家中都有NAS，用ZerotierOne组网在了一起。其中一个通过SMB协议共享了电影，想在另]]></description>
+</item>
+<item>
+    <title>Linux更新软件包</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/linux%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%8C%85/</link>
+    <pubDate>Mon, 29 Jan 2024 12:12:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/linux%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%8C%85/</guid>
+    <description><![CDATA[在Debian系统中更新软件包 在使用Debian或基于Debian的发行版（如Ubuntu）时，你可以使用APT（Advanced Package Tool]]></description>
+</item>
+</channel>
+</rss>

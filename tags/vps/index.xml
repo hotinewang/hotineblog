@@ -3,37 +3,47 @@
         <title>VPS - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/vps/</link>
         <description>VPS - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 16 Jan 2025 09:12:00 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/vps/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 14 Jan 2025 14:17:47 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/vps/" rel="self" type="application/rss+xml" /><item>
     <title>Linux上做个流量统计器</title>
     <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%B8%8A%E5%81%9A%E4%B8%AA%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%99%A8/</link>
-    <pubDate>Thu, 16 Jan 2025 09:12:00 &#43;0000</pubDate>
+    <pubDate>Tue, 14 Jan 2025 14:17:47 &#43;0000</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%B8%8A%E5%81%9A%E4%B8%AA%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%99%A8/</guid>
     <description><![CDATA[VPS流量竟然用超了，于是打算做个流量统计与监控的脚本来自动统计每月和每天的流量使用情况。 查了下资料，Linux系统中，有一个虚拟文件，它提]]></description>
 </item>
 <item>
-    <title>Linux上做个流量统计器</title>
-    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%B8%8A%E5%81%9A%E4%B8%AA%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%99%A8/</link>
-    <pubDate>Thu, 16 Jan 2025 09:12:00 &#43;0000</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%B8%8A%E5%81%9A%E4%B8%AA%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%99%A8/</guid>
-    <description><![CDATA[VPS流量竟然用超了，于是打算做个流量统计与监控的脚本来自动统计每月和每天的流量使用情况。 查了下资料，Linux系统中，有一个虚拟文件，它提]]></description>
-</item>
-<item>
     <title>远程浏览器，通过Docker安装Firefox远程版</title>
     <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93firefox/</link>
-    <pubDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</pubDate>
+    <pubDate>Fri, 15 Sep 2023 16:00:00 &#43;0000</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93firefox/</guid>
     <description><![CDATA[远程浏览器，通过Docker安装Firefox远程版 通过VPS，可以挂一个远程浏览器，这样就可以变相实现魔法上网。 同时，也可以在远程浏览器中]]></description>
 </item>
 <item>
-    <title>远程浏览器，通过Docker安装Firefox远程版</title>
-    <link>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93firefox/</link>
-    <pubDate>Sat, 16 Sep 2023 00:00:00 &#43;0800</pubDate>
+    <title>Docker宝库：Linux套娃装Docker，Docker再跑Ubuntu</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93linux%E5%A5%97%E5%A8%83%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/</link>
+    <pubDate>Thu, 14 Sep 2023 16:00:00 &#43;0000</pubDate>
     <author>Hotine</author>
-    <guid>https://blog.hotine.wang/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93firefox/</guid>
-    <description><![CDATA[远程浏览器，通过Docker安装Firefox远程版 通过VPS，可以挂一个远程浏览器，这样就可以变相实现魔法上网。 同时，也可以在远程浏览器中]]></description>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93linux%E5%A5%97%E5%A8%83%E8%A3%85dockerdocker%E5%86%8D%E8%B7%91ubuntu/</guid>
+    <description><![CDATA[有一个VPS，想弄一个云端工作区。考虑过VPS直接装远程桌面之类的，但是过程比较复杂，而且万一弄不好，把整个VPS弄瘫痪了就麻烦了，所以最终]]></description>
+</item>
+<item>
+    <title>V途锐部署笔记</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/v%E9%80%94%E9%94%90%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/</link>
+    <pubDate>Mon, 14 Aug 2023 14:54:59 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/v%E9%80%94%E9%94%90%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/</guid>
+    <description><![CDATA[前言 VPS的IP被墙了，在此之前，V途锐在搬瓦工已经安稳运行了8个月了。不知道是因为在VPS部署了Chanzhaoyu/chatgpt-we]]></description>
+</item>
+<item>
+    <title>Caddy建站指南</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/caddy%E5%BB%BA%E7%AB%99%E6%8C%87%E5%8D%97/</link>
+    <pubDate>Thu, 10 Aug 2023 16:00:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/caddy%E5%BB%BA%E7%AB%99%E6%8C%87%E5%8D%97/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/VPS%e4%b8%8e%e5%bb%ba%e7%ab%99/Caddy%e5%bb%ba%e7%ab%99%e6%8c%87%e5%8d%97.svg" referrerpolicy="no-referrer">
+            </div>对于在VPS或者家里的小服务器上搭建网站，最轻量级的可以使用基于NodeJS的Express,也可以使用功能强大且出名的Nginx，本文主要]]></description>
 </item>
 </channel>
 </rss>

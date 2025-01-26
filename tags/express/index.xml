@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Express - Tag - Hotine的小窝</title>
+        <link>https://blog.hotine.wang/tags/express/</link>
+        <description>Express - Tag - Hotine的小窝</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 10 May 2023 08:00:00 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/express/" rel="self" type="application/rss+xml" /><item>
+    <title>Linux中安装NodeJS并用Express搭建静态网站</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%B8%AD%E5%AE%89%E8%A3%85nodejs%E5%B9%B6%E7%94%A8express%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</link>
+    <pubDate>Wed, 10 May 2023 08:00:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%B8%AD%E5%AE%89%E8%A3%85nodejs%E5%B9%B6%E7%94%A8express%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</guid>
+    <description><![CDATA[NODEJS部署 最简单的部署方式 分别输入以下命令 sudo apt update sudo apt install nodejs sudo apt install npm 之后在控制台输入 node npm 如果能正常显示版本号，那就说明装好了。可以跳过本文]]></description>
+</item>
+</channel>
+</rss>

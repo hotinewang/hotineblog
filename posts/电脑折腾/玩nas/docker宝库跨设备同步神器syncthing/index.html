@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Docker宝库：跨设备同步神器Syncthing - Hotine的小窝</title><meta name="Description" content="Hotine的窝？"><meta property="og:title" content="Docker宝库：跨设备同步神器Syncthing" />
+<meta property="og:description" content="简介 Syncthing 是一款开源且免费的跨平台文件同步工具，它可以在多个设备之间进行实时或异步的文件同步，支持版本管理、单向或双向同步等。 它基于点对点（P2" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E7%A5%9E%E5%99%A8syncthing/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-02-28T04:20:00+00:00" />
+<meta property="article:modified_time" content="2024-02-28T04:20:00+00:00" /><meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Docker宝库：跨设备同步神器Syncthing"/>
+<meta name="twitter:description" content="简介 Syncthing 是一款开源且免费的跨平台文件同步工具，它可以在多个设备之间进行实时或异步的文件同步，支持版本管理、单向或双向同步等。 它基于点对点（P2"/>
+<meta name="application-name" content="Hotine的小窝">
+<meta name="apple-mobile-web-app-title" content="Hotine的小窝"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E7%A5%9E%E5%99%A8syncthing/" /><link rel="prev" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BB%98%E8%B4%B9%E7%9B%B8%E5%86%8Cmt-photos/" /><link rel="next" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93portainer/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Docker宝库：跨设备同步神器Syncthing",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.hotine.wang\/posts\/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE\/%E7%8E%A9nas\/docker%E5%AE%9D%E5%BA%93%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E7%A5%9E%E5%99%A8syncthing\/"
+        },"genre": "posts","keywords": "Docker, 同步, NAS","wordcount":  1926 ,
+        "url": "https:\/\/blog.hotine.wang\/posts\/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE\/%E7%8E%A9nas\/docker%E5%AE%9D%E5%BA%93%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E7%A5%9E%E5%99%A8syncthing\/","datePublished": "2024-02-28T04:20:00+00:00","dateModified": "2024-02-28T04:20:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Hotine"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="文章列表"> 文章列表 </a><a class="menu-item" href="/categories/" title="分类"> 分类 </a><a class="menu-item" href="/tags/" title="标签"> 标签 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="文章列表">文章列表</a><a class="menu-item" href="/categories/" title="分类">分类</a><a class="menu-item" href="/tags/" title="标签">标签</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Docker宝库：跨设备同步神器Syncthing</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/%E7%8E%A9nas/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>玩NAS</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-02-28">2024-02-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1926 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#简介">简介</a></li>
+    <li><a href="#部署流程docker">部署流程（Docker）</a>
+      <ul>
+        <li><a href="#1-下载安装包">1. 下载安装包</a></li>
+        <li><a href="#2-docker部署">2. Docker部署</a></li>
+      </ul>
+    </li>
+    <li><a href="#开始使用">开始使用</a>
+      <ul>
+        <li><a href="#界面介绍">界面介绍</a></li>
+        <li><a href="#基础设置">基础设置</a></li>
+        <li><a href="#开始同步">开始同步</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/Docker%e5%ae%9d%e5%ba%93%ef%bc%9a%e8%b7%a8%e8%ae%be%e5%a4%87%e5%90%8c%e6%ad%a5%e7%a5%9e%e5%99%a8Syncthing.jpg"
+        data-srcset="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/Docker%e5%ae%9d%e5%ba%93%ef%bc%9a%e8%b7%a8%e8%ae%be%e5%a4%87%e5%90%8c%e6%ad%a5%e7%a5%9e%e5%99%a8Syncthing.jpg, /blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/Docker%e5%ae%9d%e5%ba%93%ef%bc%9a%e8%b7%a8%e8%ae%be%e5%a4%87%e5%90%8c%e6%ad%a5%e7%a5%9e%e5%99%a8Syncthing.jpg 1.5x, /blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/Docker%e5%ae%9d%e5%ba%93%ef%bc%9a%e8%b7%a8%e8%ae%be%e5%a4%87%e5%90%8c%e6%ad%a5%e7%a5%9e%e5%99%a8Syncthing.jpg 2x"
+        data-sizes="auto"
+        alt="/blog/电脑折腾/附件/玩NAS/Docker宝库：跨设备同步神器Syncthing.jpg"
+        title="Docker宝库：跨设备同步神器Syncthing.jpg" /></p>
+<h2 id="简介">简介</h2>
+<p>Syncthing 是一款开源且免费的跨平台文件同步工具，它可以在多个设备之间进行实时或异步的文件同步，支持版本管理、单向或双向同步等。</p>
+<p>它基于点对点（P2P）技术实现设备间的文件同步。这意味着它去中心化，不需要通过中心服务器来同步文件，从而避免了中心化服务器可能带来的限制和隐私问题（可以跨网络，比方说单位电脑和家里电脑直接同步）。Syncthing 确保数据只存储在用户信任的设备上，并通过TLS加密进行设备间的通信，同时采用完全正向保密技术来增强数据安全。</p>
+<h2 id="部署流程docker">部署流程（Docker）</h2>
+<h3 id="1-下载安装包">1. 下载安装包</h3>
+<p>如果是windows等平台安装，可以在官网<a href="https://syncthing.net/https:/" target="_blank" rel="noopener noreffer">https://syncthing.net/</a>
+直接下载对应的安装包。如果是Docker安装，则可以使用linuxserver/syncthing镜像进行安装。</p>
+<h3 id="2-docker部署">2. Docker部署</h3>
+<p>使用以下Docker命令来启动部署容器。这个命令会创建一个名为syncthing的容器，并将要共享的根目录挂载到容器内部，并在容器停止时自动重启。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">  docker run -d <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --name<span class="o">=</span>syncthing <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --hostname<span class="o">=</span>syncthing <span class="sb">`</span><span class="c1">#optional` \</span>
+</span></span><span class="line"><span class="cl">  -e <span class="nv">PUID</span><span class="o">=</span><span class="m">1000</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -e <span class="nv">PGID</span><span class="o">=</span><span class="m">1000</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -e <span class="nv">TZ</span><span class="o">=</span>Asia/Shanghai <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -p 8384:8384 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -p 22000:22000/tcp <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -p 22000:22000/udp <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -p 21027:21027/udp <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -v /opt/syncthing/config:/config <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -v /path/to/data1:/data1 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -v /path/to/data2:/data2 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --restart unless-stopped <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  lscr.io/linuxserver/syncthing:latest
+</span></span></code></pre></div><p>代码解释：</p>
+<ul>
+<li><code>-d</code>：后台运行容器。</li>
+<li><code>--name=&quot;mt-photos&quot;</code>：给容器命名为syncthing（可自行修改）。</li>
+<li><code>--hostname=syncthing</code>：设备名称，用于区别各个同步设备的名称（可自行修改。部署完毕后在程序的管理界面也可以修改）。</li>
+<li><code>-v /opt/syncthing/config:/config</code>：将本地的/opt/syncthing/config目录挂载到容器的/config目录。</li>
+<li><code>-v /path/to/data1:/data1</code>：将本地的/path/to/data1目录挂载到容器的/data1目录，用于指定一个同步文件夹。本地目录和容器内均可以自定义，但是需要注意在程序管理页面设置要同步的目录时，路径使用的是容器内的目录路径。</li>
+<li><code>-v /path/to/data2:/data2</code>：（本行可选）将本地的/path/to/data2目录挂载到容器的/data2目录，用于指定另一个同步文件夹。本地目录和容器内均可以自定义容器内的目录名可以自定，如果想增加第三个同步目录，可以安照这个格式再加一行。</li>
+<li><code>-p 8384:8384</code>：宿主机端口:容器端口。将容器的8384端口映射到宿主机的8384端口，其中宿主及的端口可以自行修改为空闲端口。</li>
+<li><code>-e TZ=&quot;Asia/Shanghai&quot;</code>：设置容器的时区为上海时间。</li>
+<li><code>--restart=&quot;unless-stopped&quot;</code>：除非手动停止，否则容器在退出时会自动重启。</li>
+</ul>
+<h2 id="开始使用">开始使用</h2>
+<p>启动容器后，您可以通过浏览器访问http://localhost:8384来查看和使用。进入管理页面后：</p>
+<h3 id="界面介绍">界面介绍</h3>
+<ul>
+<li>左侧是本地文件夹列表，会有一个默认的文件夹DefaultFolder，可以选择“添加文件夹”来指定本机需要同步的文件夹。</li>
+<li>右侧上方是“当前设备”的基本信息和状态，里边包含了“识别”（也就是设备ID），各个设备之间可以通过这个设备ID来互相识别、联络。</li>
+<li>右侧下方是远程设备列表。可以查看已连接的远程设备的相关信息和同步状态。</li>
+<li>右上角是设置。</li>
+</ul>
+<h3 id="基础设置">基础设置</h3>
+<ul>
+<li>右上角操作-设置-常规，可以修改设备名。</li>
+<li>右上角操作-设置-图形用户界面，可以设置登录用户名和密码，修改主题等。</li>
+<li>右上角操作-设置-常规，可以修改设备名。</li>
+</ul>
+<h3 id="开始同步">开始同步</h3>
+<p>假设你已经在另外一个设备上（windows、Mac、Linux、手机都可以）部署/安装并配置好了Syncthing。</p>
+<ol>
+<li><strong>添加设备</strong>：在主界面右下角点“添加远程设备”，输入对方设备的ID，保存即可。之后在对方设备的管理界面里也按照前边的步骤，添加本机ID为远程设备。等一会即可看到两个设备已连接了。</li>
+<li><strong>添加要同步的文件夹</strong>：在主界面左侧点击“添加文件夹”，填写“文件夹标签”和“文件夹路径”。文件夹标签是文件夹的标识名称，文件夹路径要使用宿主机内的路径。例如：在docker部署的时候用的是<code>-v /path/to/data1:/data1</code> ，如果要选择data1文件夹下的aaa文件夹，则需要填写<code>/data1/aaa</code>而不是<code>/path/to/data1/aaa</code>。</li>
+<li><strong>指定同步设备</strong>：主界面点击刚才创建的文件夹，再点击“选项”，切换到“共享”标签，勾选要接受同步的设备。此外还有“版本控制”、“忽略模式”和“高级”三个标签可供选择。其中“高级”中，“文件夹类型”可以选择本机是“发送与接收”、“仅发送”、“仅接收”等模式。</li>
+<li><strong>对方设备接收</strong>：在对方设备上登录管理界面后，会弹出接收同步的提示，按要求填写好要同步的文件夹的保存路径即可，同时，在“高级”中，“文件夹类型”：“发送与接收”、“仅发送”、“仅接收”等模式可以按需选择。</li>
+</ol>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-02-28</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E7%A5%9E%E5%99%A8syncthing/" data-title="Docker宝库：跨设备同步神器Syncthing" data-via="xxxx" data-hashtags="Docker,同步,NAS"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E7%A5%9E%E5%99%A8syncthing/" data-hashtag="Docker"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E7%A5%9E%E5%99%A8syncthing/" data-title="Docker宝库：跨设备同步神器Syncthing" data-image="/blog/电脑折腾/附件/玩NAS/Docker宝库：跨设备同步神器Syncthing.jpg"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/docker/">Docker</a>,&nbsp;<a href="/tags/%E5%90%8C%E6%AD%A5/">同步</a>,&nbsp;<a href="/tags/nas/">NAS</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93%E5%A5%BD%E7%94%A8%E7%9A%84%E4%BB%98%E8%B4%B9%E7%9B%B8%E5%86%8Cmt-photos/" class="prev" rel="prev" title="Docker宝库：好用的付费相册MT-Photos"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Docker宝库：好用的付费相册MT-Photos</a>
+            <a href="/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93portainer/" class="next" rel="next" title="Docker宝库：Docker管理工具Portainer">Docker宝库：Docker管理工具Portainer<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><br /></div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2021 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Hotine</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.5.4/dist/index.umd.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"Hotine.Wang的小窝","id-2":"Hotine.Wang的小窝"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

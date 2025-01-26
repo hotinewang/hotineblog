@@ -1,15 +1,13 @@
 ---
 title: 远程浏览器，通过Docker安装Firefox远程版
-date: 2023-09-16T00:00:00+08:00
+date: 2023-09-15T16:00:00.000Z
 categories:
   - 玩NAS
 tags:
   - Docker
   - VPS
   - NAS
-  - blog
 draft: false
-lastmod: 2025-01-06T14:47:33.913Z
 ---
 ## 远程浏览器，通过Docker安装Firefox远程版
 
@@ -20,7 +18,6 @@ lastmod: 2025-01-06T14:47:33.913Z
 VPS远程浏览器+NAS百度网盘=百度下载黄金搭档：Docker版浏览器用于资源添加到网盘，NAS里的Docker网盘用来操作资源下载，简直是绝配！
 
 以下是安装命令：
-
 ```bash
 docker run -d \
     --name=firefox \
@@ -29,10 +26,8 @@ docker run -d \
     -e ENABLE_CJK_FONT=1 \
     jlesage/firefox
 ```
-
 注意：
-
-* `-v /opt/firefox:/config:rw`是指把VPS中 /opt/firefox目录挂载到docker容器中的/config目录。这样在容器中/config目录的配置文件就可以在 /opt/firefox目录下存储。
-* `-e ENABLE_CJK_FONT=1`主要是为了防止浏览器中文乱码。
-* 访问http://VPS IP:5800即可远程访问浏览器。
-* 剪贴板的内容无法直接粘贴到远程浏览器中，需要在左侧的剪贴板面板中先粘贴，然后再从远程浏览器的输入框中粘贴。
++ `-v /opt/firefox:/config:rw`是指把VPS中 /opt/firefox目录挂载到docker容器中的/config目录。这样在容器中/config目录的配置文件就可以在 /opt/firefox目录下存储。
++ `-e ENABLE_CJK_FONT=1`主要是为了防止浏览器中文乱码。
++ 访问http://VPS IP:5800即可远程访问浏览器。
++ 剪贴板的内容无法直接粘贴到远程浏览器中，需要在左侧的剪贴板面板中先粘贴，然后再从远程浏览器的输入框中粘贴。

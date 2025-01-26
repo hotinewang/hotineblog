@@ -8,15 +8,15 @@
 <meta property="og:description" content="什么是DOCKER？ Docker 是一种开源的容器化平台，用于帮助开发人员构建、交付和运行应用程序。通过使用 Docker，开发人员可以将应用程序及其所有" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%93%8D%E4%BD%9C/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-11-30T20:00:00+08:00" />
-<meta property="article:modified_time" content="2025-01-07T11:39:49+00:00" /><meta property="og:site_name" content="My cool site" />
+<meta property="article:published_time" content="2022-11-30T12:00:00+00:00" />
+<meta property="article:modified_time" content="2022-11-30T12:00:00+00:00" /><meta property="og:site_name" content="My cool site" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux中Docker的安装"/>
 <meta name="twitter:description" content="什么是DOCKER？ Docker 是一种开源的容器化平台，用于帮助开发人员构建、交付和运行应用程序。通过使用 Docker，开发人员可以将应用程序及其所有"/>
 <meta name="application-name" content="Hotine的小窝">
 <meta name="apple-mobile-web-app-title" content="Hotine的小窝"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%93%8D%E4%BD%9C/" /><link rel="next" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93firefox/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%93%8D%E4%BD%9C/" /><link rel="prev" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/%E5%AE%B6%E7%94%A8nas%E6%90%AD%E5%BB%BAomv%E7%B3%BB%E7%BB%9F/" /><link rel="next" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93ssh%E6%8E%A7%E5%88%B6%E5%8F%B0/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -25,8 +25,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/blog.hotine.wang\/posts\/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE\/%E7%8E%A9nas\/docker%E5%AE%9D%E5%BA%93linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%93%8D%E4%BD%9C\/"
-        },"genre": "posts","keywords": "建站, Docker, NAS, blog","wordcount":  917 ,
-        "url": "https:\/\/blog.hotine.wang\/posts\/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE\/%E7%8E%A9nas\/docker%E5%AE%9D%E5%BA%93linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%93%8D%E4%BD%9C\/","datePublished": "2022-11-30T20:00:00+08:00","dateModified": "2025-01-07T11:39:49+00:00","publisher": {
+        },"genre": "posts","keywords": "建站, Docker, NAS","wordcount":  907 ,
+        "url": "https:\/\/blog.hotine.wang\/posts\/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE\/%E7%8E%A9nas\/docker%E5%AE%9D%E5%BA%93linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%93%8D%E4%BD%9C\/","datePublished": "2022-11-30T12:00:00+00:00","dateModified": "2022-11-30T12:00:00+00:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -68,17 +68,10 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Linux中Docker的安装</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
-</span>&nbsp;<span class="post-category">included in <a href="/categories/nas/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>NAS</a>&nbsp;<a href="/categories/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>VPS与建站</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-11-30">2022-11-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;917 words&nbsp;
+</span>&nbsp;<span class="post-category">included in <a href="/categories/%E7%8E%A9nas/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>玩NAS</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-11-30">2022-11-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;907 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
-        </div><div class="featured-image"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/images/posts/20221130_Linux%e4%b8%adDocker%e7%9a%84%e5%ae%89%e8%a3%85.cover.jpg"
-        data-srcset="/images/posts/20221130_Linux%e4%b8%adDocker%e7%9a%84%e5%ae%89%e8%a3%85.cover.jpg, /images/posts/20221130_Linux%e4%b8%adDocker%e7%9a%84%e5%ae%89%e8%a3%85.cover.jpg 1.5x, /images/posts/20221130_Linux%e4%b8%adDocker%e7%9a%84%e5%ae%89%e8%a3%85.cover.jpg 2x"
-        data-sizes="auto"
-        alt="/images/posts/20221130_Linux中Docker的安装.cover.jpg"
-        title="/images/posts/20221130_Linux中Docker的安装.cover.jpg" /></div><div class="details toc" id="toc-static"  data-kept="true">
+        </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
@@ -90,14 +83,22 @@
     <li><a href="#常用命令">常用命令：</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="什么是docker">什么是DOCKER？</h2>
+            </div><div class="content" id="content"><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/0_Docker%e4%bd%bf%e7%94%a8%e6%8c%87%e5%8d%97%e4%b8%8e%e5%b8%b8%e7%94%a8%e9%95%9c%e5%83%8f.jpg"
+        data-srcset="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/0_Docker%e4%bd%bf%e7%94%a8%e6%8c%87%e5%8d%97%e4%b8%8e%e5%b8%b8%e7%94%a8%e9%95%9c%e5%83%8f.jpg, /blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/0_Docker%e4%bd%bf%e7%94%a8%e6%8c%87%e5%8d%97%e4%b8%8e%e5%b8%b8%e7%94%a8%e9%95%9c%e5%83%8f.jpg 1.5x, /blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/0_Docker%e4%bd%bf%e7%94%a8%e6%8c%87%e5%8d%97%e4%b8%8e%e5%b8%b8%e7%94%a8%e9%95%9c%e5%83%8f.jpg 2x"
+        data-sizes="auto"
+        alt="/blog/电脑折腾/附件/玩NAS/0_Docker使用指南与常用镜像.jpg"
+        title="0_Docker使用指南与常用镜像.jpg" /></p>
+<h2 id="什么是docker">什么是DOCKER？</h2>
 <p>Docker 是一种开源的容器化平台，用于帮助开发人员构建、交付和运行应用程序。通过使用 Docker，开发人员可以将应用程序及其所有依赖项打包到一个称为容器的独立单元中，从而实现环境隔离、易于部署、可移植性和一致性。</p>
 <p>简单来说就是，如果想在linux中安装一个文件管理、或者影音库等程序，如果不用Docker，需要手动敲很多命令进行配置、安装，中间过程麻烦不说，还有可能出现缺少依赖、插件版本不兼容等很多的错误。如果想删除程序，也只能手动一点一点清理，非常麻烦。而有了Docker，则可以使用别人已经打包配置好的程序镜像（相当于windows安装盘，是只读的），通过镜像来生成一个程序运行的实例（术语叫做“容器”，相当于一个轻量级虚拟机）。而且Docker容器和容器之间、以及容器和系统之间相互隔离互不影响。删除时，也只是一句代码，即可把程序删的干干净净。</p>
 <h2 id="开始安装">开始安装</h2>
 <ul>
 <li>
-<p>首先更新软件列表和软件<br>
-参照：<a href="/VPS%E4%B8%8E%E5%BB%BA%E7%AB%99/Linux%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6%E5%8C%85" rel="">../VPS与建站/Linux更新软件包</a>
+<p>首先更新软件列表和软件
+参照：<a href="/posts/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e5%85%b6%e4%bb%96/linux%e6%9b%b4%e6%96%b0%e8%bd%af%e4%bb%b6%e5%8c%85" rel="">Linux更新软件包</a>
 </p>
 </li>
 <li>
@@ -115,7 +116,7 @@
 <li>
 <p>查看状态</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl status docker
-</span></span></code></pre></div><p>到此，docker就安装成功了。后续可以通过<code>docker run</code>命令来镜像创建和启动容器。<br>
+</span></span></code></pre></div><p>到此，docker就安装成功了。后续可以通过<code>docker run</code>命令来镜像创建和启动容器。
 可参照其他文章，查看各类镜像的安装使用方法。</p>
 </li>
 <li>
@@ -146,25 +147,25 @@ docker restart xxxxxx
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2025-01-07</span>
+                <span>Updated on 2022-11-30</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%93%8D%E4%BD%9C/" data-title="Linux中Docker的安装" data-via="xxxx" data-hashtags="建站,Docker,NAS,blog"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%93%8D%E4%BD%9C/" data-hashtag="建站"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%93%8D%E4%BD%9C/" data-title="Linux中Docker的安装" data-image="/images/posts/20221130_Linux中Docker的安装.cover.jpg"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%93%8D%E4%BD%9C/" data-title="Linux中Docker的安装" data-via="xxxx" data-hashtags="建站,Docker,NAS"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%93%8D%E4%BD%9C/" data-hashtag="建站"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93linux%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%93%8D%E4%BD%9C/" data-title="Linux中Docker的安装"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E5%BB%BA%E7%AB%99/">建站</a>,&nbsp;<a href="/tags/docker/">Docker</a>,&nbsp;<a href="/tags/nas/">NAS</a>,&nbsp;<a href="/tags/blog/">blog</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E5%BB%BA%E7%AB%99/">建站</a>,&nbsp;<a href="/tags/docker/">Docker</a>,&nbsp;<a href="/tags/nas/">NAS</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
     </div>
 
-    <div class="post-nav">
-            <a href="/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93firefox/" class="next" rel="next" title="远程浏览器，通过Docker安装Firefox远程版">远程浏览器，通过Docker安装Firefox远程版<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/%E5%AE%B6%E7%94%A8nas%E6%90%AD%E5%BB%BAomv%E7%B3%BB%E7%BB%9F/" class="prev" rel="prev" title="用OMV系统搭建家用NAS"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>用OMV系统搭建家用NAS</a>
+            <a href="/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93ssh%E6%8E%A7%E5%88%B6%E5%8F%B0/" class="next" rel="next" title="Docker宝库：SSH控制台">Docker宝库：SSH控制台<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
