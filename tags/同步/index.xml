@@ -13,5 +13,15 @@
                 <img src="/blog/%e7%94%b5%e8%84%91%e6%8a%98%e8%85%be/%e9%99%84%e4%bb%b6/%e7%8e%a9NAS/Docker%e5%ae%9d%e5%ba%93%ef%bc%9a%e8%b7%a8%e8%ae%be%e5%a4%87%e5%90%8c%e6%ad%a5%e7%a5%9e%e5%99%a8Syncthing.jpg" referrerpolicy="no-referrer">
             </div>简介 Syncthing 是一款开源且免费的跨平台文件同步工具，它可以在多个设备之间进行实时或异步的文件同步，支持版本管理、单向或双向同步等。 它基于点对点（P2]]></description>
 </item>
+<item>
+    <title>Hugo文章模板标题</title>
+    <link>https://blog.hotine.wang/posts/%E6%A8%A1%E6%9D%BF/hugo%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E6%A8%A1%E6%9D%BF/hugo%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/%e6%ad%a4%e5%a4%84%e5%a1%ab%e5%86%99%e5%9b%be%e7%89%87URL%ef%bc%88%e6%88%96%e8%80%85%e5%88%a0%e9%99%a4%e6%ad%a4%e9%a1%b9%e5%8f%af%e8%87%aa%e5%8a%a8%e7%94%9f%e6%88%90%e5%b0%81%e9%9d%a2%e5%9b%be%ef%bc%89.txt" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item>
 </channel>
 </rss>

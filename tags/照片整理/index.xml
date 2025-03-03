@@ -11,5 +11,15 @@
     <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/%E7%85%A7%E7%89%87%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0/</guid>
     <description><![CDATA[转眼间已经存下了5万张照片。之前一直是按照年度，将不同时期的照片/视频存放在电脑里。缺点很明显，直接在文件夹中，不方便翻看，而且因为不同AP]]></description>
 </item>
+<item>
+    <title>Hugo文章模板标题</title>
+    <link>https://blog.hotine.wang/posts/%E6%A8%A1%E6%9D%BF/hugo%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E6%A8%A1%E6%9D%BF/hugo%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/%e6%ad%a4%e5%a4%84%e5%a1%ab%e5%86%99%e5%9b%be%e7%89%87URL%ef%bc%88%e6%88%96%e8%80%85%e5%88%a0%e9%99%a4%e6%ad%a4%e9%a1%b9%e5%8f%af%e8%87%aa%e5%8a%a8%e7%94%9f%e6%88%90%e5%b0%81%e9%9d%a2%e5%9b%be%ef%bc%89.txt" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item>
 </channel>
 </rss>

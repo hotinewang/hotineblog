@@ -12,6 +12,14 @@
     <description><![CDATA[在Debian系统中，修改SSH端口号到2077的步骤如下： 一、备份配置文件 首先，备份sshd_config文件，以防止修改过程中出现错误导]]></description>
 </item>
 <item>
+    <title>Linux修改SSH端口号和登录方式</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%BF%AE%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%92%8C%E7%99%BB%E5%BD%95%E6%96%B9%E5%BC%8F/</link>
+    <pubDate>Tue, 14 Jan 2025 07:03:58 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%BF%AE%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%92%8C%E7%99%BB%E5%BD%95%E6%96%B9%E5%BC%8F/</guid>
+    <description><![CDATA[在Debian系统中，修改SSH端口号到2077的步骤如下： 一、备份配置文件 首先，备份sshd_config文件，以防止修改过程中出现错误导]]></description>
+</item>
+<item>
     <title>Docker镜像导出与导入</title>
     <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%87%BA%E4%B8%8E%E5%AF%BC%E5%85%A5/</link>
     <pubDate>Wed, 12 Jun 2024 16:00:00 &#43;0000</pubDate>

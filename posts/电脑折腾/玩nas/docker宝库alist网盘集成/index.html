@@ -25,7 +25,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/blog.hotine.wang\/posts\/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE\/%E7%8E%A9nas\/docker%E5%AE%9D%E5%BA%93alist%E7%BD%91%E7%9B%98%E9%9B%86%E6%88%90\/"
-        },"genre": "posts","keywords": "Docker, NAS","wordcount":  515 ,
+        },"genre": "posts","keywords": "Docker, NAS","wordcount":  518 ,
         "url": "https:\/\/blog.hotine.wang\/posts\/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE\/%E7%8E%A9nas\/docker%E5%AE%9D%E5%BA%93alist%E7%BD%91%E7%9B%98%E9%9B%86%E6%88%90\/","datePublished": "2024-11-27T07:51:00+00:00","dateModified": "2024-11-27T07:51:00+00:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -69,7 +69,7 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Docker宝库：Alist网盘集成</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/%E7%8E%A9nas/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>玩NAS</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-11-27">2024-11-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;515 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-11-27">2024-11-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;518 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
@@ -125,6 +125,7 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -d <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>--restart<span class="o">=</span>unless-stopped <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /opt/alist:/opt/alist/data <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v /opt:/srv <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>-p 5244:5244 <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>-e <span class="nv">PUID</span><span class="o">=</span><span class="m">0</span> -e <span class="nv">PGID</span><span class="o">=</span><span class="m">0</span> -e <span class="nv">UMASK</span><span class="o">=</span><span class="m">022</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>--name<span class="o">=</span><span class="s2">&#34;alist&#34;</span> <span class="se">\
