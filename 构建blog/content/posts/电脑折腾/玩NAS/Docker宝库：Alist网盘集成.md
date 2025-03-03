@@ -24,7 +24,7 @@ docker run -d \
 --name="alist" \
 xhofe/alist:latest
 ```
-+ `-v /etc/alist:/opt/alist/data`  /etc/alist 需要修改成存放数据文件的位置
++  `-v /etc/alist:/opt/alist/data`  /etc/alist 需要修改成存放数据文件的位置
 +  `-v /opt:/srv` 把宿主机的opt文件夹映射到容器的srv文件夹（可选），方便把srv文件夹挂在Alist中管理。
 + `-p 5244:5244 前边的5244可以修改为想使用的端口号；右边的5244为内部端口号不能修改。
 之后即可通过服务器IP:5244访问Alist网站。
@@ -57,6 +57,7 @@ docker exec -it alist ./alist admin set NEW_PASSWORD
 docker run -d \
 --restart=unless-stopped \
 -v /opt/alist:/opt/alist/data \
+-v /opt:/srv \
 -p 5244:5244 \
 -e PUID=0 -e PGID=0 -e UMASK=022 \
 --name="alist" \

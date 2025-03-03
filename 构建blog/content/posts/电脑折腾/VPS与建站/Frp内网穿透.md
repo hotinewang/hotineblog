@@ -42,6 +42,7 @@ docker run \
 snowdreamtech/frpc
 ```
 
+
 ### 方法2：直接安装
 首先从Github上下载FRP的最新版，(fatedier/frp)[https://github.com/fatedier/frp/releases] ,解压缩后会有4个比较重要的文件：
 ```

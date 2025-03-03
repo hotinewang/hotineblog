@@ -39,3 +39,20 @@ docker run -d \
 • `-v`：挂载卷。这里挂载了三个卷，分别用于持久化数据、库文件和日志文件。将`/path/to/document_data`、`/path/to/document_lib`、`/path/to/document_logs`替换为你在宿主机上实际的目录路径。
 
 • `onlyoffice/documentserver:latest`：指定使用的Docker镜像名称。
+
+
+
+<!--
+自用：
+```bash
+docker run -d \
+  --name onlyoffice \
+  -p 8100:80 \
+  -e "JWT_ENABLED=true" \
+  -e "JWT_SECRET=hotineonlyofficejwt" \
+-v /srv/dev-disk-by-uuid-1ad0ebcf-0133-47df-af50-2cb54d10baa6/documents:/var/www/onlyoffice/Data \
+-v /opt/onlyoffice/lib:/var/lib/onlyoffice \
+-v /opt/onlyoffice/log:/var/log/onlyoffice \
+  onlyoffice/documentserver:latest
+```
+-->

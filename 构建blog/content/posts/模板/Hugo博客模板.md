@@ -16,6 +16,6 @@ tags:
   - 同步
   - 养花
 featuredImage: 此处填写图片URL（或者删除此项可自动生成封面图）.txt
-draft: true
+draft: false
 ---
 

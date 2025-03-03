@@ -47,3 +47,14 @@ PS:有时候可能出现下载存储位置异常（比方说外接硬盘掉线�
   docker rm 容器id
   ```
   然后重新安装容器即可。
+
+<!--自用
+docker run -d \
+--name=xunlei  \
+-v /opt/xunlei/data:/xunlei/data \
+-v /srv/dev-disk-by-uuid-1ad0ebcf-0133-47df-af50-2cb54d10baa6/downloads:/xunlei/downloads  \
+-p 2350:2345 \
+--privileged \
+--restart=unless-stopped \
+cnk3x/xunlei:latest
+-->
