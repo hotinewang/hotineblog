@@ -3,7 +3,15 @@
         <title>Docker - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/docker/</link>
         <description>Docker - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 06 Jan 2025 11:00:00 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/docker/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 17 Mar 2025 10:16:47 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/docker/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker宝库：ezBookkeeping记账</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93ezbookkeeping%E8%AE%B0%E8%B4%A6/</link>
+    <pubDate>Mon, 17 Mar 2025 10:16:47 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93ezbookkeeping%E8%AE%B0%E8%B4%A6/</guid>
+    <description><![CDATA[ezBookkeeping 是一个自托管 (self-hosted) 的轻量个人账本应用。它可以部署在几乎所有平台上，包括 x86、x64 以及 ARM 架构的 Windows、macOS 和 Linux。您甚至]]></description>
+</item>
+<item>
     <title>Docker使用指南与常用镜像</title>
     <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/0_docker%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E4%B8%8E%E5%B8%B8%E7%94%A8%E9%95%9C%E5%83%8F/</link>
     <pubDate>Mon, 06 Jan 2025 11:00:00 &#43;0000</pubDate>
@@ -84,14 +92,6 @@
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%87%BA%E4%B8%8E%E5%AF%BC%E5%85%A5/</guid>
     <description><![CDATA[Docker被Ban，因此可以通过导入、导出镜像文件的方式来分享、安装镜像。 镜像导出 docker save -o &lt;导出路径与文件名&gt; &lt;镜像名&g]]></description>
-</item>
-<item>
-    <title>Docker宝库：V途锐客户端</title>
-    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</link>
-    <pubDate>Wed, 12 Jun 2024 13:44:00 &#43;0000</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93v%E9%80%94%E9%94%90%E5%AE%A2%E6%88%B7%E7%AB%AF/</guid>
-    <description><![CDATA[国内Docker被Ban，是时候在NAS上魔法上网了 通过一下命令，在Docker安装V2RayA docker run -d \ --restart=always \ --privileged \ --network=host \ --name v2raya \ -e V2RAYA_LOG_FILE=/tmp/v2raya.log \ -e V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray \ -e V2RAYA_NFTABLES_SUPPORT=off \]]></description>
 </item>
 </channel>
 </rss>
