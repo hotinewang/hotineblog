@@ -3,7 +3,15 @@
         <title>Linux - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/linux/</link>
         <description>Linux - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 14 Jan 2025 07:03:58 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/linux/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 31 Mar 2025 07:43:31 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>Debian系统瘦身</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/debian%E7%B3%BB%E7%BB%9F%E7%98%A6%E8%BA%AB/</link>
+    <pubDate>Mon, 31 Mar 2025 07:43:31 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/debian%E7%B3%BB%E7%BB%9F%E7%98%A6%E8%BA%AB/</guid>
+    <description><![CDATA[以下是几种Debian系统瘦身的方法： 用命令清除日志、无用软件包 清理系统缓存和日志文件 清理APT缓存：APT在安装和更新软件时会将下载的包保]]></description>
+</item>
+<item>
     <title>Linux修改SSH端口号</title>
     <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/vps%E4%B8%8E%E5%BB%BA%E7%AB%99/linux%E4%BF%AE%E6%94%B9ssh%E7%AB%AF%E5%8F%A3%E5%8F%B7/</link>
     <pubDate>Tue, 14 Jan 2025 07:03:58 &#43;0000</pubDate>

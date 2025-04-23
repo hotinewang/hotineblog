@@ -3,18 +3,10 @@
         <title>Categories - Category - Hotine的小窝</title>
         <link>https://blog.hotine.wang/categories/</link>
         <description>Categories - Category - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 21 Mar 2025 09:06:21 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>生活点滴</title>
-    <link>https://blog.hotine.wang/categories/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/</link>
-    <pubDate>Fri, 21 Mar 2025 09:06:21 &#43;0000</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/categories/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 23 Apr 2025 03:28:58 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/categories/" rel="self" type="application/rss+xml" /><item>
     <title>其他</title>
     <link>https://blog.hotine.wang/categories/%E5%85%B6%E4%BB%96/</link>
-    <pubDate>Mon, 17 Mar 2025 10:20:32 &#43;0000</pubDate>
+    <pubDate>Wed, 23 Apr 2025 03:28:58 &#43;0000</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/categories/%E5%85%B6%E4%BB%96/</guid>
     <description><![CDATA[]]></description>
@@ -22,9 +14,17 @@
 <item>
     <title>玩NAS</title>
     <link>https://blog.hotine.wang/categories/%E7%8E%A9nas/</link>
-    <pubDate>Mon, 17 Mar 2025 10:16:47 &#43;0000</pubDate>
+    <pubDate>Wed, 23 Apr 2025 01:08:24 &#43;0000</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/categories/%E7%8E%A9nas/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>生活点滴</title>
+    <link>https://blog.hotine.wang/categories/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/</link>
+    <pubDate>Fri, 21 Mar 2025 09:06:21 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/categories/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>

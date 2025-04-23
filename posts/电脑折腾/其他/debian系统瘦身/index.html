@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Debian系统瘦身 - Hotine的小窝</title><meta name="Description" content="Hotine的窝？"><meta property="og:title" content="Debian系统瘦身" />
+<meta property="og:description" content="以下是几种Debian系统瘦身的方法： 用命令清除日志、无用软件包 清理系统缓存和日志文件 清理APT缓存：APT在安装和更新软件时会将下载的包保" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/debian%E7%B3%BB%E7%BB%9F%E7%98%A6%E8%BA%AB/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-03-31T07:43:31+00:00" />
+<meta property="article:modified_time" content="2025-03-31T07:43:31+00:00" /><meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Debian系统瘦身"/>
+<meta name="twitter:description" content="以下是几种Debian系统瘦身的方法： 用命令清除日志、无用软件包 清理系统缓存和日志文件 清理APT缓存：APT在安装和更新软件时会将下载的包保"/>
+<meta name="application-name" content="Hotine的小窝">
+<meta name="apple-mobile-web-app-title" content="Hotine的小窝"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/debian%E7%B3%BB%E7%BB%9F%E7%98%A6%E8%BA%AB/" /><link rel="prev" href="https://blog.hotine.wang/posts/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/%E7%85%A7%E7%89%87%E6%89%93%E5%8D%B0%E8%AE%BE%E7%BD%AE6%E5%AF%B8/" /><link rel="next" href="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93pdf%E7%BC%96%E8%BE%91%E5%99%A8stirling-pdf/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Debian系统瘦身",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/blog.hotine.wang\/posts\/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE\/%E5%85%B6%E4%BB%96\/debian%E7%B3%BB%E7%BB%9F%E7%98%A6%E8%BA%AB\/"
+        },"genre": "posts","keywords": "Linux, NAS","wordcount":  780 ,
+        "url": "https:\/\/blog.hotine.wang\/posts\/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE\/%E5%85%B6%E4%BB%96\/debian%E7%B3%BB%E7%BB%9F%E7%98%A6%E8%BA%AB\/","datePublished": "2025-03-31T07:43:31+00:00","dateModified": "2025-03-31T07:43:31+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Hotine"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="文章列表"> 文章列表 </a><a class="menu-item" href="/categories/" title="分类"> 分类 </a><a class="menu-item" href="/tags/" title="标签"> 标签 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Hotine的小窝"><span class="header-title-pre"><i class="far fa-edit fa-fw" aria-hidden="true"></i></span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="文章列表">文章列表</a><a class="menu-item" href="/categories/" title="分类">分类</a><a class="menu-item" href="/tags/" title="标签">标签</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Debian系统瘦身</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Hotine</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/%E5%85%B6%E4%BB%96/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>其他</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-03-31">2025-03-31</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;780 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#用命令清除日志无用软件包">用命令清除日志、无用软件包</a>
+      <ul>
+        <li><a href="#清理系统缓存和日志文件">清理系统缓存和日志文件</a></li>
+        <li><a href="#删除不需要的软件包">删除不需要的软件包</a></li>
+      </ul>
+    </li>
+    <li><a href="#手动定位大文件夹或文件">手动定位大文件夹或文件</a>
+      <ul>
+        <li><a href="#命令解释">命令解释：</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>以下是几种Debian系统瘦身的方法：</p>
+<h2 id="用命令清除日志无用软件包">用命令清除日志、无用软件包</h2>
+<h3 id="清理系统缓存和日志文件">清理系统缓存和日志文件</h3>
+<ul>
+<li>
+<p><strong>清理APT缓存</strong>：APT在安装和更新软件时会将下载的包保存在缓存目录中，这些缓存文件会占用大量空间。可以使用以下命令清理：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get clean
+</span></span></code></pre></div><p>该命令会清理APT缓存目录中的所有已下载的包文件，释放磁盘空间。</p>
+</li>
+<li>
+<p><strong>清理旧日志文件</strong>：系统日志文件会随着时间的推移而不断增长，占用大量磁盘空间。可以使用以下命令来清理旧的日志文件：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo journalctl --vacuum-time<span class="o">=</span>7d
+</span></span></code></pre></div><p>该命令会删除7天前的日志文件，可以根据需要调整日志保留时间。</p>
+</li>
+<li>
+<p><strong>清空系统日志文件内容</strong>：如果只是想清空系统日志文件内容，保留文件本身，可以使用以下命令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">truncate -s <span class="m">0</span> /var/log/messages
+</span></span></code></pre></div><p>这条命令会将指定的日志文件内容清空，但保留文件的元信息。</p>
+</li>
+</ul>
+<h3 id="删除不需要的软件包">删除不需要的软件包</h3>
+<ul>
+<li><strong>删除无用的依赖包</strong>：使用<code>apt-get autoremove</code>命令可以自动删除不再使用的依赖包和已被卸载软件包的残留文件，减少系统中无用的文件：
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get autoremove
+</span></span></code></pre></div>该命令会删除那些经<code>apt-get</code>自动安装的依赖包，而不会删除用户手动安装的依赖包。</li>
+<li><strong>删除指定软件包</strong>：如果知道某些软件包不再需要，可以使用以下命令卸载它们及其依赖：
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get remove &lt;package-name&gt;
+</span></span></code></pre></div>如果还需要删除软件包的配置文件，可以使用<code>purge</code>命令：
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get purge &lt;package-name&gt;
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="手动定位大文件夹或文件">手动定位大文件夹或文件</h2>
+<p>在Debian系统中，可以使用以下命令来显示某个文件夹下的每个文件夹和文件的大小，并按降序排列：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">du -sh * <span class="p">|</span> sort -rh
+</span></span></code></pre></div><h3 id="命令解释">命令解释：</h3>
+<ol>
+<li>
+<p><code>du</code> 命令用于估算文件或文件夹的磁盘使用情况。</p>
+<ul>
+<li>
+<p><code>-s</code> 选项用于显示文件夹的总大小，而不显示其子文件夹的详细信息。</p>
+</li>
+<li>
+<p><code>-h</code> 选项用于以人类可读的格式显示文件夹大小（例如，使用KB，MB，GB等单位）。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>*</code> 通配符表示当前目录下的所有文件和文件夹。</p>
+</li>
+<li>
+<p><code>sort</code> 命令用于排序输出结果。</p>
+<ul>
+<li>
+<p><code>-r</code> 选项用于反向排序，即从大到小排列。</p>
+</li>
+<li>
+<p><code>-h</code> 选项用于人类可读的排序，以便正确地处理文件夹大小的单位。</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>运行这个命令后，你将看到当前目录下所有文件和文件夹的大小，并按照从大到小的顺序排列。</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2025-03-31</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/debian%E7%B3%BB%E7%BB%9F%E7%98%A6%E8%BA%AB/" data-title="Debian系统瘦身" data-via="xxxx" data-hashtags="Linux,NAS"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/debian%E7%B3%BB%E7%BB%9F%E7%98%A6%E8%BA%AB/" data-hashtag="Linux"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/debian%E7%B3%BB%E7%BB%9F%E7%98%A6%E8%BA%AB/" data-title="Debian系统瘦身"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/nas/">NAS</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/%E7%85%A7%E7%89%87%E6%89%93%E5%8D%B0%E8%AE%BE%E7%BD%AE6%E5%AF%B8/" class="prev" rel="prev" title="照片打印设置（6寸）"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>照片打印设置（6寸）</a>
+            <a href="/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E7%8E%A9nas/docker%E5%AE%9D%E5%BA%93pdf%E7%BC%96%E8%BE%91%E5%99%A8stirling-pdf/" class="next" rel="next" title="Docker宝库：PDF编辑器Stirling-PDF">Docker宝库：PDF编辑器Stirling-PDF<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><br /></div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2021 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Hotine</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.5.4/dist/index.umd.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"Hotine.Wang的小窝","id-2":"Hotine.Wang的小窝"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

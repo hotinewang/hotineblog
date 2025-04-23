@@ -3,7 +3,55 @@
         <title>Tags - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/</link>
         <description>Tags - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 21 Mar 2025 09:06:21 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 23 Apr 2025 03:28:58 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>AI</title>
+    <link>https://blog.hotine.wang/tags/ai/</link>
+    <pubDate>Wed, 23 Apr 2025 03:28:58 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/ai/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Docker</title>
+    <link>https://blog.hotine.wang/tags/docker/</link>
+    <pubDate>Wed, 23 Apr 2025 03:28:58 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/docker/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>消息推送</title>
+    <link>https://blog.hotine.wang/tags/%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</link>
+    <pubDate>Wed, 23 Apr 2025 03:28:58 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>脚本自动化</title>
+    <link>https://blog.hotine.wang/tags/%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
+    <pubDate>Wed, 23 Apr 2025 03:28:58 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E5%8C%96/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>NAS</title>
+    <link>https://blog.hotine.wang/tags/nas/</link>
+    <pubDate>Wed, 23 Apr 2025 01:08:24 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/nas/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Linux</title>
+    <link>https://blog.hotine.wang/tags/linux/</link>
+    <pubDate>Mon, 31 Mar 2025 07:43:31 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/tags/linux/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>照片整理</title>
     <link>https://blog.hotine.wang/tags/%E7%85%A7%E7%89%87%E6%95%B4%E7%90%86/</link>
     <pubDate>Fri, 21 Mar 2025 09:06:21 &#43;0000</pubDate>
@@ -20,30 +68,6 @@
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>脚本自动化</title>
-    <link>https://blog.hotine.wang/tags/%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
-    <pubDate>Mon, 17 Mar 2025 10:20:32 &#43;0000</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E5%8C%96/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Docker</title>
-    <link>https://blog.hotine.wang/tags/docker/</link>
-    <pubDate>Mon, 17 Mar 2025 10:16:47 &#43;0000</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/docker/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>NAS</title>
-    <link>https://blog.hotine.wang/tags/nas/</link>
-    <pubDate>Mon, 17 Mar 2025 10:16:47 &#43;0000</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/nas/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
     <title>养花</title>
     <link>https://blog.hotine.wang/tags/%E5%85%BB%E8%8A%B1/</link>
     <pubDate>Mon, 03 Mar 2025 15:01:09 &#43;0000</pubDate>
@@ -57,30 +81,6 @@
     <pubDate>Sun, 26 Jan 2025 13:06:56 &#43;0000</pubDate>
     <author>Hotine</author>
     <guid>https://blog.hotine.wang/tags/hugo/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Obsidian</title>
-    <link>https://blog.hotine.wang/tags/obsidian/</link>
-    <pubDate>Sun, 26 Jan 2025 13:06:56 &#43;0000</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/obsidian/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>博客</title>
-    <link>https://blog.hotine.wang/tags/%E5%8D%9A%E5%AE%A2/</link>
-    <pubDate>Sun, 26 Jan 2025 13:06:56 &#43;0000</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/%E5%8D%9A%E5%AE%A2/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>ESP32</title>
-    <link>https://blog.hotine.wang/tags/esp32/</link>
-    <pubDate>Sun, 26 Jan 2025 13:00:21 &#43;0000</pubDate>
-    <author>Hotine</author>
-    <guid>https://blog.hotine.wang/tags/esp32/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

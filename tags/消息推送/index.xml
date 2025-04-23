@@ -3,7 +3,15 @@
         <title>消息推送 - Tag - Hotine的小窝</title>
         <link>https://blog.hotine.wang/tags/%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</link>
         <description>消息推送 - Tag - Hotine的小窝</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 23 Jan 2025 14:41:54 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 23 Apr 2025 03:28:58 &#43;0000</lastBuildDate><atom:link href="https://blog.hotine.wang/tags/%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker部署kimi-free-api</title>
+    <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/docker%E9%83%A8%E7%BD%B2kimi-free-api/</link>
+    <pubDate>Wed, 23 Apr 2025 03:28:58 &#43;0000</pubDate>
+    <author>Hotine</author>
+    <guid>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/docker%E9%83%A8%E7%BD%B2kimi-free-api/</guid>
+    <description><![CDATA[简介 🚀 KIMI AI 长文本大模型逆向API【特长：长文本解读整理】，支持高速流式输出、智能体对话、联网搜索、探索版、K1思考模型、长文档解读、图像解析]]></description>
+</item>
+<item>
     <title>天天基金网API</title>
     <link>https://blog.hotine.wang/posts/%E7%94%B5%E8%84%91%E6%8A%98%E8%85%BE/%E5%85%B6%E4%BB%96/%E5%A4%A9%E5%A4%A9%E5%9F%BA%E9%87%91%E7%BD%91api/</link>
     <pubDate>Thu, 23 Jan 2025 14:41:54 &#43;0000</pubDate>
